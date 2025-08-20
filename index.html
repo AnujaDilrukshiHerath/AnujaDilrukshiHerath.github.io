@@ -1,11 +1,14 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anuja Dilrukshi — Software Engineer & Data Scientist</title>
-  <meta name="description" content="Software Engineer & Data Scientist. Building ML, chatbots, NLP/LLM apps, and cloud-native backends on GCP.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230ea5e9'/%3E%3Ctext x='32' y='40' font-size='32' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3EA%3C/text%3E%3C/svg%3E">
+  <meta name="description"
+    content="Software Engineer & Data Scientist. Building ML, chatbots, NLP/LLM apps, and cloud-native backends on GCP.">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230ea5e9'/%3E%3Ctext x='32' y='40' font-size='32' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3EA%3C/text%3E%3C/svg%3E">
   <!-- Bootstrap 5 + Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -14,68 +17,169 @@
       --brand: #0ea5e9;
       --muted: #94a3b8;
     }
-    body { font-feature-settings: "ss01","cv01"; }
-    .brand-dot { width: .65rem; height: .65rem; background: var(--brand); border-radius: 50%; display: inline-block; margin-right:.5rem; }
-    .nav-link.active { color: var(--brand)!important; }
+
+    body {
+      font-feature-settings: "ss01", "cv01";
+    }
+
+    .brand-dot {
+      width: .65rem;
+      height: .65rem;
+      background: var(--brand);
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: .5rem;
+    }
+
+    .nav-link.active {
+      color: var(--brand) !important;
+    }
+
     .hero-terminal {
-      background: radial-gradient(1200px 600px at 10% -20%, rgba(14,165,233,.25), transparent 60%);
-      border: 1px solid rgba(148,163,184,.2);
+      background: radial-gradient(1200px 600px at 10% -20%, rgba(14, 165, 233, .25), transparent 60%);
+      border: 1px solid rgba(148, 163, 184, .2);
       border-radius: .75rem;
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
+
     .terminal-title {
-      padding:.5rem .75rem; border-bottom:1px solid rgba(148,163,184,.2);
-      display:flex; align-items:center; gap:.5rem; color:var(--muted);
+      padding: .5rem .75rem;
+      border-bottom: 1px solid rgba(148, 163, 184, .2);
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--muted);
     }
-    .terminal-body { padding: .75rem .9rem; font-size: .95rem; line-height:1.65; }
-    .code-kw { color:#7dd3fc } .code-fn { color:#a5b4fc } .code-str { color:#86efac }
-    .badge-tech { background: rgba(148,163,184,.15); border:1px solid rgba(148,163,184,.25); color:#e2e8f0; }
-    .card { border-color: rgba(148,163,184,.2); }
+
+    .terminal-body {
+      padding: .75rem .9rem;
+      font-size: .95rem;
+      line-height: 1.65;
+    }
+
+    .code-kw {
+      color: #7dd3fc
+    }
+
+    .code-fn {
+      color: #a5b4fc
+    }
+
+    .code-str {
+      color: #86efac
+    }
+
+    .badge-tech {
+      background: rgba(148, 163, 184, .15);
+      border: 1px solid rgba(148, 163, 184, .25);
+      color: #e2e8f0;
+    }
+
+    .card {
+      border-color: rgba(148, 163, 184, .2);
+    }
+
     .timeline {
-      border-left: 2px solid rgba(148,163,184,.25);
-      margin-left: .75rem; padding-left: 1.5rem;
+      border-left: 2px solid rgba(148, 163, 184, .25);
+      margin-left: .75rem;
+      padding-left: 1.5rem;
     }
-    .timeline .item { position:relative; margin-bottom:1.5rem; }
+
+    .timeline .item {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
     .timeline .item::before {
-      content:""; position:absolute; left:-1.075rem; top:.25rem; width:.75rem; height:.75rem;
-      background: var(--brand); border-radius: 50%;
-      box-shadow: 0 0 0 .2rem rgba(14,165,233,.25);
+      content: "";
+      position: absolute;
+      left: -1.075rem;
+      top: .25rem;
+      width: .75rem;
+      height: .75rem;
+      background: var(--brand);
+      border-radius: 50%;
+      box-shadow: 0 0 0 .2rem rgba(14, 165, 233, .25);
     }
-    .link-underline { text-decoration: none; border-bottom: 1px dashed var(--brand); }
-    .shadow-soft { box-shadow: 0 12px 40px rgba(0,0,0,.25); }
-    .stack-icons i { font-size:1.15rem; }
-    .section-title .muted { color: var(--muted); font-weight: 500; }
-    .btn-outline-brand { border-color: var(--brand); color: var(--brand); }
-    .btn-outline-brand:hover { background: var(--brand); color: #0b1220; }
-    .avatar { width: 112px; height:112px; border-radius: 1rem; object-fit: cover; }
-    .gradient { background: linear-gradient(180deg, rgba(14,165,233,.15), transparent 45%); }
-    .bi-check2-circle { color:#22c55e }
+
+    .link-underline {
+      text-decoration: none;
+      border-bottom: 1px dashed var(--brand);
+    }
+
+    .shadow-soft {
+      box-shadow: 0 12px 40px rgba(0, 0, 0, .25);
+    }
+
+    .stack-icons i {
+      font-size: 1.15rem;
+    }
+
+    .section-title .muted {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .btn-outline-brand {
+      border-color: var(--brand);
+      color: var(--brand);
+    }
+
+    .btn-outline-brand:hover {
+      background: var(--brand);
+      color: #0b1220;
+    }
+
+    .avatar {
+      width: 112px;
+      height: 112px;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+
+    .gradient {
+      background: linear-gradient(180deg, rgba(14, 165, 233, .15), transparent 45%);
+    }
+
+    .bi-check2-circle {
+      color: #22c55e
+    }
+
     .back-to-top {
-      position: fixed; right: 1rem; bottom: 1rem; z-index: 1050; display:none;
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 1050;
+      display: none;
     }
   </style>
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#topnav" data-bs-offset="80" tabindex="0">
 
-<!-- NAVBAR -->
-<nav id="topnav" class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#home">
-      <span class="brand-dot"></span>ANUJA
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcol" aria-controls="navcol" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="navcol" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-      <div class="ms-lg-3 d-flex gap-2">
+  <!-- NAVBAR -->
+  <nav id="topnav" class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <span class="brand-dot"></span>ANUJA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcol"
+        aria-controls="navcol" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navcol" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Always-visible buttons (outside collapse) -->
+      <div class="d-flex ms-auto gap-2">
         <a class="btn btn-outline-brand btn-sm" href="./AnuDataScience.pdf" target="_blank" rel="noopener">
           <i class="bi bi-download me-1"></i> CV
         </a>
@@ -83,445 +187,472 @@
           <i class="bi bi-moon-stars"></i>
         </button>
       </div>
+
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- HERO -->
-<header id="home" class="py-5 py-lg-6 gradient">
-  <div class="container">
-    <div class="row align-items-center gy-4">
-      <div class="col-lg-7">
-        <div class="d-flex align-items-center gap-3 mb-3">
-          <img class="avatar shadow-soft" src="assets/img/profile2.jpg" alt="Anuja portrait">
-          <div>
-            <h1 class="h2 fw-bold mb-1">Anuja Dilrukshi</h1>
-            <div class="text-muted">Software Engineer & Data Scientist • London, UK</div>
+  <!-- HERO -->
+  <header id="home" class="py-5 py-lg-6 gradient">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img class="avatar shadow-soft" src="assets/img/profile.jpg" alt="Anuja portrait">
+            <div>
+              <h1 class="h2 fw-bold mb-1">Anuja Dilrukshi</h1>
+              <div class="text-muted">Software Engineer & Data Scientist • London, UK</div>
+            </div>
           </div>
-        </div>
 
-        <div class="hero-terminal">
-          <div class="terminal-title">
-            <i class="bi bi-circle-fill text-danger"></i>
-            <i class="bi bi-circle-fill text-warning"></i>
-            <i class="bi bi-circle-fill text-success"></i>
-            <span class="ms-2">terminal — profile.ts</span>
-          </div>
-          <div class="terminal-body">
-            <span class="code-kw">const</span> <span class="code-fn">about</span> =
-            { role: <span class="code-str">'Backend ➜ Data Scientist'</span>,
-              focus: [<span class="code-str">'ML'</span>, <span class="code-str">'Chatbots'</span>, <span class="code-str">'NLP/LLMs'</span>],
+          <div class="hero-terminal">
+            <div class="terminal-title">
+              <i class="bi bi-circle-fill text-danger"></i>
+              <i class="bi bi-circle-fill text-warning"></i>
+              <i class="bi bi-circle-fill text-success"></i>
+              <span class="ms-2">terminal — profile.ts</span>
+            </div>
+            <div class="terminal-body">
+              <span class="code-kw">const</span> <span class="code-fn">about</span> =
+              { role: <span class="code-str">'Backend ➜ Data Scientist'</span>,
+              focus: [<span class="code-str">'ML'</span>, <span class="code-str">'Chatbots'</span>, <span
+                class="code-str">'NLP/LLMs'</span>],
               cloud: <span class="code-str">'GCP'</span>,
               location: <span class="code-str">'London'</span> };
-            <br>
-            <span class="code-kw">export</span> <span class="code-kw">default</span> about;
+              <br>
+              <span class="code-kw">export</span> <span class="code-kw">default</span> about;
+            </div>
+          </div>
+
+          <p class="lead mt-3">
+            MSc Data Science & Analytics. Backend Developer turned Data Scientist — building Machine Learning and
+            Chatbots,
+            NLP/LLM apps and deploying on GCP.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 align-items-center mt-3">
+            <a class="btn btn-primary" href="#projects"><i class="bi bi-rocket-takeoff me-1"></i> See Projects</a>
+            <a class="btn btn-outline-brand" href="mailto:anuanujadilrukshi@gmail.com"><i
+                class="bi bi-envelope me-1"></i> Get in touch</a>
+            <div class="ms-lg-2 small text-secondary">
+              <i class="bi bi-bookmark-star text-warning me-1"></i>
+              Featured: <a class="link-underline" target="_blank" rel="noopener"
+                href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach">TAMZHI
+                (ICTer 2023)</a>
+            </div>
+          </div>
+
+          <div class="stack-icons mt-4 d-flex flex-wrap gap-3">
+            <span class="badge rounded-pill badge-tech">Python</span>
+            <span class="badge rounded-pill badge-tech">Django</span>
+            <span class="badge rounded-pill badge-tech">Flask</span>
+            <span class="badge rounded-pill badge-tech">R</span>
+            <span class="badge rounded-pill badge-tech">Java</span>
+            <span class="badge rounded-pill badge-tech">JavaScript</span>
+            <span class="badge rounded-pill badge-tech">SQL</span>
+            <span class="badge rounded-pill badge-tech">NLP/LLMs</span>
+            <span class="badge rounded-pill badge-tech">TensorFlow</span>
+            <span class="badge rounded-pill badge-tech">scikit‑learn</span>
+            <span class="badge rounded-pill badge-tech">GCP</span>
+            <span class="badge rounded-pill badge-tech">Docker</span>
+            <span class="badge rounded-pill badge-tech">Photoshop</span>
+            <span class="badge rounded-pill badge-tech">Canva</span>
           </div>
         </div>
 
-        <p class="lead mt-3">
-          MSc Data Science & Analytics. Backend Developer turned Data Scientist — building Machine Learning and Chatbots,
-          NLP/LLM apps and deploying on GCP.
-        </p>
-
-        <div class="d-flex flex-wrap gap-2 align-items-center mt-3">
-          <a class="btn btn-primary" href="#projects"><i class="bi bi-rocket-takeoff me-1"></i> See Projects</a>
-          <a class="btn btn-outline-brand" href="mailto:anuanujadilrukshi@gmail.com"><i class="bi bi-envelope me-1"></i> Get in touch</a>
-          <div class="ms-lg-2 small text-secondary">
-            <i class="bi bi-bookmark-star text-warning me-1"></i>
-            Featured: <a class="link-underline" target="_blank" rel="noopener"
-              href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach">TAMZHI (ICTer 2023)</a>
-          </div>
-        </div>
-
-        <div class="stack-icons mt-4 d-flex flex-wrap gap-3">
-          <span class="badge rounded-pill badge-tech">Python</span>
-          <span class="badge rounded-pill badge-tech">Django</span>
-          <span class="badge rounded-pill badge-tech">Flask</span>
-          <span class="badge rounded-pill badge-tech">R</span>
-          <span class="badge rounded-pill badge-tech">Java</span>
-          <span class="badge rounded-pill badge-tech">JavaScript</span>
-          <span class="badge rounded-pill badge-tech">SQL</span>
-          <span class="badge rounded-pill badge-tech">NLP/LLMs</span>
-          <span class="badge rounded-pill badge-tech">TensorFlow</span>
-          <span class="badge rounded-pill badge-tech">scikit‑learn</span>
-          <span class="badge rounded-pill badge-tech">GCP</span>
-          <span class="badge rounded-pill badge-tech">Docker</span>
-          <span class="badge rounded-pill badge-tech">Photoshop</span>
-          <span class="badge rounded-pill badge-tech">Canva</span>
-        </div>
-      </div>
-
-      <div class="col-lg-5">
-        <div class="card shadow-soft">
-          <div class="card-body">
-            <h5 class="card-title mb-3">Quick Links</h5>
-            <div class="d-flex flex-wrap gap-2">
-              <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener" href="https://linkedin.com/in/anuja-dilrukshi"><i class="bi bi-linkedin me-1"></i> LinkedIn</a>
-              <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener" href="https://github.com/AnujaDilrukshiHerath"><i class="bi bi-github me-1"></i> GitHub</a>
-              <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener" href="https://anuja-herath.medium.com"><i class="bi bi-journal-text me-1"></i> Medium</a>
-              <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener" href="https://anujadilrukshiherath.github.io/"><i class="bi bi-globe me-1"></i> Website</a>
-              <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener" href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach"><i class="bi bi-mortarboard me-1"></i> Research</a>
-            </div>
-            <hr class="my-3">
-            <div class="small text-secondary">
-              <i class="bi bi-check2-circle me-1"></i> MSc Data Science & Analytics (2024–2025) - Distinction<br>
-              <i class="bi bi-check2-circle me-1"></i> BEng (Hons) Software Engineering (2020–2023) - 2nd Upper
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- ABOUT -->
-<section id="about" class="py-5">
-  <div class="container">
-    <div class="row g-4 align-items-start">
-      <div class="col-lg-7">
-        <h2 class="section-title h4 fw-bold mb-3">About <span class="muted">/ who I am</span></h2>
-        <p class="text-secondary">
-          Results-oriented Software Engineer & Data Scientist with an MSc in Data Science & Analytics and a BEng in Software Engineering.
-          Published NLP researcher; I build ML systems, production APIs, and data pipelines, and deploy them on GCP with CI/CD.
-        </p>
-      </div>
-      <div class="col-lg-5">
-        <div class="row g-3">
-          <div class="col-6">
-            <div class="p-3 border rounded h-100">
-              <div class="small text-secondary">Education</div>
-              <div class="fw-semibold">MSc DS&A</div>
-              <div class="small">University of Westminster</div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="p-3 border rounded h-100">
-              <div class="small text-secondary">Award</div>
-              <div class="fw-semibold">IIT Excellence Bronze</div>
-              <div class="small">2024</div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="p-3 border rounded">
-              <div class="small text-secondary">Interests</div>
-              <div class="fw-semibold">LLMs • NLP • MLOps • Data Products</div>
+        <div class="col-lg-5">
+          <div class="card shadow-soft">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Quick Links</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener"
+                  href="https://linkedin.com/in/anuja-dilrukshi"><i class="bi bi-linkedin me-1"></i> LinkedIn</a>
+                <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener"
+                  href="https://github.com/AnujaDilrukshiHerath"><i class="bi bi-github me-1"></i> GitHub</a>
+                <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener"
+                  href="https://anuja-herath.medium.com"><i class="bi bi-journal-text me-1"></i> Medium</a>
+                <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener"
+                  href="https://anujadilrukshiherath.github.io/"><i class="bi bi-globe me-1"></i> Website</a>
+                <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener"
+                  href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach"><i
+                    class="bi bi-mortarboard me-1"></i> Research</a>
+              </div>
+              <hr class="my-3">
+              <div class="small text-secondary">
+                <i class="bi bi-check2-circle me-1"></i> MSc Data Science & Analytics (2024–2025)<br>
+                <i class="bi bi-check2-circle me-1"></i> BEng (Hons) Software Engineering (2020–2023)
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- SKILLS -->
-<section id="skills" class="py-5">
-  <div class="container">
-    <h2 class="section-title h4 fw-bold mb-4">Skills <span class="muted">/ what I use</span></h2>
-    <div class="row g-3">
-      <div class="col-md-6 col-lg-4">
-        <div class="p-3 border rounded h-100">
-          <div class="fw-semibold mb-1">AI & Data</div>
-          <div class="small text-secondary">NLP, LLMs, CNN, Classification, Image Processing, Power BI, Tableau, GCP</div>
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-7">
+          <h2 class="section-title h4 fw-bold mb-3">About <span class="muted">/ who I am</span></h2>
+          <p class="text-secondary">
+            Results-oriented Software Engineer & Data Scientist with an MSc in Data Science & Analytics and a BEng in
+            Software Engineering.
+            Published NLP researcher; I build ML systems, production APIs, and data pipelines, and deploy them on GCP
+            with CI/CD.
+          </p>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="p-3 border rounded h-100">
-          <div class="fw-semibold mb-1">Programming</div>
-          <div class="small text-secondary">Python, R, Java, JavaScript, SQL • Django, Flask, Spring Boot • REST APIs</div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="p-3 border rounded h-100">
-          <div class="fw-semibold mb-1">Tools</div>
-          <div class="small text-secondary">Pandas, NumPy, scikit‑learn, TensorFlow, Firebase, Git, Docker (basic)</div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="p-3 border rounded h-100">
-          <div class="fw-semibold mb-1">Design & E‑commerce</div>
-          <div class="small text-secondary">Photoshop, Canva, Amazon A+ content, product imaging, SEO copy</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="py-5">
-  <div class="container">
-    <h2 class="section-title h4 fw-bold mb-4">Experience <span class="muted">/ impact</span></h2>
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <div class="timeline">
-
-          <div class="item">
-            <div class="d-flex justify-content-between align-items-start">
-              <h5 class="mb-1">E‑commerce Product Content & Graphic Designer</h5>
-              <span class="badge text-bg-secondary">May 2025 – Present</span>
+        <div class="col-lg-5">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="p-3 border rounded h-100">
+                <div class="small text-secondary">Education</div>
+                <div class="fw-semibold">MSc DS&A</div>
+                <div class="small">University of Westminster</div>
+              </div>
             </div>
-            <div class="text-secondary small mb-2">VIROSA Group Limited — London, UK</div>
-            <ul class="small text-secondary mb-0">
-              <li>Managed Amazon/TikTok/website listings; improved visibility & accuracy.</li>
-              <li>Designed Amazon A+ graphics, infographics, comparison charts, banners.</li>
-              <li>Produced platform‑optimized imagery; created barcode labels for merchandise.</li>
-              <li>Wrote SEO‑friendly titles, bullets & descriptions; keyword research.</li>
-              <li>Partnered with marketing & ops to keep content consistent and high‑quality.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="d-flex justify-content-between align-items-start">
-              <h5 class="mb-1">Data Science & Backend Developer</h5>
-              <span class="badge text-bg-secondary">Sep 2022 – Dec 2024</span>
+            <div class="col-6">
+              <div class="p-3 border rounded h-100">
+                <div class="small text-secondary">Award</div>
+                <div class="fw-semibold">IIT Excellence Bronze</div>
+                <div class="small">2024</div>
+              </div>
             </div>
-            <div class="text-secondary small mb-2">IT Domain — Remote</div>
-            <ul class="small text-secondary mb-0">
-              <li>Led “Intellijence” (LLMs + image processing) ⇒ <strong>+25% model performance</strong>.</li>
-              <li>Built scalable REST services in Django; production APIs.</li>
-              <li>Deployed cloud‑native apps on GCP with CI/CD.</li>
-              <li>Transformed business requirements into robust data solutions.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="d-flex justify-content-between align-items-start">
-              <h5 class="mb-1">Software Engineer Intern</h5>
-              <span class="badge text-bg-secondary">Jul 2021 – Jul 2022</span>
+            <div class="col-12">
+              <div class="p-3 border rounded">
+                <div class="small text-secondary">Interests</div>
+                <div class="fw-semibold">LLMs • NLP • MLOps • Data Products</div>
+              </div>
             </div>
-            <div class="text-secondary small mb-2">Informatics International — Colombo, Sri Lanka</div>
-            <ul class="small text-secondary mb-0">
-              <li><strong>−30% bugs</strong> via rigorous testing & code reviews.</li>
-              <li>Wrote OOP code; contributed to UX and user journeys.</li>
-            </ul>
           </div>
-
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="timeline">
-
-          <div class="item">
-            <div class="d-flex justify-content-between align-items-start">
-              <h5 class="mb-1">Tutor</h5>
-              <span class="badge text-bg-secondary">May 2024 – Aug 2024</span>
-            </div>
-            <div class="text-secondary small mb-2">Excel Academy — Harrow, UK</div>
-            <ul class="small text-secondary mb-0">
-              <li>Personalised tutoring in maths & CS; tailored lesson plans.</li>
-              <li>Feedback & mentoring; improved student outcomes.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="d-flex justify-content-between align-items-start">
-              <h5 class="mb-1">Personal Assistant to Director</h5>
-              <span class="badge text-bg-secondary">Mar 2024 – May 2024</span>
-            </div>
-            <div class="text-secondary small mb-2">Red Lounge Limited — London, UK</div>
-            <ul class="small text-secondary mb-0">
-              <li>Managed schedules, travel, confidential correspondence.</li>
-              <li>Prepared reports & decks; tracked actions for decisions.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="d-flex justify-content-between align-items-start">
-              <h5 class="mb-1">Content Writer</h5>
-              <span class="badge text-bg-secondary">Ongoing</span>
-            </div>
-            <div class="text-secondary small mb-2">Medium — @anuja-herath</div>
-            <ul class="small text-secondary mb-0">
-              <li>Published explainers on data science, GPT models, ethical AI (SEO‑optimised).</li>
-            </ul>
-          </div>
-
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="py-5">
-  <div class="container">
-    <h2 class="section-title h4 fw-bold mb-4">Projects <span class="muted">/ selected work</span></h2>
+  <!-- SKILLS -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="section-title h4 fw-bold mb-4">Skills <span class="muted">/ what I use</span></h2>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 border rounded h-100">
+            <div class="fw-semibold mb-1">AI & Data</div>
+            <div class="small text-secondary">NLP, LLMs, CNN, Classification, Image Processing, Power BI, Tableau, GCP
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 border rounded h-100">
+            <div class="fw-semibold mb-1">Programming</div>
+            <div class="small text-secondary">Python, R, Java, JavaScript, SQL • Django, Flask, Spring Boot • REST APIs
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 border rounded h-100">
+            <div class="fw-semibold mb-1">Tools</div>
+            <div class="small text-secondary">Pandas, NumPy, scikit‑learn, TensorFlow, Firebase, Git, Docker (basic)
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 border rounded h-100">
+            <div class="fw-semibold mb-1">Design & E‑commerce</div>
+            <div class="small text-secondary">Photoshop, Canva, Amazon A+ content, product imaging, SEO copy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="row g-4">
-      <!-- TamZhi -->
-      <div class="col-md-6">
-        <div class="card h-100">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex align-items-start justify-content-between">
-              <h5 class="card-title mb-1">TamZhi — Tamil Transliteration</h5>
-              <a class="small link-underline" target="_blank" rel="noopener"
-                 href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach">
-                Paper
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-5">
+    <div class="container">
+      <h2 class="section-title h4 fw-bold mb-4">Experience <span class="muted">/ impact</span></h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="timeline">
+
+            <div class="item">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">E‑commerce Product Content & Graphic Designer</h5>
+                <span class="badge text-bg-secondary">May 2025 – Present</span>
+              </div>
+              <div class="text-secondary small mb-2">VIROSA Group Limited — London, UK</div>
+              <ul class="small text-secondary mb-0">
+                <li>Managed Amazon/TikTok/website listings; improved visibility & accuracy.</li>
+                <li>Designed Amazon A+ graphics, infographics, comparison charts, banners.</li>
+                <li>Produced platform‑optimized imagery; created barcode labels for merchandise.</li>
+                <li>Wrote SEO‑friendly titles, bullets & descriptions; keyword research.</li>
+                <li>Partnered with marketing & ops to keep content consistent and high‑quality.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Data Science & Backend Developer</h5>
+                <span class="badge text-bg-secondary">Sep 2022 – Dec 2024</span>
+              </div>
+              <div class="text-secondary small mb-2">IT Domain — Remote</div>
+              <ul class="small text-secondary mb-0">
+                <li>Led “Intellijence” (LLMs + image processing) ⇒ <strong>+25% model performance</strong>.</li>
+                <li>Built scalable REST services in Django; production APIs.</li>
+                <li>Deployed cloud‑native apps on GCP with CI/CD.</li>
+                <li>Transformed business requirements into robust data solutions.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Software Engineer Intern</h5>
+                <span class="badge text-bg-secondary">Jul 2021 – Jul 2022</span>
+              </div>
+              <div class="text-secondary small mb-2">Informatics International — Colombo, Sri Lanka</div>
+              <ul class="small text-secondary mb-0">
+                <li><strong>−30% bugs</strong> via rigorous testing & code reviews.</li>
+                <li>Wrote OOP code; contributed to UX and user journeys.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="timeline">
+
+            <div class="item">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Tutor</h5>
+                <span class="badge text-bg-secondary">May 2024 – Aug 2024</span>
+              </div>
+              <div class="text-secondary small mb-2">Excel Academy — Harrow, UK</div>
+              <ul class="small text-secondary mb-0">
+                <li>Personalised tutoring in maths & CS; tailored lesson plans.</li>
+                <li>Feedback & mentoring; improved student outcomes.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Personal Assistant to Director</h5>
+                <span class="badge text-bg-secondary">Mar 2024 – May 2024</span>
+              </div>
+              <div class="text-secondary small mb-2">Red Lounge Limited — London, UK</div>
+              <ul class="small text-secondary mb-0">
+                <li>Managed schedules, travel, confidential correspondence.</li>
+                <li>Prepared reports & decks; tracked actions for decisions.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Content Writer</h5>
+                <span class="badge text-bg-secondary">Ongoing</span>
+              </div>
+              <div class="text-secondary small mb-2">Medium — @anuja-herath</div>
+              <ul class="small text-secondary mb-0">
+                <li>Published explainers on data science, GPT models, ethical AI (SEO‑optimised).</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title h4 fw-bold mb-4">Projects <span class="muted">/ selected work</span></h2>
+
+      <div class="row g-4">
+        <!-- TamZhi -->
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-start justify-content-between">
+                <h5 class="card-title mb-1">TamZhi — Tamil Transliteration</h5>
+                <a class="small link-underline" target="_blank" rel="noopener"
+                  href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach">
+                  Paper
+                </a>
+              </div>
+              <p class="card-text text-secondary mt-2">
+                Predictive model converting shorthand Romanized Tamil (with/without vowels) back to Tamil script.
+                <strong>90%+ accuracy</strong> using Python + Flask. ICTer 2023.
+              </p>
+              <div class="mt-auto d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill badge-tech">Python</span>
+                <span class="badge rounded-pill badge-tech">Flask</span>
+                <span class="badge rounded-pill badge-tech">NLP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oggy Doggy -->
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-start justify-content-between">
+                <h5 class="card-title mb-1">Oggy Doggy — Dog Emotion Detection</h5>
+                <a class="small link-underline" target="_blank" rel="noopener"
+                  href="https://github.com/DebugPirates/Repo1">GitHub</a>
+              </div>
+              <p class="card-text text-secondary mt-2">
+                Mobile app that detects dog emotions from images; ~85% accuracy. Explores vet‑clinic use cases for
+                behaviour analysis.
+              </p>
+              <div class="mt-auto d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill badge-tech">CNN</span>
+                <span class="badge rounded-pill badge-tech">Computer Vision</span>
+                <span class="badge rounded-pill badge-tech">Mobile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more cards here as you like -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="py-5">
+    <div class="container">
+      <h2 class="section-title h4 fw-bold mb-4">Research & Publications <span class="muted">/ peer‑reviewed</span></h2>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex flex-wrap align-items-start justify-content-between gap-3">
+            <div>
+              <h5 class="mb-1">TAMZHI: Shorthand Romanized Tamil → Tamil Reverse Transliteration Using a Novel Hybrid
+                Approach</h5>
+              <div class="small text-secondary">ICTer 2023 (University of Colombo) • NLP • Transliteration</div>
+            </div>
+            <div class="d-flex gap-2">
+              <a class="btn btn-primary btn-sm" target="_blank" rel="noopener"
+                href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach">
+                <i class="bi bi-file-earmark-text me-1"></i> Read paper
               </a>
             </div>
-            <p class="card-text text-secondary mt-2">
-              Predictive model converting shorthand Romanized Tamil (with/without vowels) back to Tamil script.
-              <strong>90%+ accuracy</strong> using Python + Flask. ICTer 2023.
-            </p>
-            <div class="mt-auto d-flex flex-wrap gap-2">
-              <span class="badge rounded-pill badge-tech">Python</span>
-              <span class="badge rounded-pill badge-tech">Flask</span>
-              <span class="badge rounded-pill badge-tech">NLP</span>
-            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Oggy Doggy -->
-      <div class="col-md-6">
-        <div class="card h-100">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex align-items-start justify-content-between">
-              <h5 class="card-title mb-1">Oggy Doggy — Dog Emotion Detection</h5>
-              <a class="small link-underline" target="_blank" rel="noopener" href="https://github.com/DebugPirates/Repo1">GitHub</a>
-            </div>
-            <p class="card-text text-secondary mt-2">
-              Mobile app that detects dog emotions from images; ~85% accuracy. Explores vet‑clinic use cases for behaviour analysis.
-            </p>
-            <div class="mt-auto d-flex flex-wrap gap-2">
-              <span class="badge rounded-pill badge-tech">CNN</span>
-              <span class="badge rounded-pill badge-tech">Computer Vision</span>
-              <span class="badge rounded-pill badge-tech">Mobile</span>
-            </div>
+          <p class="small text-secondary mt-3 mb-2">
+            Hybrid rules + ML approach converting shorthand Romanized Tamil (with/without vowels) back to Tamil script.
+            Achieved <strong>90%+ accuracy</strong>; supports learning tools and IMEs.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge rounded-pill badge-tech">NLP</span>
+            <span class="badge rounded-pill badge-tech">Transliteration</span>
+            <span class="badge rounded-pill badge-tech">Python</span>
+            <span class="badge rounded-pill badge-tech">Flask</span>
           </div>
-        </div>
-      </div>
 
-      <!-- Add more cards here as you like -->
-    </div>
-  </div>
-</section>
-
-<!-- PUBLICATIONS -->
-<section id="publications" class="py-5">
-  <div class="container">
-    <h2 class="section-title h4 fw-bold mb-4">Research & Publications <span class="muted">/ peer‑reviewed</span></h2>
-
-    <div class="card">
-      <div class="card-body">
-        <div class="d-flex flex-wrap align-items-start justify-content-between gap-3">
-          <div>
-            <h5 class="mb-1">TAMZHI: Shorthand Romanized Tamil → Tamil Reverse Transliteration Using a Novel Hybrid Approach</h5>
-            <div class="small text-secondary">ICTer 2023 (University of Colombo) • NLP • Transliteration</div>
-          </div>
-          <div class="d-flex gap-2">
-            <a class="btn btn-primary btn-sm" target="_blank" rel="noopener"
-               href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach">
-               <i class="bi bi-file-earmark-text me-1"></i> Read paper
-            </a>
-          </div>
-        </div>
-
-        <p class="small text-secondary mt-3 mb-2">
-          Hybrid rules + ML approach converting shorthand Romanized Tamil (with/without vowels) back to Tamil script.
-          Achieved <strong>90%+ accuracy</strong>; supports learning tools and IMEs.
-        </p>
-
-        <div class="d-flex flex-wrap gap-2">
-          <span class="badge rounded-pill badge-tech">NLP</span>
-          <span class="badge rounded-pill badge-tech">Transliteration</span>
-          <span class="badge rounded-pill badge-tech">Python</span>
-          <span class="badge rounded-pill badge-tech">Flask</span>
-        </div>
-
-        <details class="mt-3">
-          <summary class="small">BibTeX</summary>
-<pre class="mt-2 small text-secondary mb-0">@inproceedings{TamZhi2023,
+          <details class="mt-3">
+            <summary class="small">BibTeX</summary>
+            <pre class="mt-2 small text-secondary mb-0">@inproceedings{TamZhi2023,
   title={TAMZHI: Shorthand Romanized Tamil to Tamil Reverse Transliteration Using a Novel Hybrid Approach},
   booktitle={ICTer},
   year={2023},
   note={Available on ResearchGate}
 }</pre>
-        </details>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-5">
-  <div class="container">
-    <h2 class="section-title h4 fw-bold mb-4">Contact <span class="muted">/ let’s build</span></h2>
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <div class="p-3 border rounded h-100">
-          <dl class="row mb-0 small">
-            <dt class="col-4 col-md-3 text-secondary">Location</dt><dd class="col-8 col-md-9">London, United Kingdom</dd>
-            <dt class="col-4 col-md-3 text-secondary">Email</dt><dd class="col-8 col-md-9"><a href="mailto:anuanujadilrukshi@gmail.com" class="link-underline">anuanujadilrukshi@gmail.com</a></dd>
-            <dt class="col-4 col-md-3 text-secondary">Phone</dt><dd class="col-8 col-md-9">+44 7932 858305</dd>
-            <dt class="col-4 col-md-3 text-secondary">Links</dt>
-            <dd class="col-8 col-md-9">
-              <a target="_blank" rel="noopener" class="me-3 link-underline" href="https://linkedin.com/in/anuja-dilrukshi">LinkedIn</a>
-              <a target="_blank" rel="noopener" class="me-3 link-underline" href="https://github.com/AnujaDilrukshiHerath">GitHub</a>
-              <a target="_blank" rel="noopener" class="me-3 link-underline" href="https://anuja-herath.medium.com">Medium</a>
-            </dd>
-          </dl>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="p-3 border rounded h-100">
-          <div class="fw-semibold mb-1">Work with me</div>
-          <p class="small text-secondary mb-3">
-            For roles, collaborations, or freelance projects, include a short brief and timeline.
-          </p>
-          <a href="mailto:anuanujadilrukshi@gmail.com?subject=Project%20Enquiry%20—%20Anuja%20Dilrukshi" class="btn btn-primary">
-            <i class="bi bi-send me-1"></i> Email Anuja
-          </a>
-          <a class="btn btn-outline-brand ms-2" href="./AnuDataScience.pdf" target="_blank" rel="noopener">
-            <i class="bi bi-download me-1"></i> Download CV
-          </a>
+          </details>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="py-4 border-top">
-  <div class="container text-center small text-secondary">
-    © <span id="year"></span> Anuja Dilrukshi • Built with Bootstrap
-  </div>
-</footer>
+  <!-- CONTACT -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title h4 fw-bold mb-4">Contact <span class="muted">/ let’s build</span></h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="p-3 border rounded h-100">
+            <dl class="row mb-0 small">
+              <dt class="col-4 col-md-3 text-secondary">Location</dt>
+              <dd class="col-8 col-md-9">London, United Kingdom</dd>
+              <dt class="col-4 col-md-3 text-secondary">Email</dt>
+              <dd class="col-8 col-md-9"><a href="mailto:anuanujadilrukshi@gmail.com"
+                  class="link-underline">anuanujadilrukshi@gmail.com</a></dd>
+              <dt class="col-4 col-md-3 text-secondary">Phone</dt>
+              <dd class="col-8 col-md-9">+44 7932 858305</dd>
+              <dt class="col-4 col-md-3 text-secondary">Links</dt>
+              <dd class="col-8 col-md-9">
+                <a target="_blank" rel="noopener" class="me-3 link-underline"
+                  href="https://linkedin.com/in/anuja-dilrukshi">LinkedIn</a>
+                <a target="_blank" rel="noopener" class="me-3 link-underline"
+                  href="https://github.com/AnujaDilrukshiHerath">GitHub</a>
+                <a target="_blank" rel="noopener" class="me-3 link-underline"
+                  href="https://anuja-herath.medium.com">Medium</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-3 border rounded h-100">
+            <div class="fw-semibold mb-1">Work with me</div>
+            <p class="small text-secondary mb-3">
+              For roles, collaborations, or freelance projects, include a short brief and timeline.
+            </p>
+            <a href="mailto:anuanujadilrukshi@gmail.com?subject=Project%20Enquiry%20—%20Anuja%20Dilrukshi"
+              class="btn btn-primary">
+              <i class="bi bi-send me-1"></i> Email Anuja
+            </a>
+            <a class="btn btn-outline-brand ms-2" href="./AnuDataScience.pdf" target="_blank" rel="noopener">
+              <i class="bi bi-download me-1"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<button id="backToTop" class="btn btn-primary rounded-circle back-to-top">
-  <i class="bi bi-arrow-up"></i>
-</button>
+  <footer class="py-4 border-top">
+    <div class="container text-center small text-secondary">
+      © <span id="year"></span> Anuja Dilrukshi • Built with Bootstrap
+    </div>
+  </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // Scrollspy init
-  const scrollSpy = new bootstrap.ScrollSpy(document.body, { target: '#topnav', offset: 80 });
+  <button id="backToTop" class="btn btn-primary rounded-circle back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
-  // Theme toggle (dark <-> light) with persistence
-  const themeToggle = document.getElementById('themeToggle');
-  const root = document.documentElement;
-  (function initTheme() {
-    const saved = localStorage.getItem('theme');
-    if (saved) document.documentElement.setAttribute('data-bs-theme', saved);
-  })();
-  themeToggle.addEventListener('click', () => {
-    const cur = root.getAttribute('data-bs-theme') || 'dark';
-    const next = cur === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-bs-theme', next);
-    localStorage.setItem('theme', next);
-    themeToggle.innerHTML = next === 'dark' ? '<i class="bi bi-moon-stars"></i>' : '<i class="bi bi-brightness-high"></i>';
-  });
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scrollspy init
+    const scrollSpy = new bootstrap.ScrollSpy(document.body, { target: '#topnav', offset: 80 });
 
-  // Year
-  document.getElementById('year').textContent = new Date().getFullYear();
+    // Theme toggle (dark <-> light) with persistence
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    (function initTheme() {
+      const saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-bs-theme', saved);
+    })();
+    themeToggle.addEventListener('click', () => {
+      const cur = root.getAttribute('data-bs-theme') || 'dark';
+      const next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-bs-theme', next);
+      localStorage.setItem('theme', next);
+      themeToggle.innerHTML = next === 'dark' ? '<i class="bi bi-moon-stars"></i>' : '<i class="bi bi-brightness-high"></i>';
+    });
 
-  // Back to top
-  const btt = document.getElementById('backToTop');
-  window.addEventListener('scroll', () => {
-    btt.style.display = (window.scrollY > 400) ? 'inline-flex' : 'none';
-  });
-  btt.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
-</script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Back to top
+    const btt = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      btt.style.display = (window.scrollY > 400) ? 'inline-flex' : 'none';
+    });
+    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 </body>
-</html>
 
+</html>
