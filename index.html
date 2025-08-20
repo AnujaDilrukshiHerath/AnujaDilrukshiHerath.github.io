@@ -72,7 +72,7 @@
     .badge-tech {
       background: rgba(148, 163, 184, .15);
       border: 1px solid rgba(148, 163, 184, .25);
-      color: #e2e8f0;
+      color: inherit;  /* text color follows theme */
     }
 
     .card {
@@ -160,8 +160,11 @@
   <!-- NAVBAR -->
   <nav id="topnav" class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">
-        <span class="brand-dot"></span>ANUJA
+      <a class="navbar-brand fw-bold" href="#home"> 
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <img src="assets/img/logo.png" alt="Anuja Logo" height="32" class="me-2">
+        </a>
+        <!-- <span class="brand-dot"></span> -->
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcol"
         aria-controls="navcol" aria-expanded="false" aria-label="Toggle navigation">
@@ -177,7 +180,7 @@
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
-      
+
       <!-- Always-visible buttons (outside collapse) -->
       <div class="d-flex ms-auto gap-2">
         <a class="btn btn-outline-brand btn-sm" href="./AnuDataScience.pdf" target="_blank" rel="noopener">
@@ -188,7 +191,7 @@
         </button>
       </div>
 
-      </div>
+    </div>
     </div>
   </nav>
 
@@ -198,7 +201,7 @@
       <div class="row align-items-center gy-4">
         <div class="col-lg-7">
           <div class="d-flex align-items-center gap-3 mb-3">
-            <img class="avatar shadow-soft" src="assets/img/profile.jpg" alt="Anuja portrait">
+            <img class="avatar shadow-soft" src="assets/img/profile.png" alt="Anuja portrait">
             <div>
               <h1 class="h2 fw-bold mb-1">Anuja Dilrukshi</h1>
               <div class="text-muted">Software Engineer & Data Scientist • London, UK</div>
@@ -226,8 +229,7 @@
 
           <p class="lead mt-3">
             MSc Data Science & Analytics. Backend Developer turned Data Scientist — building Machine Learning and
-            Chatbots,
-            NLP/LLM apps and deploying on GCP.
+            Chatbots, NLP/LLM apps and deploying on GCP.
           </p>
 
           <div class="d-flex flex-wrap gap-2 align-items-center mt-3">
@@ -374,6 +376,7 @@
         <div class="col-lg-6">
           <div class="timeline">
 
+            <!-- VIROSA: expanded bullets per your notes -->
             <div class="item">
               <div class="d-flex justify-content-between align-items-start">
                 <h5 class="mb-1">E‑commerce Product Content & Graphic Designer</h5>
@@ -381,11 +384,22 @@
               </div>
               <div class="text-secondary small mb-2">VIROSA Group Limited — London, UK</div>
               <ul class="small text-secondary mb-0">
-                <li>Managed Amazon/TikTok/website listings; improved visibility & accuracy.</li>
-                <li>Designed Amazon A+ graphics, infographics, comparison charts, banners.</li>
-                <li>Produced platform‑optimized imagery; created barcode labels for merchandise.</li>
-                <li>Wrote SEO‑friendly titles, bullets & descriptions; keyword research.</li>
-                <li>Partnered with marketing & ops to keep content consistent and high‑quality.</li>
+                <li><strong>Website:</strong> maintained and <strong>rebuilt</strong> the company site <a
+                    class="link-underline" href="https://www.virosagroup.com" target="_blank"
+                    rel="noopener">virosagroup.com</a> (Shopify) for better UX, performance, and SEO.</li>
+                <li><strong>Listings:</strong> created and optimized product listings across <strong>Amazon, eBay, Etsy,
+                    Temu, TikTok Shop</strong>, and the <strong>Shopify</strong> website; ensured accurate inventory
+                  sync.</li>
+                <li>Designed <strong>Amazon A+ Content</strong> (graphics, infographics, comparison charts, banners) to
+                  drive conversion.</li>
+                <li>Produced platform‑optimized product imagery; designed <strong>barcode stickers</strong> and labels
+                  for merchandise.</li>
+                <li>Developed <strong>SEO‑friendly</strong> titles, bullet points, and descriptions using keyword
+                  research.</li>
+                <li><strong>Operations:</strong> managed orders and <strong>replied to customer messages</strong> to
+                  improve satisfaction and retention.</li>
+                <li><strong>Marketing:</strong> collaborated on <strong>marketing strategies</strong> for multi‑channel
+                  campaigns and seasonal promotions.</li>
               </ul>
             </div>
 
@@ -396,11 +410,18 @@
               </div>
               <div class="text-secondary small mb-2">IT Domain — Remote</div>
               <ul class="small text-secondary mb-0">
-                <li>Led “Intellijence” (LLMs + image processing) ⇒ <strong>+25% model performance</strong>.</li>
-                <li>Built scalable REST services in Django; production APIs.</li>
-                <li>Deployed cloud‑native apps on GCP with CI/CD.</li>
-                <li>Transformed business requirements into robust data solutions.</li>
-              </ul>
+                <li><strong>Intellijence Project:</strong> led research and engineering of an LLM + Image Processing solution; achieved
+                  <strong>+25% model performance uplift</strong> via data augmentation, fine-tuning, and evaluation pipelines.</li>
+                <li>Developed scalable <strong>RESTful APIs</strong> with <strong>Django & Django REST Framework</strong> to serve ML
+                  models in production.</li>
+                <li>Implemented <strong>Python-based analytics pipelines</strong> for classification, NLP tasks, and image recognition,
+                  delivering actionable insights for clients.</li>
+                <li>Deployed applications on <strong>Google Cloud Platform</strong> (App Engine, Cloud Run, Cloud Storage) with CI/CD
+                  pipelines for automation.</li>
+                <li>Optimized data processing workflows (Pandas, NumPy, scikit-learn) to handle thousands of records efficiently.</li>
+                <li>Collaborated with cross-functional teams to convert business requirements into technical solutions — from
+                  prototyping to production deployment.</li>
+                </ul>
             </div>
 
             <div class="item">
@@ -410,9 +431,14 @@
               </div>
               <div class="text-secondary small mb-2">Informatics International — Colombo, Sri Lanka</div>
               <ul class="small text-secondary mb-0">
-                <li><strong>−30% bugs</strong> via rigorous testing & code reviews.</li>
-                <li>Wrote OOP code; contributed to UX and user journeys.</li>
-              </ul>
+                <li>Worked extensively with <strong>Java</strong> and <strong>JavaFX</strong> to build desktop and enterprise modules,
+                  focusing on maintainable OOP architecture.</li>
+                <li>Enhanced system reliability by reducing bugs by ~<strong>30%</strong> through rigorous testing, debugging, and peer
+                  code reviews.</li>
+                <li>Contributed to <strong>UX and user journeys</strong>, improving usability in internal applications.</li>
+                <li>Assisted senior engineers with API integrations and database design (MySQL).</li>
+                <li>Documented workflows and participated in Agile sprints for faster delivery cycles.</li>
+                </ul>
             </div>
 
           </div>
@@ -480,13 +506,45 @@
                 </a>
               </div>
               <p class="card-text text-secondary mt-2">
-                Predictive model converting shorthand Romanized Tamil (with/without vowels) back to Tamil script.
-                <strong>90%+ accuracy</strong> using Python + Flask. ICTer 2023.
+                Reverse transliteration that converts shorthand Romanized Tamil (with/without vowels) back to Tamil
+                script using a hybrid rules + ML approach.
               </p>
+              <ul class="small text-secondary mb-3">
+                <li><strong>Problem:</strong> inconsistent shorthand causes errors in typing tools and NLP tasks.</li>
+                <li><strong>Data:</strong> curated transliteration pairs; normalization; noise handling.</li>
+                <li><strong>Approach:</strong> rules for vowel omissions + ML model for edge cases.</li>
+                <li><strong>Result:</strong> <strong>90%+</strong> accuracy; practical for IMEs and education tools.
+                </li>
+              </ul>
               <div class="mt-auto d-flex flex-wrap gap-2">
                 <span class="badge rounded-pill badge-tech">Python</span>
                 <span class="badge rounded-pill badge-tech">Flask</span>
                 <span class="badge rounded-pill badge-tech">NLP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intellijence -->
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Intellijence — LLM + Vision Uplift</h5>
+              <p class="card-text text-secondary mt-2">
+                Evaluation and iteration on an LLM + image processing pipeline to improve prediction quality and
+                latency.
+              </p>
+              <ul class="small text-secondary mb-3">
+                <li><strong>Approach:</strong> error analysis, prompt iteration, model selection, vision pre‑processing
+                  tweaks.</li>
+                <li><strong>MLOps:</strong> reproducible eval scripts; tracked metrics; GCP deployment.</li>
+                <li><strong>Impact:</strong> <strong>+25%</strong> model performance; smoother inference.</li>
+              </ul>
+              <div class="mt-auto d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill badge-tech">LLMs</span>
+                <span class="badge rounded-pill badge-tech">Evaluation</span>
+                <span class="badge rounded-pill badge-tech">Python</span>
+                <span class="badge rounded-pill badge-tech">GCP</span>
               </div>
             </div>
           </div>
@@ -497,14 +555,19 @@
           <div class="card h-100">
             <div class="card-body d-flex flex-column">
               <div class="d-flex align-items-start justify-content-between">
-                <h5 class="card-title mb-1">Oggy Doggy — Dog Emotion Detection</h5>
+                <h5 class="card-title mb-1">Oggy Doggy — Dog Emotion Detection App</h5>
                 <a class="small link-underline" target="_blank" rel="noopener"
                   href="https://github.com/DebugPirates/Repo1">GitHub</a>
               </div>
               <p class="card-text text-secondary mt-2">
-                Mobile app that detects dog emotions from images; ~85% accuracy. Explores vet‑clinic use cases for
-                behaviour analysis.
+                CNN‑based image classifier that predicts dog emotions; early vet‑clinic pilot to assess well‑being from
+                images.
               </p>
+              <ul class="small text-secondary mb-3">
+                <li><strong>Data:</strong> labelled dog face images; augmentation for lighting/pose.</li>
+                <li><strong>Model:</strong> CNN baseline; tuned hyperparameters for stability.</li>
+                <li><strong>Result:</strong> ~85% accuracy; clear next steps: class balance and harder negatives.</li>
+              </ul>
               <div class="mt-auto d-flex flex-wrap gap-2">
                 <span class="badge rounded-pill badge-tech">CNN</span>
                 <span class="badge rounded-pill badge-tech">Computer Vision</span>
@@ -614,7 +677,7 @@
 
   <footer class="py-4 border-top">
     <div class="container text-center small text-secondary">
-      © <span id="year"></span> Anuja Dilrukshi • Built with Bootstrap
+      © <span id="year"></span> Anuja Dilrukshi • 
     </div>
   </footer>
 
@@ -634,13 +697,16 @@
     (function initTheme() {
       const saved = localStorage.getItem('theme');
       if (saved) document.documentElement.setAttribute('data-bs-theme', saved);
+      themeToggle.innerHTML = (document.documentElement.getAttribute('data-bs-theme') === 'light')
+        ? '<i class="bi bi-brightness-high"></i>'
+        : '<i class="bi bi-moon-stars"></i>';
     })();
     themeToggle.addEventListener('click', () => {
       const cur = root.getAttribute('data-bs-theme') || 'dark';
       const next = cur === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-bs-theme', next);
       localStorage.setItem('theme', next);
-      themeToggle.innerHTML = next === 'dark' ? '<i class="bi bi-moon-stars"></i>' : '<i class="bi bi-brightness-high"></i>';
+      themeToggle.innerHTML = next === 'light' ? '<i class="bi bi-brightness-high"></i>' : '<i class="bi bi-moon-stars"></i>';
     });
 
     // Year
