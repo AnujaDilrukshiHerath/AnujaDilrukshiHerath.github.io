@@ -31,7 +31,10 @@
     }
 
     
-    
+    /* Extra syntax colors */
+    .code-key { color: #9cdcfe; }       /* cyan-ish for keys */
+    .code-punc { color: #808080; }      /* commas, colons, braces */
+    .code-num  { color: #b5cea8; }      /* numbers, if any */
 
     .brand-dot {
       width: .65rem;
@@ -249,23 +252,23 @@
         const terminalBody = document.getElementById('terminal-body');
 
         const tsSnippet = `
-      <span class="code-kw">const</span> <span class="code-fn">about</span> = {<br>
-      &nbsp;&nbsp;careerPath: [<span class="code-str">'Backend Developer'</span>, <span class="code-str">'Data Scientist'</span>],<br>
-      &nbsp;&nbsp;currentRole: <span class="code-str">'Data Scientist'</span>,<br>
-      &nbsp;&nbsp;specialties: [<span class="code-str">'ML'</span>, <span class="code-str">'NLP / LLMs'</span>, <span class="code-str">'Chatbots'</span>],<br>
-      &nbsp;&nbsp;cloud: <span class="code-str">'Google Cloud Platform'</span>,<br>
-      &nbsp;&nbsp;base: <span class="code-str">'London, UK'</span><br>
-      };<br><br>
-      <span class="code-kw">export</span> <span class="code-kw">default</span> about;`;
+        <span class="code-kw">const</span> <span class="code-fn">about</span> <span class="code-punc">= {</span><br>
+        &nbsp;&nbsp;<span class="code-key">careerPath</span><span class="code-punc">:</span> [<span class="code-str">'Backend Developer'</span><span class="code-punc">,</span> <span class="code-str">'Data Scientist'</span>]<span class="code-punc">,</span><br>
+        &nbsp;&nbsp;<span class="code-key">currentRole</span><span class="code-punc">:</span> <span class="code-str">'Data Scientist'</span><span class="code-punc">,</span><br>
+        &nbsp;&nbsp;<span class="code-key">specialties</span><span class="code-punc">:</span> [<span class="code-str">'ML'</span><span class="code-punc">,</span> <span class="code-str">'NLP / LLMs'</span><span class="code-punc">,</span> <span class="code-str">'Chatbots'</span>]<span class="code-punc">,</span><br>
+        &nbsp;&nbsp;<span class="code-key">cloud</span><span class="code-punc">:</span> <span class="code-str">'Google Cloud Platform'</span><span class="code-punc">,</span><br>
+        &nbsp;&nbsp;<span class="code-key">base</span><span class="code-punc">:</span> <span class="code-str">'London, UK'</span><br>
+        <span class="code-punc">};</span><br><br>
+        <span class="code-kw">export</span> <span class="code-kw">default</span> about<span class="code-punc">;</span>`;
 
         const pySnippet = `
-      <span class="code-kw">about</span> = {<br>
-      &nbsp;&nbsp;<span class="code-str">"career_path"</span>: [<span class="code-str">"Backend Developer"</span>, <span class="code-str">"Data Scientist"</span>],<br>
-      &nbsp;&nbsp;<span class="code-str">"current_role"</span>: <span class="code-str">"Data Scientist"</span>,<br>
-      &nbsp;&nbsp;<span class="code-str">"specialties"</span>: [<span class="code-str">"ML"</span>, <span class="code-str">"NLP / LLMs"</span>, <span class="code-str">"Chatbots"</span>],<br>
-      &nbsp;&nbsp;<span class="code-str">"cloud"</span>: <span class="code-str">"Google Cloud Platform"</span>,<br>
-      &nbsp;&nbsp;<span class="code-str">"base"</span>: <span class="code-str">"London, UK"</span><br>
-      }`;
+        <span class="code-fn">about</span> <span class="code-punc">= {</span><br>
+        &nbsp;&nbsp;<span class="code-str">"</span><span class="code-key">career_path</span><span class="code-str">"</span><span class="code-punc">:</span> [<span class="code-str">"Backend Developer"</span><span class="code-punc">,</span> <span class="code-str">"Data Scientist"</span>]<span class="code-punc">,</span><br>
+        &nbsp;&nbsp;<span class="code-str">"</span><span class="code-key">current_role</span><span class="code-str">"</span><span class="code-punc">:</span> <span class="code-str">"Data Scientist"</span><span class="code-punc">,</span><br>
+        &nbsp;&nbsp;<span class="code-str">"</span><span class="code-key">specialties</span><span class="code-str">"</span><span class="code-punc">:</span> [<span class="code-str">"ML"</span><span class="code-punc">,</span> <span class="code-str">"NLP / LLMs"</span><span class="code-punc">,</span> <span class="code-str">"Chatbots"</span>]<span class="code-punc">,</span><br>
+        &nbsp;&nbsp;<span class="code-str">"</span><span class="code-key">cloud</span><span class="code-str">"</span><span class="code-punc">:</span> <span class="code-str">"Google Cloud Platform"</span><span class="code-punc">,</span><br>
+        &nbsp;&nbsp;<span class="code-str">"</span><span class="code-key">base</span><span class="code-str">"</span><span class="code-punc">:</span> <span class="code-str">"London, UK"</span><br>
+        <span class="code-punc">}</span>`;
 
         let isTS = true;
 
@@ -1003,5 +1006,6 @@
 </body>
 
 </html>
+
 
 
