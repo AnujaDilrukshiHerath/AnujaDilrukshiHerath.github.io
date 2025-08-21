@@ -219,26 +219,68 @@
 
 
 
-          <div class="hero-terminal">
-            <div class="terminal-title">
-              <i class="bi bi-circle-fill text-danger"></i>
-              <i class="bi bi-circle-fill text-warning"></i>
-              <i class="bi bi-circle-fill text-success"></i>
-              <span class="ms-2">// profile.ts</span>
-            </div>
-            <div class="terminal-body">
-              <span class="code-kw">const</span> <span class="code-fn">about</span> = {<br>
-              &nbsp;&nbsp;careerPath: [<span class="code-str">'Backend Developer'</span>, <span class="code-str">'Data
-                Scientist'</span>],<br>
-              &nbsp;&nbsp;currentRole: <span class="code-str">'Data Scientist'</span>,<br>
-              &nbsp;&nbsp;specialties: [<span class="code-str">'ML'</span>, <span class="code-str">'NLP / LLMs'</span>, <span
-                class="code-str">'Chatbots'</span>],<br>
-              &nbsp;&nbsp;cloud: <span class="code-str">'Google Cloud Platform'</span>,<br>
-              &nbsp;&nbsp;base: <span class="code-str">'London, UK'</span><br>
-              };<br><br>
-              <span class="code-kw">export</span> <span class="code-kw">default</span> about;
-            </div>
-          </div>
+      <div class="hero-terminal">
+        <div class="terminal-title d-flex align-items-center">
+          <i class="bi bi-circle-fill text-danger"></i>
+          <i class="bi bi-circle-fill text-warning"></i>
+          <i class="bi bi-circle-fill text-success"></i>
+          <span id="file-label" class="ms-2">// profile.ts</span>
+          <button id="toggleLang" class="btn btn-sm btn-outline-light ms-auto">Switch to Python</button>
+        </div>
+        <div id="terminal-body" class="terminal-body">
+          <span class="code-kw">const</span> <span class="code-fn">about</span> = {<br>
+          &nbsp;&nbsp;careerPath: [<span class="code-str">'Backend Developer'</span>, <span class="code-str">'Data
+            Scientist'</span>],<br>
+          &nbsp;&nbsp;currentRole: <span class="code-str">'Data Scientist'</span>,<br>
+          &nbsp;&nbsp;specialties: [<span class="code-str">'ML'</span>, <span class="code-str">'NLP / LLMs'</span>, <span
+            class="code-str">'Chatbots'</span>],<br>
+          &nbsp;&nbsp;cloud: <span class="code-str">'Google Cloud Platform'</span>,<br>
+          &nbsp;&nbsp;base: <span class="code-str">'London, UK'</span><br>
+          };<br><br>
+          <span class="code-kw">export</span> <span class="code-kw">default</span> about;
+        </div>
+      </div>
+      
+      <script>
+        const toggleBtn = document.getElementById('toggleLang');
+        const fileLabel = document.getElementById('file-label');
+        const terminalBody = document.getElementById('terminal-body');
+
+        const tsSnippet = `
+      <span class="code-kw">const</span> <span class="code-fn">about</span> = {<br>
+      &nbsp;&nbsp;careerPath: [<span class="code-str">'Backend Developer'</span>, <span class="code-str">'Data Scientist'</span>],<br>
+      &nbsp;&nbsp;currentRole: <span class="code-str">'Data Scientist'</span>,<br>
+      &nbsp;&nbsp;specialties: [<span class="code-str">'ML'</span>, <span class="code-str">'NLP / LLMs'</span>, <span class="code-str">'Chatbots'</span>],<br>
+      &nbsp;&nbsp;cloud: <span class="code-str">'Google Cloud Platform'</span>,<br>
+      &nbsp;&nbsp;base: <span class="code-str">'London, UK'</span><br>
+      };<br><br>
+      <span class="code-kw">export</span> <span class="code-kw">default</span> about;`;
+
+        const pySnippet = `
+      <span class="code-kw">about</span> = {<br>
+      &nbsp;&nbsp;<span class="code-str">"career_path"</span>: [<span class="code-str">"Backend Developer"</span>, <span class="code-str">"Data Scientist"</span>],<br>
+      &nbsp;&nbsp;<span class="code-str">"current_role"</span>: <span class="code-str">"Data Scientist"</span>,<br>
+      &nbsp;&nbsp;<span class="code-str">"specialties"</span>: [<span class="code-str">"ML"</span>, <span class="code-str">"NLP / LLMs"</span>, <span class="code-str">"Chatbots"</span>],<br>
+      &nbsp;&nbsp;<span class="code-str">"cloud"</span>: <span class="code-str">"Google Cloud Platform"</span>,<br>
+      &nbsp;&nbsp;<span class="code-str">"base"</span>: <span class="code-str">"London, UK"</span><br>
+      }`;
+
+        let isTS = true;
+
+        toggleBtn.addEventListener('click', () => {
+          if (isTS) {
+            terminalBody.innerHTML = pySnippet;
+            fileLabel.textContent = "# profile.py";
+            toggleBtn.textContent = "Switch to TypeScript";
+          } else {
+            terminalBody.innerHTML = tsSnippet;
+            fileLabel.textContent = "// profile.ts";
+            toggleBtn.textContent = "Switch to Python";
+          }
+          isTS = !isTS;
+        });
+      </script>
+
 
 
           <!-- <div class="hero-terminal">
