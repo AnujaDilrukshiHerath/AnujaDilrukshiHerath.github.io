@@ -12,6 +12,10 @@
   <!-- Bootstrap 5 + Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Devicon Icons (Programming Languages & Tools) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
 
 
@@ -23,6 +27,9 @@
     body {
       font-feature-settings: "ss01", "cv01";
     }
+
+    
+    
 
     .brand-dot {
       width: .65rem;
@@ -210,7 +217,31 @@
             </div>
           </div>
 
+
+
           <div class="hero-terminal">
+            <div class="terminal-title">
+              <i class="bi bi-circle-fill text-danger"></i>
+              <i class="bi bi-circle-fill text-warning"></i>
+              <i class="bi bi-circle-fill text-success"></i>
+              <span class="ms-2">// profile.ts</span>
+            </div>
+            <div class="terminal-body">
+              <span class="code-kw">const</span> <span class="code-fn">about</span> = {<br>
+              &nbsp;&nbsp;careerPath: [<span class="code-str">'Backend Developer'</span>, <span class="code-str">'Data
+                Scientist'</span>],<br>
+              &nbsp;&nbsp;currentRole: <span class="code-str">'Data Scientist'</span>,<br>
+              &nbsp;&nbsp;specialties: [<span class="code-str">'ML'</span>, <span class="code-str">'NLP / LLMs'</span>, <span
+                class="code-str">'Chatbots'</span>],<br>
+              &nbsp;&nbsp;cloud: <span class="code-str">'Google Cloud Platform'</span>,<br>
+              &nbsp;&nbsp;base: <span class="code-str">'London, UK'</span><br>
+              };<br><br>
+              <span class="code-kw">export</span> <span class="code-kw">default</span> about;
+            </div>
+          </div>
+
+
+          <!-- <div class="hero-terminal">
             <div class="terminal-title">
               <i class="bi bi-circle-fill text-danger"></i>
               <i class="bi bi-circle-fill text-warning"></i>
@@ -227,7 +258,7 @@
               <br>
               <span class="code-kw">export</span> <span class="code-kw">default</span> about;
             </div>
-          </div>
+          </div> -->
 
           <p class="lead mt-3">
             MSc Data Science & Analytics. Backend Developer turned Data Scientist — building Machine Learning and
@@ -362,58 +393,77 @@
         <!-- Achievements & Leadership -->
         <div class="col-lg-6">
           <h3 class="h5 fw-semibold mb-3">Achievements & Leadership</h3>
-  
+        
           <!-- ICTer Paper -->
           <div class="p-3 border rounded mb-3">
             <div class="fw-semibold">
-              <i class="bi bi-trophy me-1 text-warning"></i> ICTer 2023 Conference Publication & Presentation
+              <i class="bi bi-trophy me-1 text-warning"></i>
+              ICTer 2023 Conference Publication & Presentation
             </div>
+        
             <div class="small text-secondary mt-1">
-              Published and <strong>presented TamZhi</strong> (hybrid Romanized-Tamil transliteration) at the
-              <strong>ICTer 2023 International Conference, University of Colombo</strong>.
-              Recognized with a <strong>Best Presentation Certificate</strong>.
-              <ul class="mb-2 small text-secondary">
-                <li>Peer-reviewed and published in proceedings; <strong>cited 5+ times</strong> in Google Scholar.</li>
+              <p class="mb-2">
+                Published and <strong>presented TamZhi</strong> (hybrid Romanized‑Tamil transliteration) at the
+                <strong>ICTer 2023 International Conference, University of Colombo</strong>.
+                Recognized with a <strong>Best Presentation Certificate</strong>.
+              </p>
+              <ul class="mb-2">
+                <li>Peer‑reviewed and published in proceedings; <strong>cited 5+ times</strong> in Google Scholar.</li>
                 <li>Live presentation to academic and industry audience on NLP methodology & results.</li>
               </ul>
-              <img src="assets/img/icter_certificate.jpg" alt="ICTer 2023 Certificate"
-                class="img-fluid rounded shadow-sm mt-2" style="max-width: 280px;">
-              <img src="assets/img/iit_award.jpg" alt="ICTer 2023 Certificate" class="img-fluid rounded shadow-sm mt-2"
-                style="max-width: 280px;">
+            </div>
+        
+            <div class="d-flex justify-content-center gap-3 mt-3">
+              <img src="assets/img/icter_certificate.jpg" alt="ICTer 2023 Best Presentation Certificate"
+                class="img-fluid rounded shadow-sm" style="max-width: 200px;">
+              <img src="assets/img/iit_award.jpg" alt="IIT Excellence Award (photo)" class="img-fluid rounded shadow-sm"
+                style="max-width: 200px;">
             </div>
           </div>
-  
+        
           <!-- IIT Excellence -->
           <div class="p-3 border rounded mb-3">
             <div class="fw-semibold">
-              <i class="bi bi-trophy me-1 text-warning"></i> IIT Excellence Awards — Bronze
+              <i class="bi bi-trophy me-1 text-warning"></i>
+              IIT Excellence Awards — Bronze
             </div>
+        
             <div class="small text-secondary mt-1">
-              2025 • Awarded Bronze for applied research and innovation in NLP (TamZhi).
-              <img src="assets/img/iit_award.jpg" alt="IIT Excellence Award" class="img-fluid rounded shadow-sm mt-2"
-                style="max-width: 280px;">
+              <p class="mb-2">2025 • Awarded Bronze for applied research and innovation in NLP (TamZhi).</p>
+              <!-- <div class="d-flex justify-content-center mt-2">
+                <img src="assets/img/iit_award.jpg" alt="IIT Excellence Award" class="img-fluid rounded shadow-sm"
+                  style="max-width: 280px;">
+              </div> -->
             </div>
           </div>
-  
+
+
+        
+      
           <!-- Leadership -->
-          <div class="p-3 border rounded">
-            <div class="fw-semibold">
-              <i class="bi bi-people-fill me-1 text-info"></i> Academic Leadership — Course & School Representative
-            </div>
-            <div class="small text-secondary mt-1">
-              Elected MSc Data Science & Analytics Course Rep → promoted to
-              <strong>School Representative</strong> for the School of Computer Science & Engineering.
-              Represented and advocated for <strong>hundreds of MSc and BEng students</strong>.
-              <ul class="mb-0 small text-secondary mt-1">
-                <li>Voiced student concerns directly to university leadership in formal boards & committees.</li>
-                <li>Advocated improvements in curriculum, assessment fairness, and student wellbeing.</li>
-                <li>Organised feedback sessions with MSc & BEng cohorts; ensured diverse voices were heard.</li>
-                <li>Worked with faculty on strategic improvements in teaching, labs, and digital infrastructure.</li>
-              </ul>
-            </div>
+        <!-- Leadership & Professional Skills -->
+        <div class="p-3 border rounded text-center">
+          <div class="fw-semibold h5 mb-2">
+            <i class="bi bi-people-fill me-1 text-info"></i> Leadership & Professional Skills
           </div>
+          <div class="small text-secondary mt-2">
+            Elected MSc Data Science & Analytics Course Rep → promoted to
+            <strong>School Representative</strong> for the School of Computer Science & Engineering.
+            Represented and advocated for <strong>hundreds of MSc and BEng students</strong>.
+          </div>
+        
+          <ul class="list-unstyled mt-3 small text-secondary">
+            <li>🤝 Voiced student concerns directly to university leadership, module leaders, and the Vice Chancellor.</li>
+            <li>📚 Advocated improvements in curriculum, assessment fairness, and student wellbeing.</li>
+            <li>🗣️ Organised feedback sessions with MSc & BEng cohorts to ensure diverse voices were heard.</li>
+            <li>💡 Worked with faculty on teaching, labs, and digital infrastructure improvements.</li>
+            <li>🧩 <strong>Problem Solving:</strong> Always strive to find the most efficient and practical solution to issues.
+            </li>
+            <li>⚡ <strong>Quick Learner:</strong> Rapidly adapt to new technologies, workflows, and challenges in fast-paced
+              environments.</li>
+          </ul>
         </div>
-  
+
       </div>
     </div>
   </section>
@@ -450,9 +500,96 @@
             <div class="small text-secondary">Photoshop, Canva, Amazon A+ content, product imaging, SEO copy</div>
           </div>
         </div>
+
+        <!-- NEW: Methodologies -->
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 border rounded h-100">
+            <div class="fw-semibold mb-1">Methodologies</div>
+            <div class="small text-secondary">
+              Waterfall, Agile, Scrum
+            </div>
+          </div>
+        </div>
+        
+        <!-- NEW: CMS & Commerce -->
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 border rounded h-100">
+            <div class="fw-semibold mb-1">CMS & Commerce</div>
+            <div class="small text-secondary">
+              WordPress, Shopify
+            </div>
+          </div>
+        </div>
+      
+
       </div>
     </div>
   </section>
+
+
+<!-- Tech Stack -->
+<section id="techstack" class="py-5 bg-body-tertiary">
+  <div class="container text-center">
+    <h2 class="section-title h4 fw-bold mb-4">
+      Tech Stack <span class="muted">/ Languages & Tools</span>
+    </h2>
+    <!-- Languages -->
+    <h5 class="fw-semibold mt-4">Languages</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
+      <i class="devicon-python-plain colored" title="Python"></i>
+      <i class="devicon-r-plain colored" title="R"></i>
+      <i class="devicon-java-plain colored" title="Java"></i>
+      <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+      <i class="devicon-swift-plain colored" title="Swift"></i>
+    </div>
+
+    <!-- Frameworks & Libraries -->
+    <h5 class="fw-semibold mt-4">Frameworks & Libraries</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
+      <i class="devicon-django-plain colored" title="Django"></i>
+      <i class="devicon-flask-original colored" title="Flask"></i>
+      <i class="devicon-spring-plain colored" title="Spring Boot"></i>
+      <i class="devicon-react-original colored" title="React JS"></i>
+    </div>
+
+    <!-- Databases & Cloud -->
+    <h5 class="fw-semibold mt-4">Databases & Cloud</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
+      <i class="devicon-mysql-plain colored" title="MySQL"></i>
+      <i class="devicon-firebase-plain colored" title="Firebase"></i>
+      <i class="devicon-docker-plain colored" title="Docker"></i>
+      <i class="devicon-googlecolab-plain colored" title="Google Colab"></i>
+    </div>
+
+    <!-- Tools -->
+    <h5 class="fw-semibold mt-4">Developer Tools</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
+      <i class="devicon-git-plain colored" title="Git"></i>
+      <i class="devicon-github-original colored" title="GitHub"></i>
+      <i class="devicon-postman-plain colored" title="Postman"></i>
+      <i class="devicon-vscode-plain colored" title="VS Code"></i>
+      <i class="devicon-intellij-plain colored" title="IntelliJ IDEA"></i>
+      <i class="devicon-jupyter-plain colored" title="Jupyter Notebook"></i>
+    </div>
+
+    <!-- CMS & Commerce -->
+    <h5 class="fw-semibold mt-4">CMS & Commerce</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
+      <i class="devicon-wordpress-plain colored" title="WordPress"></i>
+      <i class="fa-brands fa-shopify" title="Shopify" style="color:#96BF48; font-size:40px;"></i>
+
+    </div>
+
+    <!-- Design -->
+    <h5 class="fw-semibold mt-4">Design</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
+      <i class="devicon-photoshop-plain colored" title="Photoshop"></i>
+      <i class="devicon-xcode-plain colored" title="Xcode"></i>
+    </div>
+  </div>
+</section>
+
+
 
   <!-- EXPERIENCE -->
   <section id="experience" class="py-5">
@@ -808,4 +945,3 @@
 </body>
 
 </html>
-
