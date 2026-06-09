@@ -1,15 +1,15 @@
                                   ANUJA HERATH
                         London, United Kingdom | +44 7932 858305
-             Email: anuanujadilrukshi@gmail.com | LinkedIn: linkedin.com/in/anuja-dilrukshi | Portfolio: anujadilrukshiherath.github.io
+             Email: anuanujadilrukshi@gmail.com | LinkedIn: https://linkedin.com/in/anuja-dilrukshi | Portfolio: https://anujadilrukshiherath.github.io
 ================================================================================
 
 JUNIOR DATA ENGINEER | TECHNICAL DATA ANALYST | PYTHON | SQL | DASHBOARDS | DATA ENGINEERING
 
 PROFESSIONAL SUMMARY
 --------------------
-Junior Data Engineer and Technical Data Analyst with 3+ years of experience
-building SQL reporting workflows, dashboards, forecasting models, APIs, and
-backend-supported analytics platforms. Skilled in Python, SQL, Django/FastAPI,
+Junior Data Engineer and Technical Data Analyst with 3+ years of combined
+experience across software engineering, backend development, data analytics,
+and business intelligence systems. Skilled in Python, SQL, Django/FastAPI,
 Node.js, React, PostgreSQL, BI dashboards, and data automation. Experienced
 across e-commerce, event management, NLP research, and business intelligence
 systems.
@@ -50,7 +50,7 @@ EDUCATION
   Data Visualisation, Machine Learning Systems.
 
 * BEng (Hons) in Software Engineering
-  University of Westminster, United Kingdom / IIT Sri Lanka partner institution (2020 - 2023)
+  University of Westminster, United Kingdom — delivered through IIT, Sri Lanka (2020 - 2023)
   Modules: OOP Software Design, Database Engineering, Algorithms,
   Systems Architecture, Web Architectures.
 
@@ -59,7 +59,7 @@ WORK EXPERIENCE
 Technical Data Analyst & Full Stack Developer | Crystal Events & Management, United Kingdom
 January 2026 - Present
 * Engineered a full-stack venue booking management system (React + Node.js +
-  PostgreSQL) processing 200+ active bookings, cutting manual reconciliation by ~4h/week.
+  PostgreSQL) supporting 200+ active bookings, cutting manual reconciliation by ~4h/week.
 * Extended enquiry handling across Hayes, Wembley and Slough through three email
   workflows, improving branch-level coordination and response management.
 * Added chatbot result visibility for admins, simplified image uploads, and
@@ -75,7 +75,7 @@ May 2025 - October 2025
   Shopify and Amazon revenue, reducing reporting time by 50%.
 * Developed Express.js APIs aggregating real-time user activity and conversion data,
   reducing server-side overhead by 30%.
-* Implemented demand-driven stock forecasting models, reducing overstock waste.
+* Implemented demand-driven stock forecasting models, helping reduce overstock risk.
 * Collaborated in an Agile/Scrum team; maintained CI/CD pipelines via GitHub Actions.
 
 Backend Developer (Python / Django / NLP) | Antarions — IT Domain, Australia (Remote)
