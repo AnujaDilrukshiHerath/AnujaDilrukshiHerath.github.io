@@ -1543,6 +1543,53 @@ button {
     border-color: var(--accent-primary);
 }
 
+/* Crystal Events feature showcase cards */
+.feature-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin: 18px 0 24px;
+}
+
+.feature-showcase-card {
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.88));
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 10px 24px var(--shadow-color);
+}
+
+.feature-showcase-card.accent-blue { border-color: rgba(56, 189, 248, 0.35); }
+.feature-showcase-card.accent-cyan { border-color: rgba(45, 212, 191, 0.35); }
+.feature-showcase-card.accent-purple { border-color: rgba(167, 139, 250, 0.35); }
+.feature-showcase-card.accent-green { border-color: rgba(74, 222, 128, 0.35); }
+
+.feature-showcase-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(99, 102, 241, 0.16);
+    color: var(--accent-secondary);
+    margin-bottom: 10px;
+}
+
+.feature-showcase-card h5 {
+    font-size: 0.98rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+    color: var(--text-primary);
+}
+
+.feature-showcase-card p {
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
 /* KPI grids in dashboard */
 .kpi-grid {
     display: grid;
