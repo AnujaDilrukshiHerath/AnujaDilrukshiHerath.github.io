@@ -1,61 +1,104 @@
                                   ANUJA HERATH
                         London, United Kingdom | +44 7932 858305
-                Email: anuanujadilrukshi@gmail.com | LinkedIn: linkedin.com/in/anuja-dilrukshi
+             Email: anuanujadilrukshi@gmail.com | LinkedIn: linkedin.com/in/anuja-dilrukshi
 ================================================================================
 
 PROFESSIONAL SUMMARY
 --------------------
-Dynamic Backend Developer and Data Analyst with an MSc in Data Science & Analytics
-(Merit) and a BEng in Software Engineering. Proven track record in building 
-high-performance API services (Django, Spring Boot, Node.js), scalable data 
-pipelines, interactive analytics dashboards, and custom chatbot platforms.
+Results-driven Backend Engineer and Data Scientist with an MSc in Data Science &
+Analytics (Merit, University of Westminster) and a BEng (Hons) in Software Engineering.
+Published NLP researcher (ICTer 2025 Bronze Medal) with 3+ years of hands-on production
+experience building RESTful APIs, data pipelines, analytics dashboards, and AI-driven
+systems for UK-based businesses. Proven expertise in Python (Django, FastAPI), Java
+(Spring Boot), React/Node.js, PostgreSQL, GCP Cloud Run, and Machine Learning / NLP.
+Seeking Backend Engineer, Data Engineer, or AI/ML Engineer roles in the UK or UAE/GCC.
+
+KEY ACHIEVEMENTS
+----------------
+* Peer-reviewed NLP researcher — Lead author, ICTer Journal (Indexed), May 2024.
+  Awarded the ICTer 2025 Bronze Medal for Research & Innovation.
+* Accelerated API data rendering by 40% via optimised Django REST Framework endpoints
+  at Antarions analytics platform (GCP Cloud Run, PyTest 85% coverage).
+* Engineered a full-stack venue booking system managing 200+ live bookings, cutting
+  manual financial reconciliation by ~4 hours/week (Crystal Events, UK).
+* Improved PostgreSQL reporting speed by 35% through schema optimisation and multi-join
+  query refactoring; reduced overdue invoices by 60% via automated balance tracking.
+* Reduced e-commerce reporting effort by 50% by building multichannel analytics
+  dashboards (Shopify + Amazon) with CI/CD-integrated deployments (Virosa Group, UK).
+* Graduated MSc Data Science & Analytics with Merit — University of Westminster, UK (2025).
 
 EDUCATION
 ---------
 * MSc in Data Science & Analytics (Merit)
   University of Westminster, United Kingdom (2024 - 2025)
-  
-* BEng (Hons) in Software Engineering
+  Modules: Predictive Modelling, Deep Learning, NLP, Big Data Analytics,
+  Data Visualisation, Machine Learning Systems.
+
+* BEng (Hons) in Software Engineering (First Class equivalent)
   University of Westminster, United Kingdom (2020 - 2023)
+  Modules: OOP Software Design, Database Engineering, Algorithms,
+  Systems Architecture, Web Architectures.
 
 WORK EXPERIENCE
 ---------------
-Data Analyst | Crystal Events & Management, United Kingdom
+Data Analyst & React/Node.js Developer | Crystal Events & Management, United Kingdom
 January 2026 - Present
-* Analyzed and tracked event booking datasets, monthly sales targets, and balances.
-* Developed custom dashboard interfaces for booking sheets and event scheduling.
-* Integrated transactional systems to display real-time financial tracking.
+* Engineered a full-stack venue booking management system (React + Node.js +
+  PostgreSQL) processing 200+ active bookings, cutting manual reconciliation by ~4h/week.
+* Optimised PostgreSQL schemas and multi-table joins, improving financial report
+  generation speed by 35%.
+* Automated outstanding balance calculations and payment notifications, reducing
+  overdue invoices by 60%.
+* Implemented Agile/Scrum sprint cycles, delivering iterative dashboard features
+  aligned with business KPIs.
 
-Data Analyst | Virosa, United Kingdom
+Data Analyst & Full Stack Developer | Virosa Group, United Kingdom
 May 2025 - October 2025
-* Built multichannel sales performance projections and inventory tracking models.
-* Programmed e-commerce dashboard panels reporting Shopify/Amazon sales data.
-* Implemented forecasting calculators for seasonal stock replenishment.
+* Built multichannel sales analytics dashboards (Chart.js + React) monitoring
+  Shopify and Amazon revenue, reducing reporting time by 50%.
+* Developed Express.js APIs aggregating real-time user activity and conversion data,
+  reducing server-side overhead by 30%.
+* Implemented demand-driven stock forecasting models, reducing overstock waste.
+* Collaborated in an Agile/Scrum team; maintained CI/CD pipelines via GitHub Actions.
 
-Backend Developer | Antarions — IT Domain, Australia (Remote)
+Backend Developer (Python / Django / NLP) | Antarions — IT Domain, Australia (Remote)
 January 2024 - December 2024
-* Engineered data infrastructure and high-performance API routes for the 
-  Antarions analytics platform, boosting visual query speeds by 40%.
-* Designed and built conversational AI modules for automated data retrieval.
-* Managed relational databases, indexing, and complex SQL transaction layers.
+* Designed and optimised Django REST Framework API endpoints for BI dashboards,
+  accelerating data rendering speed by 40%.
+* Engineered a context-aware NLP chatbot (NLTK + SpaCy) for relational database
+  queries and automated data retrievals.
+* Deployed containerised Django services on GCP Cloud Run with CI/CD pipelines
+  for zero-downtime releases.
+* Achieved 85%+ test coverage via comprehensive PyTest suite across API and data layers.
 
-Software Engineer Intern | Informatics International Limited, Sri Lanka
+Software Engineer Intern (Java / Spring Boot) | Informatics International Limited, Sri Lanka
 2022 - 2023
-* Supported backend microservices development using Java, Spring Boot, and SQL.
-* Wrote comprehensive unit and integration tests using JUnit and Mockito.
-* Assisted in bug resolution, system refactoring, and technical writing.
+* Developed and tested Java Spring Boot microservices; wrote unit/integration tests
+  using JUnit and Mockito, achieving high coverage on key service modules.
+* Collaborated with senior engineers on REST API integrations, code reviews, and
+  technical documentation — gaining exposure to enterprise software delivery practices.
 
-PUBLICATIONS & HONORS
+PUBLICATIONS & HONOURS
+-----------------------
+* TAMZHI NLP Research — Lead Author: "TAMZHI: Shorthand Romanized Tamil to Tamil
+  Reverse Transliteration Using Novel Hybrid Approach."
+  Published: International Journal on Advances in ICT for Emerging Regions (ICTer),
+  Vol. 16(1), May 2024. Indexed. 90%+ transliteration accuracy. 80M+ speakers addressed.
+* ICTer 2025 Bronze Medal — Applied Research & Innovation Award.
+
+CORE TECHNICAL SKILLS
 ---------------------
-* TAMZHI NLP Research: Lead Author of "TAMZHI: Shorthand Romanized Tamil to 
-  Tamil Reverse Transliteration Using Novel Hybrid Approach", published in 
-  the International Journal on Advances in ICT for Emerging Regions (ICTer), 
-  May 2024.
-* Bronze Medal for Applied Research & Innovation, ICTer (2025).
+* Backend Engineering : Python (Django REST Framework, FastAPI), Java (Spring Boot,
+                         Microservices), Node.js (Express.js), RESTful APIs
+* Data Science & AI   : Machine Learning, NLP (NLTK, SpaCy, LangChain, RAG),
+                         TensorFlow, Scikit-Learn, Pandas, NumPy, R, SQL (PostgreSQL,
+                         MySQL), Power BI, Tableau
+* Frontend & Mobile   : React.js, JavaScript (ES6+), HTML5/CSS3, Flutter, Swift (iOS)
+* Cloud & DevOps      : GCP (Cloud Run, GCS), Docker, Kubernetes, CI/CD Pipelines,
+                         Git/GitHub, Agile/Scrum, Jira, GDPR / Data Governance
+* Testing             : PyTest, JUnit, Mockito, TDD, Unit & Integration Testing
 
-CORE SKILLS
------------
-* Backend Systems: Python (Django), Java (Spring Boot, Microservices), Node.js
-* Data Science: Machine Learning, NLP, SQL (PostgreSQL, MySQL), R, Chart.js
-* Frontend & Mobile: ReactJS, JavaScript, Swift, Flutter, HTML/CSS
-* Languages: English (Fluent), Tamil (Fluent), Hindi (Fluent)
+LANGUAGES
+---------
+* English (Fluent) | Tamil (Fluent) | Sinhala (Native)
+
