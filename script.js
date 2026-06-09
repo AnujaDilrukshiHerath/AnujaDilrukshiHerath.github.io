@@ -840,7 +840,7 @@ function initShowcaseDashboard() {
 }
 
 /* ==========================================
-   10A. Crystal Events Dashboard Logic
+   10A. Event Management Company Dashboard Logic
    ========================================== */
 function initEventsAnalytics() {
     const searchInput = document.getElementById('search-client');
@@ -1258,7 +1258,7 @@ const BOT_RESPONSES = {
     tamzhi_vowels: "The <strong>Vowel Omission Compensator</strong> (<code>OmittingVowel.py</code>) handles informal SMS typing where vowels are omitted.<br>• <strong>Consonant Skeletons</strong>: Drops letters <code>a, e, i, o, u</code> to capture pure consonants.<br>• <strong>Dictionary Alignment</strong>: Matches the remaining consonant stems against indexed keys in the database.",
     main_menu: "Main menu restored. What else would you like to ask AnuAI about Anuja's experience or skills?",
     antarions: "At <strong>IT Domain</strong>, Anuja worked on the Western Australian analytics platform **Antarions** (antarions.com):<br>• Built optimized backend API routes for their **interactive charts dashboards**, speeding up visual data queries by 40%.<br>• Designed and integrated the **conversational AI chatbot module** for intelligent customer queries and data retrieval.",
-    experience: "Anuja's professional background covers:<br>• **Data Analyst** at Crystal Events & Management (Jan 2026 – Present)<br>• **Data Analyst** at Virosa (May 2025 – Oct 2025)<br>• **Backend Developer** at IT Domain (Antarions Project, 2024)<br>• **Software Engineer Intern** at Informatics (2022 – 2023)",
+    experience: "Anuja's professional background covers:<br>• **Data Analyst** at an event management company (Jan 2026 – Present)<br>• **Data Analyst** at Virosa (May 2025 – Oct 2025)<br>• **Backend Developer** at IT Domain (Antarions Project, 2024)<br>• **Software Engineer Intern** at Informatics (2022 – 2023)",
     education: "Anuja completed her higher education at the **University of Westminster, UK**:<br>• **MSc in Data Science & Analytics** (2025) – <em>Graduated with Merit</em><br>• **BEng (Hons) in Software Engineering** (2023)",
     contact: "You can reach Anuja Herath at:<br>• **Email**: anuja.dilrukshi@gmail.com<br>• **Phone**: +44 7932 858305<br>• **Location**: London, United Kingdom",
     default: "I'm not sure I understood that. You can ask about my skills, TAMZHI research, Westminster education, or Antarions work. Try using the suggestions buttons!"
