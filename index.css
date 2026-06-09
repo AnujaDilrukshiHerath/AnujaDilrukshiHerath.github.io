@@ -2862,6 +2862,39 @@ button {
     100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(18, 240, 240, 0); }
 }
 
+@media (max-width: 992px) {
+    .avatar-bubble {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        width: calc(100vw - 40px);
+        max-width: 280px; /* Aligns perfectly with the 280px avatar card width */
+        margin: 0 auto;
+        opacity: 0;
+        max-height: 0;
+        padding: 0 16px;
+        overflow: hidden;
+        border-color: transparent;
+        box-shadow: none;
+        transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease, margin 0.4s ease;
+    }
+    
+    .avatar-bubble.active {
+        opacity: 1;
+        max-height: 320px;
+        padding: 16px;
+        margin: 0 auto 20px auto;
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 15px 30px var(--shadow-color), 0 0 10px var(--accent-primary-glow);
+    }
+    
+    .bubble-arrow {
+        display: none; /* Hide the arrow on mobile for a clean card design */
+    }
+}
+
+
 
 
 
