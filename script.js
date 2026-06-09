@@ -1802,9 +1802,12 @@ function initAvatarIntro() {
     let speechSynthUtterance = null;
     let isSpeaking = false;
 
+    const wrapper = bubble.closest('.avatar-card-wrapper');
+
     // Show bubble
     function showIntro() {
         bubble.classList.add('active');
+        if (wrapper) wrapper.classList.add('bubble-active');
         currentSlide = 0;
         renderSlide();
     }
@@ -1813,6 +1816,7 @@ function initAvatarIntro() {
     function hideIntro() {
         stopSpeech();
         bubble.classList.remove('active');
+        if (wrapper) wrapper.classList.remove('bubble-active');
         if (typingTimer) clearTimeout(typingTimer);
         isTyping = false;
     }

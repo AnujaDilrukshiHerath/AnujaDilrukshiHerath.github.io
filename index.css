@@ -2863,34 +2863,47 @@ button {
 }
 
 @media (max-width: 992px) {
+    .avatar-card-wrapper {
+        margin-top: 0;
+        transition: margin-top 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .avatar-card-wrapper.bubble-active {
+        margin-top: 140px;
+    }
+    
     .avatar-bubble {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        transform: none;
-        width: calc(100vw - 40px);
-        max-width: 280px; /* Aligns perfectly with the 280px avatar card width */
-        margin: 0 auto;
+        position: absolute;
+        bottom: calc(100% + 20px);
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        width: 280px; /* Force the bubble to align perfectly with the card width on mobile */
+        max-width: 280px;
         opacity: 0;
-        max-height: 0;
-        padding: 0 16px;
-        overflow: hidden;
-        border-color: transparent;
-        box-shadow: none;
-        transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease, margin 0.4s ease;
+        pointer-events: none;
+        transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        
+        /* Reset mobile flow properties */
+        max-height: none;
+        padding: 16px;
+        margin: 0;
+        overflow: visible;
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 20px 40px var(--shadow-color), 0 0 15px var(--accent-primary-glow);
     }
     
     .avatar-bubble.active {
         opacity: 1;
-        max-height: 320px;
-        padding: 16px;
-        margin: 0 auto 20px auto;
-        border: 1px solid var(--glass-border);
-        box-shadow: 0 15px 30px var(--shadow-color), 0 0 10px var(--accent-primary-glow);
+        pointer-events: all;
+        transform: translateX(-50%) scale(1);
     }
     
     .bubble-arrow {
-        display: none; /* Hide the arrow on mobile for a clean card design */
+        display: block; /* Show arrow on mobile */
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top-color: var(--glass-bg);
     }
 }
 
