@@ -1,1023 +1,1068 @@
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
-
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anuja Dilrukshi — Software Engineer & Data Scientist</title>
-  <meta name="description"
-    content="Software Engineer & Data Scientist. Building ML, chatbots, NLP/LLM apps, and cloud-native backends on GCP.">
-  <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230ea5e9'/%3E%3Ctext x='32' y='40' font-size='32' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3EA%3C/text%3E%3C/svg%3E">
-  <!-- Bootstrap 5 + Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Devicon Icons (Programming Languages & Tools) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-
-  <style>
-
-
-    :root {
-      --brand: #0ea5e9;
-      --muted: #94a3b8;
-    }
-
-    body {
-      font-feature-settings: "ss01", "cv01";
-    }
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuja Herath | Backend Developer & Data Analyst</title>
     
-    /* Extra syntax colors */
-    .code-key { color: #9cdcfe; }       /* cyan-ish for keys */
-    .code-punc { color: #808080; }      /* commas, colons, braces */
-    .code-num  { color: #b5cea8; }      /* numbers, if any */
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Anuja Herath (Dilrukshi) - Backend Developer & Data Analyst. Specialist in Python, Django, Java, React, Node.js, and Machine Learning / NLP.">
+    <meta name="keywords" content="Anuja Herath, Anuja Dilrukshi, Backend Developer, Data Analyst, Data Scientist, Django, Python, Java Spring Boot, React, NLP, London">
+    <meta name="author" content="Anuja Herath">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anujadilrukshiherath.github.io/">
+    <meta property="og:title" content="Anuja Herath | Backend Developer & Data Analyst">
+    <meta property="og:description" content="Portfolio of Anuja Herath (Dilrukshi) - Backend Developer & Data Analyst. Specialist in Python, Django, Java, React, Node.js, and Machine Learning / NLP.">
+    <meta property="og:image" content="https://anujadilrukshiherath.github.io/assets/img/og-preview.png">
 
-    .brand-dot {
-      width: .65rem;
-      height: .65rem;
-      background: var(--brand);
-      border-radius: 50%;
-      display: inline-block;
-      margin-right: .5rem;
-    }
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Anuja Herath | Backend Developer & Data Analyst">
+    <meta property="twitter:description" content="Portfolio of Anuja Herath (Dilrukshi) - Backend Developer & Data Analyst. Specialist in Python, Django, Java, React, Node.js, and Machine Learning / NLP.">
 
-    .nav-link.active {
-      color: var(--brand) !important;
-    }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    .hero-terminal {
-      background: radial-gradient(1200px 600px at 10% -20%, rgba(14, 165, 233, .25), transparent 60%);
-      border: 1px solid rgba(148, 163, 184, .2);
-      border-radius: .75rem;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    }
-
-    .terminal-title {
-      padding: .5rem .75rem;
-      border-bottom: 1px solid rgba(148, 163, 184, .2);
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      color: var(--muted);
-    }
-
-    .terminal-body {
-      padding: .75rem .9rem;
-      font-size: .95rem;
-      line-height: 1.65;
-    }
-
-    .code-kw {
-      color: #7dd3fc
-    }
-
-    .code-fn {
-      color: #a5b4fc
-    }
-
-    .code-str {
-      color: #86efac
-    }
-
-    .badge-tech {
-      background: rgba(148, 163, 184, .15);
-      border: 1px solid rgba(148, 163, 184, .25);
-      color: inherit;  /* text color follows theme */
-    }
-
-    .card {
-      border-color: rgba(148, 163, 184, .2);
-    }
-
-    .timeline {
-      border-left: 2px solid rgba(148, 163, 184, .25);
-      margin-left: .75rem;
-      padding-left: 1.5rem;
-    }
-
-    .timeline .item {
-      position: relative;
-      margin-bottom: 1.5rem;
-    }
-
-    .timeline .item::before {
-      content: "";
-      position: absolute;
-      left: -1.075rem;
-      top: .25rem;
-      width: .75rem;
-      height: .75rem;
-      background: var(--brand);
-      border-radius: 50%;
-      box-shadow: 0 0 0 .2rem rgba(14, 165, 233, .25);
-    }
-
-    .link-underline {
-      text-decoration: none;
-      border-bottom: 1px dashed var(--brand);
-    }
-
-    .shadow-soft {
-      box-shadow: 0 12px 40px rgba(0, 0, 0, .25);
-    }
-
-    .stack-icons i {
-      font-size: 1.15rem;
-    }
-
-    .section-title .muted {
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    .btn-outline-brand {
-      border-color: var(--brand);
-      color: var(--brand);
-    }
-
-    .btn-outline-brand:hover {
-      background: var(--brand);
-      color: #0b1220;
-    }
-
-    .avatar {
-      width: 112px;
-      height: 112px;
-      border-radius: 1rem;
-      object-fit: cover;
-    }
-
-    .gradient {
-      background: linear-gradient(180deg, rgba(14, 165, 233, .15), transparent 45%);
-    }
-
-    .bi-check2-circle {
-      color: #22c55e
-    }
-
-    .back-to-top {
-      position: fixed;
-      right: 1rem;
-      bottom: 1rem;
-      z-index: 1050;
-      display: none;
-    }
-  </style>
+    <!-- Icons: Devicon & FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
 </head>
+<body>
+    <!-- Background Blur Decorative Circles -->
+    <div class="decor-circle circle-1" aria-hidden="true"></div>
+    <div class="decor-circle circle-2" aria-hidden="true"></div>
+    <div class="decor-circle circle-3" aria-hidden="true"></div>
 
-<body data-bs-spy="scroll" data-bs-target="#topnav" data-bs-offset="80" tabindex="0">
+    <!-- Navigation Header -->
+    <header class="navbar-header">
+        <nav class="nav-container container" id="navbar">
+            <a href="#hero" class="nav-logo" id="nav-logo">
+                <svg class="logo-svg" viewBox="0 0 50 50" width="40" height="40" aria-label="Anuja Herath Logo">
+                    <circle cx="25" cy="25" r="23" fill="none" stroke="url(#logo-grad)" stroke-width="3"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="20" fill="currentColor">AH</text>
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="var(--accent-primary)" />
+                            <stop offset="100%" stop-color="var(--accent-secondary)" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Anuja<span class="text-glow">Herath</span></span>
+            </a>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-  <!-- NAVBAR -->
-  <nav id="topnav" class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#home"> 
-        <a class="navbar-brand d-flex align-items-center" href="#home">
-          <img src="assets/img/logo.png" alt="Anuja Logo" height="32" class="me-2">
-        </a>
-        <!-- <span class="brand-dot"></span> -->
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcol"
-        aria-controls="navcol" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="navcol" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Always-visible buttons (outside collapse) -->
-      <div class="d-flex ms-auto gap-2">
-        <a class="btn btn-outline-brand btn-sm" href="./AnuDataScience.pdf" target="_blank" rel="noopener">
-          <i class="bi bi-download me-1"></i> CV
-        </a>
-        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button">
-          <i class="bi bi-moon-stars"></i>
-        </button>
-      </div>
-
-    </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header id="home" class="py-5 py-lg-6 gradient">
-    <div class="container">
-      <div class="row align-items-center gy-4">
-        <div class="col-lg-7">
-          <div class="d-flex align-items-center gap-3 mb-3">
-            <img class="avatar shadow-soft" src="assets/img/profile.png" alt="Anuja portrait">
-            <div>
-              <h1 class="h2 fw-bold mb-1">Anuja Dilrukshi</h1>
-              <div class="text-muted">Software Engineer & Data Scientist • London, UK</div>
+            <div class="nav-links-wrapper" id="nav-links-wrapper">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link nav-item-link">About</a></li>
+                    <li><a href="#skills" class="nav-link nav-item-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link nav-item-link">Experience</a></li>
+                    <li><a href="#research" class="nav-link nav-item-link">Research</a></li>
+                    <li><a href="#projects" class="nav-link nav-item-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link nav-item-link">Contact</a></li>
+                </ul>
             </div>
-          </div>
 
-
-
-      <div class="hero-terminal">
-        <div class="terminal-title d-flex align-items-center">
-          <i class="bi bi-circle-fill text-danger"></i>
-          <i class="bi bi-circle-fill text-warning"></i>
-          <i class="bi bi-circle-fill text-success"></i>
-          <span id="file-label" class="ms-2">// profile.ts</span>
-          <button id="toggleLang" class="btn btn-sm btn-outline-light ms-auto">Switch to Python</button>
-        </div>
-        <div id="terminal-body" class="terminal-body">
-          <span class="code-kw">const</span> <span class="code-fn">about</span> = {<br>
-          &nbsp;&nbsp;careerPath: [<span class="code-str">'Backend Developer'</span>, <span class="code-str">'Data
-            Scientist'</span>],<br>
-          &nbsp;&nbsp;currentRole: <span class="code-str">'Data Scientist'</span>,<br>
-          &nbsp;&nbsp;specialties: [<span class="code-str">'ML'</span>, <span class="code-str">'NLP / LLMs'</span>, <span
-            class="code-str">'Chatbots'</span>],<br>
-          &nbsp;&nbsp;cloud: <span class="code-str">'Google Cloud Platform'</span>,<br>
-          &nbsp;&nbsp;base: <span class="code-str">'London, UK'</span><br>
-          };<br><br>
-          <span class="code-kw">export</span> <span class="code-kw">default</span> about;
-        </div>
-      </div>
-      
-      <script>
-        const toggleBtn = document.getElementById('toggleLang');
-        const fileLabel = document.getElementById('file-label');
-        const terminalBody = document.getElementById('terminal-body');
-
-        const tsSnippet = `
-        <span class="code-kw">const</span> <span class="code-fn">about</span> <span class="code-punc">= {</span><br>
-        &nbsp;&nbsp;<span class="code-key">careerPath</span><span class="code-punc">:</span> [<span class="code-str">'Backend Developer'</span><span class="code-punc">,</span> <span class="code-str">'Data Scientist'</span>]<span class="code-punc">,</span><br>
-        &nbsp;&nbsp;<span class="code-key">currentRole</span><span class="code-punc">:</span> <span class="code-str">'Data Scientist'</span><span class="code-punc">,</span><br>
-        &nbsp;&nbsp;<span class="code-key">specialties</span><span class="code-punc">:</span> [<span class="code-str">'ML'</span><span class="code-punc">,</span> <span class="code-str">'NLP / LLMs'</span><span class="code-punc">,</span> <span class="code-str">'Chatbots'</span>]<span class="code-punc">,</span><br>
-        &nbsp;&nbsp;<span class="code-key">cloud</span><span class="code-punc">:</span> <span class="code-str">'Google Cloud Platform'</span><span class="code-punc">,</span><br>
-        &nbsp;&nbsp;<span class="code-key">base</span><span class="code-punc">:</span> <span class="code-str">'London, UK'</span><br>
-        <span class="code-punc">};</span><br><br>
-        <span class="code-kw">export</span> <span class="code-kw">default</span> about<span class="code-punc">;</span>`;
-
-        const pySnippet = `
-        <span class="code-fn">about</span> <span class="code-punc">= {</span><br>
-        &nbsp;&nbsp;<span class="code-str">"</span><span class="code-key">career_path</span><span class="code-str">"</span><span class="code-punc">:</span> [<span class="code-str">"Backend Developer"</span><span class="code-punc">,</span> <span class="code-str">"Data Scientist"</span>]<span class="code-punc">,</span><br>
-        &nbsp;&nbsp;<span class="code-str">"</span><span class="code-key">current_role</span><span class="code-str">"</span><span class="code-punc">:</span> <span class="code-str">"Data Scientist"</span><span class="code-punc">,</span><br>
-        &nbsp;&nbsp;<span class="code-str">"</span><span class="code-key">specialties</span><span class="code-str">"</span><span class="code-punc">:</span> [<span class="code-str">"ML"</span><span class="code-punc">,</span> <span class="code-str">"NLP / LLMs"</span><span class="code-punc">,</span> <span class="code-str">"Chatbots"</span>]<span class="code-punc">,</span><br>
-        &nbsp;&nbsp;<span class="code-str">"</span><span class="code-key">cloud</span><span class="code-str">"</span><span class="code-punc">:</span> <span class="code-str">"Google Cloud Platform"</span><span class="code-punc">,</span><br>
-        &nbsp;&nbsp;<span class="code-str">"</span><span class="code-key">base</span><span class="code-str">"</span><span class="code-punc">:</span> <span class="code-str">"London, UK"</span><br>
-        <span class="code-punc">}</span>`;
-
-        let isTS = true;
-
-        toggleBtn.addEventListener('click', () => {
-          if (isTS) {
-            terminalBody.innerHTML = pySnippet;
-            fileLabel.textContent = "# profile.py";
-            toggleBtn.textContent = "Switch to TypeScript";
-          } else {
-            terminalBody.innerHTML = tsSnippet;
-            fileLabel.textContent = "// profile.ts";
-            toggleBtn.textContent = "Switch to Python";
-          }
-          isTS = !isTS;
-        });
-      </script>
-
-
-
-          <!-- <div class="hero-terminal">
-            <div class="terminal-title">
-              <i class="bi bi-circle-fill text-danger"></i>
-              <i class="bi bi-circle-fill text-warning"></i>
-              <i class="bi bi-circle-fill text-success"></i>
-              <span class="ms-2">terminal — profile.ts</span>
-            </div>
-            <div class="terminal-body">
-              <span class="code-kw">const</span> <span class="code-fn">about</span> =
-              { role: <span class="code-str">'Backend ➜ Data Scientist'</span>,
-              focus: [<span class="code-str">'ML'</span>, <span class="code-str">'Chatbots'</span>, <span
-                class="code-str">'NLP/LLMs'</span>],
-              cloud: <span class="code-str">'GCP'</span>,
-              location: <span class="code-str">'London'</span> };
-              <br>
-              <span class="code-kw">export</span> <span class="code-kw">default</span> about;
-            </div>
-          </div> -->
-
-  <p class="lead mt-3"><b> 
-            Backend Developer turned Data Scientist — specializing in ML, NLP/LLM, and Chatbot applications.</b>
-          </p>
-
-       <div class="d-flex flex-wrap gap-2 align-items-center mt-3">
-            <a class="btn btn-primary" href="#projects"><i class="bi bi-rocket-takeoff me-1"></i> See Projects</a>
-            <a class="btn btn-outline-brand" href="mailto:anuanujadilrukshi@gmail.com"><i
-                class="bi bi-envelope me-1"></i> Get in touch</a>
-            <div class="ms-lg-2 small text-secondary">
-              <i class="bi bi-bookmark-star text-warning me-1"></i>
-              Featured: <a class="link-underline" target="_blank" rel="noopener"
-                href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach">TAMZHI
-                (ICTer 2023)</a>
-            </div>
-          </div> 
-
-<!--           <div class="stack-icons mt-4 d-flex flex-wrap gap-3">
-            <span class="badge rounded-pill badge-tech">Python</span>
-            <span class="badge rounded-pill badge-tech">Django</span>
-            <span class="badge rounded-pill badge-tech">Flask</span>
-            <span class="badge rounded-pill badge-tech">R</span>
-            <span class="badge rounded-pill badge-tech">Java</span>
-            <span class="badge rounded-pill badge-tech">JavaScript</span>
-            <span class="badge rounded-pill badge-tech">SQL</span>
-            <span class="badge rounded-pill badge-tech">NLP/LLMs</span>
-            <span class="badge rounded-pill badge-tech">TensorFlow</span>
-            <span class="badge rounded-pill badge-tech">scikit‑learn</span>
-            <span class="badge rounded-pill badge-tech">GCP</span>
-            <span class="badge rounded-pill badge-tech">Docker</span>
-            <span class="badge rounded-pill badge-tech">Photoshop</span>
-            <span class="badge rounded-pill badge-tech">Canva</span>
-          </div> -->
-        </div>
-
-        <div class="col-lg-5">
-          <div class="card shadow-soft">
-            <div class="card-body">
-              <h5 class="card-title mb-3">Quick Links</h5>
-              <div class="d-flex flex-wrap gap-2">
-                <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener"
-                  href="https://linkedin.com/in/anuja-dilrukshi"><i class="bi bi-linkedin me-1"></i> LinkedIn</a>
-                <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener"
-                  href="https://github.com/AnujaDilrukshiHerath"><i class="bi bi-github me-1"></i> GitHub</a>
-                <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener"
-                  href="https://anuja-herath.medium.com"><i class="bi bi-journal-text me-1"></i> Medium</a>
-                <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener"
-                  href="https://anujadilrukshiherath.github.io/"><i class="bi bi-globe me-1"></i> Website</a>
-                <a class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener"
-                  href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach"><i
-                    class="bi bi-mortarboard me-1"></i> Research</a>
-              </div>
-              <hr class="my-3">
-              <div class="small text-secondary">
-                <i class="bi bi-check2-circle me-1"></i> MSc Data Science & Analytics (2024–2025)<br>
-                <i class="bi bi-check2-circle me-1"></i> BEng (Hons) Software Engineering (2020–2023)
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- ABOUT -->
-  <!-- EDUCATION / ACHIEVEMENTS / LEADERSHIP -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="section-title h4 fw-bold mb-4">Education, Achievements & Leadership <span class="muted">/
-          foundation</span></h2>
-      <div class="row g-5">
-  
-        <!-- Education timeline -->
-        <div class="col-lg-6">
-          <h3 class="h5 fw-semibold mb-3">Education</h3>
-          <div class="timeline">
-  
-            <!-- MSc -->
-            <div class="item">
-              <h5 class="mb-1">MSc Data Science & Analytics (Distinction)</h5>
-              <div class="text-secondary small mb-2">University of Westminster • Jan 2024 – Jan 2025</div>
-              <p class="small text-secondary mb-2">
-                Focused on <strong>Machine Learning, NLP/LLMs, Business Analytics, Business Optimisation, Data Warehousing, Data Mining, Data Dashboard & Visualisation Data Analytics</strong>.
-                Built projects in predictive modeling, chatbot development, and real-time data pipelines.
-                Applied Data Science practices using Docker and CI/CD.
-              </p>
-              <ul class="small text-secondary mb-2">
-                <li>Special coursework: Data Mining, Business Analytics & Optimisation, Big Data Analytics, Deep Learning, Research Methods.</li>
-                <li>Projects: sentiment analysis, chatbot with LLMs, predictive sales models deployed on GCP.</li>
-              </ul>
-              <div class="d-flex flex-wrap gap-2 mt-2">
-                <span class="badge rounded-pill badge-tech">Python</span>
-                <span class="badge rounded-pill badge-tech">TensorFlow</span>
-                <span class="badge rounded-pill badge-tech">scikit-learn</span>
-                <span class="badge rounded-pill badge-tech">Docker</span>
-                <span class="badge rounded-pill badge-tech">Power BI</span>
-                <span class="badge rounded-pill badge-tech">Tableau</span>
-                <span class="badge rounded-pill badge-tech">GCP</span>
-              </div>
-            </div>
-  
-            <!-- BEng -->
-            <div class="item">
-              <h5 class="mb-1">BEng (Hons) Software Engineering with Industrial Expertise (2nd Upper)</h5>
-              <div class="text-secondary small mb-2">IIT Sri Lanka • Jan 2020 – Aug 2023</div>
-              <p class="small text-secondary mb-2">
-                Solid foundation in <strong>Algorithms and Data Structures, Concurrent Programming, Java, Python, IOS Development,  OOP Concepts, Databases, and Web Development</strong>.
-                Dissertation evolved into published research (TamZhi transliteration).
-                Multiple group projects leading teams in backend and full-stack roles.
-              </p>
-              <ul class="small text-secondary mb-2">
-                <li><strong>Dissertation / Publication:</strong> TamZhi (ICTer 2023) — Hybrid ML + rules transliteration
-                  achieving 90%+ accuracy.</li>
-                <li>Coursework included: Software Engineering Principles, Cloud Computing, Advanced Databases, Mobile App
-                  Dev.</li>
-                <li>Led group project “Footprints in Paradise” (tourism website) as team leader.</li>
-              </ul>
-              <div class="d-flex flex-wrap gap-2 mt-2">
-                <span class="badge rounded-pill badge-tech">Java</span>
-                <span class="badge rounded-pill badge-tech">Spring Boot</span>
-                <span class="badge rounded-pill badge-tech">Python</span>
-                <span class="badge rounded-pill badge-tech">DJango</span>
-                <span class="badge rounded-pill badge-tech">Swift</span>
-                <span class="badge rounded-pill badge-tech">IOS App Development</span>
-                <span class="badge rounded-pill badge-tech">JavaScript</span>
-                <span class="badge rounded-pill badge-tech">React Js</span>
-                <span class="badge rounded-pill badge-tech">SQL</span>
-                <span class="badge rounded-pill badge-tech">Flask</span>
-                <span class="badge rounded-pill badge-tech">NLP</span>
-                <span class="badge rounded-pill badge-tech">LLM</span>
-              </div>
-            </div>
-  
-          </div>
-        </div>
-  
-        <!-- Achievements & Leadership -->
-        <div class="col-lg-6">
-          <h3 class="h5 fw-semibold mb-3">Achievements & Leadership</h3>
-        
-          <!-- ICTer Paper -->
-          <div class="p-3 border rounded mb-3">
-            <div class="fw-semibold">
-              <i class="bi bi-trophy me-1 text-warning"></i>
-              ICTer 2023 Conference Publication & Presentation
-            </div>
-        
-            <div class="small text-secondary mt-1">
-              <p class="mb-2">
-                Published and <strong>presented TamZhi</strong> (hybrid Romanized‑Tamil transliteration) at the
-                <strong>ICTer 2023 International Conference, University of Colombo</strong>.
-                Recognized with a <strong>Best Presentation Certificate</strong>.
-              </p>
-              <ul class="mb-2">
-                <li>Peer‑reviewed and published in proceedings; <strong>cited 5+ times</strong> in Google Scholar.</li>
-                <li>Live presentation to academic and industry audience on NLP methodology & results.</li>
-              </ul>
-            </div>
-        
-            <div class="d-flex justify-content-center gap-3 mt-3">
-              <img src="assets/img/icter_certificate.jpg" alt="ICTer 2023 Best Presentation Certificate"
-                class="img-fluid rounded shadow-sm" style="max-width: 200px;">
-              <img src="assets/img/iit_award.jpg" alt="IIT Excellence Award (photo)" class="img-fluid rounded shadow-sm"
-                style="max-width: 200px;">
-            </div>
-          </div>
-        
-          <!-- IIT Excellence -->
-          <div class="p-3 border rounded mb-3">
-            <div class="fw-semibold">
-              <i class="bi bi-trophy me-1 text-warning"></i>
-              IIT Excellence Awards — Bronze
-            </div>
-        
-            <div class="small text-secondary mt-1">
-              <p class="mb-2">2025 • Awarded Bronze for applied research and innovation in NLP (TamZhi).</p>
-              <!-- <div class="d-flex justify-content-center mt-2">
-                <img src="assets/img/iit_award.jpg" alt="IIT Excellence Award" class="img-fluid rounded shadow-sm"
-                  style="max-width: 280px;">
-              </div> -->
-            </div>
-          </div>
-
-
-        
-      
-          <!-- Leadership -->
-        <!-- Leadership & Professional Skills -->
-        <div class="p-3 border rounded text-center">
-          <div class="fw-semibold h5 mb-2">
-            <i class="bi bi-people-fill me-1 text-info"></i> Leadership & Professional Skills
-          </div>
-          <div class="small text-secondary mt-2">
-            Elected MSc Data Science & Analytics Course Rep → promoted to
-            <strong>School Representative</strong> for the School of Computer Science & Engineering.
-            Represented and advocated for <strong>thousands of MSc and BEng students</strong>.
-          </div>
-        
-          <ul class="list-unstyled mt-3 small text-secondary">
-            <li>🤝 Voiced student concerns directly to university leadership, module leaders, and the Vice Chancellor.</li>
-            <li>📚 Advocated improvements in curriculum, assessment fairness, and student wellbeing.</li>
-            <li>🗣️ Organised feedback sessions with MSc & BEng cohorts to ensure diverse voices were heard.</li>
-            <li>💡 Worked with faculty on teaching, labs, and digital infrastructure improvements.</li>
-            <li>🧩 <strong>Problem Solving:</strong> Always strive to find the most efficient and practical solution to issues.
-            </li>
-            <li>⚡ <strong>Quick Learner:</strong> Rapidly adapt to new technologies, workflows, and challenges in fast-paced
-              environments.</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="py-5">
-    <div class="container">
-      <h2 class="section-title h4 fw-bold mb-4">Skills <span class="muted">/ what I use</span></h2>
-      <div class="row g-3">
-        <div class="col-md-6 col-lg-4">
-          <div class="p-3 border rounded h-100">
-            <div class="fw-semibold mb-1">AI & Data</div>
-            <div class="small text-secondary">NLP, LLMs, CNN, Classification, Image Processing, Power BI, Tableau, GCP
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="p-3 border rounded h-100">
-            <div class="fw-semibold mb-1">Programming</div>
-            <div class="small text-secondary">Python, R, Java, JavaScript, SQL • Django, Flask, Spring Boot • REST APIs
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="p-3 border rounded h-100">
-            <div class="fw-semibold mb-1">Tools</div>
-            <div class="small text-secondary">Pandas, NumPy, scikit‑learn, TensorFlow, Firebase, Git, Docker (basic)
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="p-3 border rounded h-100">
-            <div class="fw-semibold mb-1">Design & E‑commerce</div>
-            <div class="small text-secondary">Photoshop, Canva, Amazon A+ content, product imaging, SEO copy</div>
-          </div>
-        </div>
-
-        <!-- NEW: Methodologies -->
-        <div class="col-md-6 col-lg-4">
-          <div class="p-3 border rounded h-100">
-            <div class="fw-semibold mb-1">Methodologies</div>
-            <div class="small text-secondary">
-              Waterfall, Agile, Scrum
-            </div>
-          </div>
-        </div>
-        
-        <!-- NEW: CMS & Commerce -->
-        <div class="col-md-6 col-lg-4">
-          <div class="p-3 border rounded h-100">
-            <div class="fw-semibold mb-1">CMS & Commerce</div>
-            <div class="small text-secondary">
-              WordPress, Shopify
-            </div>
-          </div>
-        </div>
-      
-
-      </div>
-    </div>
-  </section>
-
-
-<!-- Tech Stack -->
-<section id="techstack" class="py-5 bg-body-tertiary">
-  <div class="container text-center">
-    <h2 class="section-title h4 fw-bold mb-4">
-      Tech Stack <span class="muted">/ Languages & Tools</span>
-    </h2>
-    <!-- Languages -->
-    <h5 class="fw-semibold mt-4">Languages</h5>
-    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
-      <i class="devicon-python-plain colored" title="Python"></i>
-      <i class="devicon-r-plain colored" title="R"></i>
-      <i class="devicon-java-plain colored" title="Java"></i>
-      <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-      <i class="devicon-swift-plain colored" title="Swift"></i>
-    </div>
-
-    <!-- Frameworks & Libraries -->
-    <h5 class="fw-semibold mt-4">Frameworks & Libraries</h5>
-    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
-      <i class="devicon-django-plain colored" title="Django"></i>
-      <i class="devicon-flask-original colored" title="Flask"></i>
-      <i class="devicon-spring-plain colored" title="Spring Boot"></i>
-      <i class="devicon-react-original colored" title="React JS"></i>
-    </div>
-
-    <!-- Databases & Cloud -->
-    <h5 class="fw-semibold mt-4">Databases & Cloud</h5>
-    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
-      <i class="devicon-mysql-plain colored" title="MySQL"></i>
-      <i class="devicon-firebase-plain colored" title="Firebase"></i>
-      <i class="devicon-docker-plain colored" title="Docker"></i>
-      <i class="devicon-googlecolab-plain colored" title="Google Colab"></i>
-    </div>
-
-    <!-- Tools -->
-    <h5 class="fw-semibold mt-4">Developer Tools</h5>
-    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
-      <i class="devicon-git-plain colored" title="Git"></i>
-      <i class="devicon-github-original colored" title="GitHub"></i>
-      <i class="devicon-postman-plain colored" title="Postman"></i>
-      <i class="devicon-vscode-plain colored" title="VS Code"></i>
-      <i class="devicon-intellij-plain colored" title="IntelliJ IDEA"></i>
-      <i class="devicon-jupyter-plain colored" title="Jupyter Notebook"></i>
-    </div>
-
-    <!-- CMS & Commerce -->
-    <h5 class="fw-semibold mt-4">CMS & Commerce</h5>
-    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
-      <i class="devicon-wordpress-plain colored" title="WordPress"></i>
-      <i class="fa-brands fa-shopify" title="Shopify" style="color:#96BF48; font-size:40px;"></i>
-
-    </div>
-
-    <!-- Design -->
-    <h5 class="fw-semibold mt-4">Design</h5>
-    <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
-      <i class="devicon-photoshop-plain colored" title="Photoshop"></i>
-      <i class="devicon-xcode-plain colored" title="Xcode"></i>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- EXPERIENCE -->
-<section id="experience" class="py-5">
-  <div class="container">
-    <h2 class="section-title h4 fw-bold mb-4">Experience <span class="muted">/ Impact</span></h2>
-
-    <div class="row g-4">
-
-      <!-- E-commerce Product Content & Graphic Designer -->
-      <div class="col-12">
-        <div class="p-3 border rounded h-100">
-          <h5 class="fw-semibold d-flex align-items-center gap-2">
-            <i class="bi bi-shop text-success" aria-hidden="true"></i>
-            Admin
-          </h5>
-          <div class="small text-secondary mb-2">VIROSA Group Limited — London, UK • May 2025 – Present</div>
-          <ul class="small text-secondary mb-2">
-            <li>Rebuilt and maintained <strong>virosagroup.com</strong> (Shopify) for improved UX, SEO, and performance.
-            </li>
-            <li>Created & optimized product listings across Amazon, eBay, Etsy, Temu, TikTok Shop, and Shopify.</li>
-            <li>Designed <strong>Amazon A+ Content</strong> (graphics, infographics, banners) to drive conversions.</li>
-            <li>Produced platform-optimized imagery; designed barcode stickers and merchandise labels.</li>
-            <li>Developed SEO-friendly titles, bullet points, and descriptions using keyword research.</li>
-            <li>Managed orders & customer queries; collaborated on multi-channel marketing campaigns.</li>
-          </ul>
-          <div class="fw-medium small text-success">➡️ Summary: Blended <strong>e-commerce, content design, and
-              marketing</strong> to improve brand visibility and sales.</div>
-        </div>
-      </div>
-
-      <!-- Data Science & Backend Developer -->
-      <div class="col-12">
-        <div class="p-3 border rounded h-100">
-          <h5 class="fw-semibold d-flex align-items-center gap-2">
-            <i class="bi bi-cpu text-danger" aria-hidden="true"></i>
-            Data Science & Backend Developer
-          </h5>
-          <div class="small text-secondary mb-2">IT Domain — Australia (Remote) • Sep 2022 – Dec 2024</div>
-          <ul class="small text-secondary mb-2">
-            <li>Led <strong>Intellijence Project</strong>: LLM + Image Processing; delivered +25% model uplift.</li>
-            <li>Built REST APIs (Django, DRF) to serve ML models at scale.</li>
-            <li>Implemented analytics pipelines for NLP, classification, and image recognition.</li>
-            <li>Deployed apps on <strong>GCP (App Engine, Cloud Run, Cloud Storage)</strong> with CI/CD automation.</li>
-            <li>Optimized data workflows with Pandas, NumPy, scikit-learn for efficiency.</li>
-            <li>Translated business requirements into production-ready AI/ML solutions.</li>
-          </ul>
-          <div class="fw-medium small text-success">➡️ Summary: Delivered production AI solutions with <strong>ML, NLP,
-              and cloud backend engineering</strong>.</div>
-        </div>
-      </div>
-      
-      <!-- Software Engineer Intern -->
-      <div class="col-12">
-        <div class="p-3 border rounded h-100">
-          <h5 class="fw-semibold d-flex align-items-center gap-2">
-            <i class="bi bi-code-slash text-warning" aria-hidden="true"></i>
-            Software Engineer Intern
-          </h5>
-          <div class="small text-secondary mb-2">Informatics International — Colombo, Sri Lanka • Jul 2021 – Jul 2022
-          </div>
-          <ul class="small text-secondary mb-2">
-            <li>Developed enterprise modules in <strong>Java/JavaFX</strong> with OOP best practices.</li>
-            <li>Reduced bugs by ~30% via testing, debugging, and peer code reviews.</li>
-            <li>Improved usability by enhancing UX flows and user journeys.</li>
-            <li>Assisted in <strong>API integrations</strong> and <strong>MySQL database design</strong>.</li>
-            <li>Participated in <strong>Agile sprints</strong> and documented workflows.</li>
-          </ul>
-          <div class="fw-medium small text-success">➡️ Summary: Built a foundation in <strong>Java development, testing,
-              and Agile teamwork</strong>.</div>
-        </div>
-      </div>
-
-      <!-- Tutor -->
-      <div class="col-12">
-        <div class="p-3 border rounded h-100">
-          <h5 class="fw-semibold d-flex align-items-center gap-2">
-            <i class="bi bi-mortarboard text-primary" aria-hidden="true"></i>
-            Tutor
-          </h5>
-          <div class="small text-secondary mb-2">Excel Academy — Harrow, UK • May 2024 – Aug 2024</div>
-          <ul class="small text-secondary mb-2">
-            <li>Delivered personalised tutoring in Maths & Computer Science; tailored lesson plans by ability.</li>
-            <li>Mentored students with structured feedback; improved confidence and exam outcomes.</li>
-            <li>Developed digital learning resources (quizzes, coding tasks, presentations) for interactive study.</li>
-            <li>Reported student progress to parents and collaborated with academy staff.</li>
-          </ul>
-          <div class="fw-medium small text-success">➡️ Summary: Strengthened <strong>communication, mentoring, and
-              problem-solving</strong> skills while supporting student success.</div>
-        </div>
-      </div>
-
-      <!-- Personal Assistant -->
-      <div class="col-12">
-        <div class="p-3 border rounded h-100">
-          <h5 class="fw-semibold d-flex align-items-center gap-2">
-            <i class="bi bi-person-workspace text-info" aria-hidden="true"></i>
-            Personal Assistant to Director
-          </h5>
-          <div class="small text-secondary mb-2">Red Lounge Limited — London, UK • Mar 2024 – May 2024</div>
-          <ul class="small text-secondary mb-2">
-            <li>Managed Director’s calendar, travel, and confidential correspondence.</li>
-            <li>Prepared business reports, PowerPoint decks, and financial summaries.</li>
-            <li>Tracked project action items and coordinated with vendors and staff.</li>
-            <li>Assisted in event coordination and business planning initiatives.</li>
-          </ul>
-          <div class="fw-medium small text-success">➡️ Summary: Gained experience in <strong>organisation, business
-              support, and executive-level communication</strong>.</div>
-        </div>
-      </div>
-
-      <!-- Content Writer -->
-      <div class="col-12">
-        <div class="p-3 border rounded h-100">
-          <h5 class="fw-semibold d-flex align-items-center gap-2">
-            <i class="bi bi-pen text-secondary" aria-hidden="true"></i>
-            Content Writer
-          </h5>
-          <div class="small text-secondary mb-2">Medium — @anuja-herath • Ongoing</div>
-          <ul class="small text-secondary mb-2">
-            <li>Published SEO-optimised articles on Data Science, GPT models, and Ethical AI.</li>
-            <li>Wrote tutorials and case studies demonstrating applications of Python, ML, and NLP.</li>
-            <li>Built a consistent content calendar; grew readership and professional engagement.</li>
-            <li>Shared research insights across LinkedIn/Twitter to expand professional visibility.</li>
-          </ul>
-          <div class="fw-medium small text-success">➡️ Summary: Enhanced <strong>technical writing, research, and public
-              communication</strong> skills in the AI/DS domain.</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- PROJECTS -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h2 class="section-title h4 fw-bold mb-4">Projects <span class="muted">/ selected work</span></h2>
-
-      <div class="row g-4">
-        <!-- TamZhi -->
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex align-items-start justify-content-between">
-                <h5 class="card-title mb-1">TamZhi — Tamil Transliteration</h5>
-                <a class="small link-underline" target="_blank" rel="noopener"
-                  href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach">
-                  Paper
+            <div class="nav-actions">
+                <button id="showcase-view-btn" class="btn btn-outline showcase-nav-btn" aria-label="Toggle live analytics dashboard showcase">
+                    <i class="fa-solid fa-chart-pie"></i> Interactive Demo
+                </button>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="assets/docs/Anuja_Herath_Resume.pdf" class="btn btn-outline cv-btn" download>
+                    <i class="fa-solid fa-download"></i> CV
                 </a>
-              </div>
-              <p class="card-text text-secondary mt-2">
-                Reverse transliteration that converts shorthand Romanized Tamil (with/without vowels) back to Tamil
-                script using a hybrid rules + ML approach.
-              </p>
-              <ul class="small text-secondary mb-3">
-                <li><strong>Problem:</strong> inconsistent shorthand causes errors in typing tools and NLP tasks.</li>
-                <li><strong>Data:</strong> curated transliteration pairs; normalization; noise handling.</li>
-                <li><strong>Approach:</strong> rules for vowel omissions + ML model for edge cases.</li>
-                <li><strong>Result:</strong> <strong>90%+</strong> accuracy; practical for IMEs and education tools.
-                </li>
-              </ul>
-              <div class="mt-auto d-flex flex-wrap gap-2">
-                <span class="badge rounded-pill badge-tech">Python</span>
-                <span class="badge rounded-pill badge-tech">Flask</span>
-                <span class="badge rounded-pill badge-tech">NLP</span>
-              </div>
             </div>
-          </div>
-        </div>
+        </nav>
+    </header>
 
-        <!-- Intellijence -->
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title mb-1">Intellijence — LLM + Vision Uplift</h5>
-              <p class="card-text text-secondary mt-2">
-                Evaluation and iteration on an LLM + image processing pipeline to improve prediction quality and
-                latency.
-              </p>
-              <ul class="small text-secondary mb-3">
-                <li><strong>Approach:</strong> error analysis, prompt iteration, model selection, vision pre‑processing
-                  tweaks.</li>
-                <li><strong>MLOps:</strong> reproducible eval scripts; tracked metrics; GCP deployment.</li>
-                <li><strong>Impact:</strong> <strong>+25%</strong> model performance; smoother inference.</li>
-              </ul>
-              <div class="mt-auto d-flex flex-wrap gap-2">
-                <span class="badge rounded-pill badge-tech">LLMs</span>
-                <span class="badge rounded-pill badge-tech">Evaluation</span>
-                <span class="badge rounded-pill badge-tech">Python</span>
-                <span class="badge rounded-pill badge-tech">GCP</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- PORTFOLIO VIEW CONTAINER -->
+    <div id="portfolio-view">
+        <main>
+            <!-- Hero Section -->
+            <section id="hero" class="hero-section container">
+                <div class="hero-grid">
+                    <!-- Profile & Greeting -->
+                    <div class="hero-content">
+                        <div class="badge-intro">
+                            <span class="pulse-dot"></span> Available for Opportunities
+                        </div>
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="gradient-text">Anuja Herath</span>
+                        </h1>
+                        <h2 class="hero-subtitle">
+                            I am a <span id="typewriter" class="typewriter-text"></span><span class="cursor">|</span>
+                        </h2>
+                        <p class="hero-description">
+                            An MSc Data Science & Analytics graduate (with Merit) and Software Engineer. I bridge the gap between high-performance backend architectures and deep intelligence through machine learning, NLP, and scalable data pipelines.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn btn-primary">Let's Connect <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#projects" class="btn btn-secondary">View My Work</a>
+                        </div>
+                        <div class="hero-socials">
+                            <a href="https://www.linkedin.com/in/anuja-dilrukshi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/AnujaDilrukshiHerath" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                            <a href="mailto:Anuanujadilrukshi@gmail.com" aria-label="Email Me"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
 
-        <!-- Oggy Doggy -->
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex align-items-start justify-content-between">
-                <h5 class="card-title mb-1">Oggy Doggy — Dog Emotion Detection App</h5>
-                <a class="small link-underline" target="_blank" rel="noopener"
-                  href="https://github.com/DebugPirates/Repo1">GitHub</a>
-              </div>
-              <p class="card-text text-secondary mt-2">
-                CNN‑based image classifier that predicts dog emotions; early vet‑clinic pilot to assess well‑being from
-                images.
-              </p>
-              <ul class="small text-secondary mb-3">
-                <li><strong>Data:</strong> labelled dog face images; augmentation for lighting/pose.</li>
-                <li><strong>Model:</strong> CNN baseline; tuned hyperparameters for stability.</li>
-                <li><strong>Result:</strong> ~85% accuracy; clear next steps: class balance and harder negatives.</li>
-              </ul>
-              <div class="mt-auto d-flex flex-wrap gap-2">
-                <span class="badge rounded-pill badge-tech">CNN</span>
-                <span class="badge rounded-pill badge-tech">Computer Vision</span>
-                <span class="badge rounded-pill badge-tech">Mobile</span>
-              </div>
-            </div>
-          </div>
-        </div>
+                    <!-- Interactive IDE Console -->
+                    <div class="hero-ide-wrapper">
+                        <div class="ide-container">
+                            <div class="ide-header">
+                                <div class="ide-controls">
+                                    <span class="ide-dot dot-red"></span>
+                                    <span class="ide-dot dot-yellow"></span>
+                                    <span class="ide-dot dot-green"></span>
+                                </div>
+                                <div class="ide-tabs">
+                                    <button class="ide-tab active" data-lang="python" aria-selected="true" role="tab">
+                                        <i class="devicon-python-plain text-python"></i> main.py
+                                    </button>
+                                    <button class="ide-tab" data-lang="javascript" aria-selected="false" role="tab">
+                                        <i class="devicon-javascript-plain text-js"></i> server.js
+                                    </button>
+                                    <button class="ide-tab" data-lang="sql" aria-selected="false" role="tab">
+                                        <i class="fa-solid fa-database text-sql"></i> analytics.sql
+                                    </button>
+                                </div>
+                                <button class="ide-copy" id="ide-copy-btn" aria-label="Copy code snippet">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="ide-body">
+                                <pre><code id="ide-code-block" class="language-python"># Dynamic content loaded by JS</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <a href="#about" aria-label="Scroll to About Me section">
+                        <span class="mouse-icon">
+                            <span class="mouse-wheel"></span>
+                        </span>
+                    </a>
+                </div>
+            </section>
 
-        <!-- Add more cards here as you like -->
-      </div>
+            <!-- About Section -->
+            <section id="about" class="about-section container section-padding">
+                <div class="section-header">
+                    <span class="section-tag">01. Discover</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <div class="avatar-card-wrapper">
+                            <!-- Floating Speech Bubble -->
+                            <div class="avatar-bubble" id="avatar-bubble" role="dialog" aria-label="Intro Speech Bubble">
+                                <div class="bubble-text-box" id="bubble-text">
+                                    <!-- Typed script content will load dynamically -->
+                                </div>
+                                <div class="bubble-footer">
+                                    <button class="audio-btn" id="bubble-audio-btn" title="Speak Intro">
+                                        <i class="fa-solid fa-volume-high"></i>
+                                    </button>
+                                    <div class="bubble-controls">
+                                        <button class="bubble-btn bubble-btn-outline" id="bubble-close-btn">Close</button>
+                                        <button class="bubble-btn bubble-btn-primary" id="bubble-next-btn">Next <i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="bubble-arrow"></div>
+                            </div>
+
+                            <!-- Professional profile photo with glassmorphic container and hover glow effect -->
+                            <div class="avatar-card">
+                                <div class="avatar-glow"></div>
+                                <div class="avatar-img-container">
+                                    <img src="AnujaHerath.jpeg?v=2" alt="Anuja Herath" class="avatar-img">
+                                </div>
+                                <div class="avatar-info">
+                                    <span class="info-name">Anuja Herath</span>
+                                    <span class="info-title">Backend & Analytics</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Trigger Button -->
+                            <div style="text-align: center; margin-top: 20px;">
+                                <button class="avatar-trigger-btn" id="avatar-trigger-btn" aria-label="Interactive Intro">
+                                    <span class="ping-dot"></span> Hear My Intro
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <h3>Dual Expertise in Engineering & Data</h3>
+                        <p>
+                            I am a results-oriented technologist based in <strong>London, UK</strong>. Having completed my BEng (Hons) in Software Engineering, I went on to secure an <strong>MSc in Data Science & Analytics with Merit</strong> from the University of Westminster. This blend allows me to engineer high-throughput backend services while designing intelligent, data-driven ML solutions.
+                        </p>
+                        <p>
+                            During my graduate studies, I was selected as the <strong>MSc Course Representative</strong> and later promoted to the <strong>School Representative for Computer Science & Engineering</strong>. This leadership role honed my communication and management skills, allowing me to bridge the gap between student interests, academic structures, and infrastructure enhancements.
+                        </p>
+                        
+                        <div class="about-quick-facts">
+                            <div class="fact-card">
+                                <span class="fact-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                                <div class="fact-details">
+                                    <h4>MSc Merit</h4>
+                                    <p>Data Science & Analytics</p>
+                                </div>
+                            </div>
+                            <div class="fact-card">
+                                <span class="fact-icon"><i class="fa-solid fa-users-line"></i></span>
+                                <div class="fact-details">
+                                    <h4>School Rep</h4>
+                                    <p>UoW CS & Engineering</p>
+                                </div>
+                            </div>
+                            <div class="fact-card">
+                                <span class="fact-icon"><i class="fa-solid fa-award"></i></span>
+                                <div class="fact-details">
+                                    <h4>Bronze Award</h4>
+                                    <p>Research & Innovation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills-section container section-padding">
+                <div class="section-header">
+                    <span class="section-tag">02. Stack</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Backend -->
+                    <div class="skill-category-card">
+                        <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3>Backend Engineering</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag"><i class="devicon-python-plain"></i> Python</div>
+                            <div class="skill-tag"><i class="devicon-django-plain"></i> Django</div>
+                            <div class="skill-tag"><i class="devicon-java-plain"></i> Java</div>
+                            <div class="skill-tag"><i class="devicon-spring-original"></i> Spring Boot</div>
+                            <div class="skill-tag"><i class="devicon-nodejs-plain"></i> Node.js</div>
+                            <div class="skill-tag"><i class="devicon-express-original"></i> Express.js</div>
+                            <div class="skill-tag"><i class="fa-solid fa-cube"></i> Microservices</div>
+                        </div>
+                    </div>
+
+                    <!-- Data Science -->
+                    <div class="skill-category-card">
+                        <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Data Science & AI</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag"><i class="devicon-tensorflow-line"></i> TensorFlow</div>
+                            <div class="skill-tag"><i class="fa-solid fa-brain"></i> Machine Learning</div>
+                            <div class="skill-tag"><i class="fa-solid fa-language"></i> NLP / LLMs</div>
+                            <div class="skill-tag"><i class="devicon-pandas-plain"></i> Pandas / NumPy</div>
+                            <div class="skill-tag"><i class="devicon-opencv-plain"></i> OpenCV</div>
+                            <div class="skill-tag"><i class="devicon-r-plain"></i> R Language</div>
+                            <div class="skill-tag"><i class="fa-solid fa-database"></i> SQL / PostgreSQL</div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend & Apps -->
+                    <div class="skill-category-card">
+                        <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Frontend & Mobile</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag"><i class="devicon-react-original"></i> ReactJS</div>
+                            <div class="skill-tag"><i class="devicon-javascript-plain"></i> JavaScript</div>
+                            <div class="skill-tag"><i class="devicon-html5-plain"></i> HTML5 / CSS3</div>
+                            <div class="skill-tag"><i class="devicon-flutter-plain"></i> Flutter</div>
+                            <div class="skill-tag"><i class="devicon-swift-plain"></i> Swift (iOS)</div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-category-card">
+                        <div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag"><i class="devicon-googlecloud-plain"></i> GCP (Cloud Run, GCS)</div>
+                            <div class="skill-tag"><i class="devicon-docker-plain"></i> Docker</div>
+                            <div class="skill-tag"><i class="fa-solid fa-network-wired"></i> RESTful APIs</div>
+                            <div class="skill-tag"><i class="fa-solid fa-circle-check"></i> CI/CD Pipelines</div>
+                            <div class="skill-tag"><i class="devicon-git-plain"></i> Git / GitHub</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work Experience Section -->
+            <section id="experience" class="experience-section container section-padding">
+                <div class="section-header">
+                    <span class="section-tag">03. Journey</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Exp 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jan 2026 – Present</div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3>Data Analyst & React / Node.js Dev</h3>
+                                <a href="https://www.crystalevent.co.uk/" target="_blank" rel="noopener noreferrer" class="company-link">
+                                    Crystal Events & Management, United Kingdom <i class="fa-solid fa-arrow-up-right-from-square inline-icon"></i>
+                                </a>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Developing data-driven booking platforms and analytics dashboards to manage event resources, booking states, and monthly financial summaries.</p>
+                                <ul>
+                                    <li>Implemented an event bookings dashboard using React and Node.js for tracking client quotes and outstanding payments.</li>
+                                    <li>Optimized PostgreSQL database schemas and complex backend joins, improving report generation performance by 35%.</li>
+                                    <li>Built automated notifications and outstanding balance calculations, ensuring real-time payment reconciliation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exp 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">May 2025 – Oct 2025</div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3>Data Analyst & Full Stack Developer</h3>
+                                <a href="https://www.virosagroup.com/" target="_blank" rel="noopener noreferrer" class="company-link">
+                                    Virosa, United Kingdom <i class="fa-solid fa-arrow-up-right-from-square inline-icon"></i>
+                                </a>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Engineered responsive web modules and designed reporting frameworks to track user activity metrics and system resource allocations.</p>
+                                <ul>
+                                    <li>Created custom charting features using Chart.js and React to monitor platform bookings and user conversion metrics.</li>
+                                    <li>Wrote Express.js APIs to aggregate statistical user data, minimizing server-side overhead.</li>
+                                    <li>Maintained standard Git workflows and coordinated software deployments with agile team members.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exp 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3>Backend Developer (Python/Django)</h3>
+                                <a href="https://antarions.com/" target="_blank" rel="noopener noreferrer" class="company-link">
+                                    IT Domain (Antarions Project), Australia (Remote) <i class="fa-solid fa-arrow-up-right-from-square inline-icon"></i>
+                                </a>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Designed and scaled RESTful APIs using Python and the Django framework to support the core Antarions analytics infrastructure and chatbot services.</p>
+                                <ul>
+                                    <li>Designed and optimized high-performance API endpoints for the Antarions business intelligence and analytics charts interface, accelerating data rendering speed by 40%.</li>
+                                    <li>Engineered and integrated the conversational AI chatbot module using NLP techniques to handle context-aware customer queries and automatic data retrievals.</li>
+                                    <li>Utilized Django REST framework to manage secure connections to cloud databases and set up unit testing coverage using PyTest.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exp 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 – 2023</div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3>Software Engineer Intern (Java/Spring Boot)</h3>
+                                <span class="company">Informatics International Limited, Sri Lanka</span>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Assisted in the design, development, and unit testing of Java-based enterprise web systems and microservices.</p>
+                                <ul>
+                                    <li>Assisted in software development and application testing using JUnit and Mockito.</li>
+                                    <li>Supported debugging and troubleshooting activities to resolve high-priority application tickets.</li>
+                                    <li>Participated in software design and implementation projects within an agile scrum environment.</li>
+                                    <li>Collaborated with senior engineers on system enhancements and API integrations.</li>
+                                    <li>Contributed to quality assurance, code refactoring, and technical documentation processes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research Section -->
+            <section id="research" class="research-section container section-padding">
+                <div class="section-header">
+                    <span class="section-tag">04. Science</span>
+                    <h2 class="section-title">Academic & NLP Research</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="research-grid">
+                    <!-- Highlighted NLP Research -->
+                    <div class="research-card highlighted">
+                        <div class="research-badge"><i class="fa-solid fa-award"></i> Bronze Award 2025</div>
+                        <h3>TAMZHI: Shorthand Romanized Tamil to Tamil Reverse Transliteration System</h3>
+                        <p class="research-pub">Published in: <em>International Journal on Advances in ICT for Emerging Regions (ICTer), May 2024</em></p>
+                        <p class="research-desc">
+                            TAMZHI solves the problem of typing Tamil characters on standard QWERTY keyboards by taking informal, shorthand Romanized Tamil (e.g. "vankam" or "nalam") and reverse-transliterating it back into correct Tamil script ("வணக்கம்"). 
+                        </p>
+                        <p class="research-citation" style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 15px; border-left: 2px solid var(--accent-primary); padding-left: 10px;">
+                            <strong>Citation:</strong> Herath, A. D., & Sumanathilaka, D. K. (2024). TAMZHI: Shorthand Romanized Tamil to Tamil Reverse Transliteration Using Novel Hybrid Approach. <em>International Journal on Advances in ICT for Emerging Regions (ICTer)</em>, 16(1).
+                        </p>
+                        <div class="research-tech" style="margin-bottom: 15px;">
+                            <span>Hybrid ML Models</span>
+                            <span>Rule-Based Transliteration</span>
+                            <span>Natural Language Processing (NLP)</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="research-actions" style="margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+                            <a href="https://www.semanticscholar.org/reader/ad041321ba3f5307388c0ad40bcac86581bdcbb1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 6.5px 16px; font-size: 0.8rem;">
+                                <i class="fa-solid fa-graduation-cap"></i> Read on Semantic Scholar
+                            </a>
+                            <button id="cite-paper-btn" class="btn btn-primary" style="padding: 6.5px 16px; font-size: 0.8rem;">
+                                <i class="fa-solid fa-quote-left"></i> Cite Paper
+                            </button>
+                        </div>
+                        <!-- Interactive TAMZHI NLP Live Playground Sandbox -->
+                        <div class="nlp-playground-container" id="tamzhi-playground-box">
+                            <div class="nlp-playground-header">
+                                <span class="playground-title"><i class="fa-solid fa-terminal"></i> TAMZHI Live NLP Sandbox</span>
+                                <span class="playground-status"><span class="status-pulse-dot"></span> Active Engine</span>
+                            </div>
+                            <div class="nlp-playground-body">
+                                <div class="playground-input-wrapper">
+                                    <label for="nlp-input-field" class="sr-only">Type Romanized Tamil</label>
+                                    <input type="text" id="nlp-input-field" placeholder="Type shorthand: e.g. vanakkam, nalam, nandri, tamzhi..." autocomplete="off">
+                                </div>
+                                <div class="playground-output-wrapper">
+                                    <div class="nlp-output-label">TAMZHI Output:</div>
+                                    <div class="nlp-output-box" id="nlp-output-display">... Type above or click suggestions ...</div>
+                                </div>
+                                <div class="nlp-autocomplete-suggestions" id="nlp-autocomplete-container" style="display: none;"></div>
+                                <div class="nlp-suggestions-bar">
+                                    <span class="suggestions-label">Try Paper Datasets (Table I & V):</span>
+                                    <button type="button" class="nlp-sug-chip" data-val="vrungl" title="Shorthand for வாருங்கள்">vrungl</button>
+                                    <button type="button" class="nlp-sug-chip" data-val="kankl" title="Shorthand for கணக்கில்">kankl</button>
+                                    <button type="button" class="nlp-sug-chip" data-val="nillngl" title="Shorthand for நில்லுங்கள்">nillngl</button>
+                                    <button type="button" class="nlp-sug-chip" data-val="yrkku" title="Shorthand for யாருக்கு">yrkku</button>
+                                    <button type="button" class="nlp-sug-chip" data-val="grmamagm" title="Vowel-less for கிராமமாகும்">grmamagm</button>
+                                    <button type="button" class="nlp-sug-chip" data-val="puthiya vedhantham" title="புதிய வேதாந்தம்">puthiya vedhantham</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="research-stats-bar">
+                            <div class="r-stat">
+                                <span class="r-num">90%+</span>
+                                <span class="r-lbl">Accuracy Rate</span>
+                            </div>
+                            <div class="r-stat">
+                                <span class="r-num">ICTer</span>
+                                <span class="r-lbl">Indexed Paper</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section container section-padding">
+                <div class="section-header">
+                    <span class="section-tag">05. Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="backend">Backend/ML</button>
+                    <button class="filter-btn" data-filter="fullstack">Fullstack/Data</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project Antarions -->
+                    <div class="project-card-item" data-category="backend">
+                        <div class="project-inner">
+                            <div class="project-header">
+                                <span class="proj-icon"><i class="fa-solid fa-robot"></i></span>
+                                <div class="proj-links">
+                                    <a href="https://antarions.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Antarions Website"><i class="fa-solid fa-globe"></i></a>
+                                    <a href="https://github.com/AnujaDilrukshiHerath" target="_blank" rel="noopener noreferrer" aria-label="Github Repo"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3>Antarions BI & Chatbot Service</h3>
+                            <p>Designed the core API microservices feeding interactive analytics graphs and engineered an NLP-powered chatbot backend to handle relational database queries.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>ETL APIs</span>
+                                <span>NLP Chatbot</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Crystal -->
+                    <div class="project-card-item" data-category="fullstack">
+                        <div class="project-inner">
+                            <div class="project-header">
+                                <span class="proj-icon"><i class="fa-solid fa-calendar-check"></i></span>
+                                <div class="proj-links">
+                                    <a href="https://www.crystalevent.co.uk/" target="_blank" rel="noopener noreferrer" aria-label="Visit Crystal Events Site"><i class="fa-solid fa-globe"></i></a>
+                                    <a href="https://github.com/AnujaDilrukshiHerath" target="_blank" rel="noopener noreferrer" aria-label="Github Repo"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3>Crystal Events Venue Platform</h3>
+                            <p>Event planner booking system with integrated month-wise financial tables and automatic balance calculators.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>NodeJS</span>
+                                <span>PostgreSQL</span>
+                                <span>Financial Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Virosa -->
+                    <div class="project-card-item" data-category="fullstack">
+                        <div class="project-inner">
+                            <div class="project-header">
+                                <span class="proj-icon"><i class="fa-solid fa-basket-shopping"></i></span>
+                                <div class="proj-links">
+                                    <a href="https://www.virosagroup.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Virosa Group Site"><i class="fa-solid fa-globe"></i></a>
+                                    <a href="https://github.com/AnujaDilrukshiHerath" target="_blank" rel="noopener noreferrer" aria-label="Github Repo"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3>Virosa E-Commerce Dashboard</h3>
+                            <p>Analytics control panel reporting multichannel sales performance metrics (Shopify, Amazon) and forecasting stock replenishment schedules.</p>
+                            <div class="project-tags">
+                                <span>ExpressJS</span>
+                                <span>React</span>
+                                <span>ChartJS</span>
+                                <span>Sales Forecasting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project TAMZHI -->
+                    <div class="project-card-item" data-category="backend">
+                        <div class="project-inner">
+                            <div class="project-header">
+                                <span class="proj-icon"><i class="fa-solid fa-language"></i></span>
+                                <div class="proj-links">
+                                    <a href="https://www.semanticscholar.org/reader/ad041321ba3f5307388c0ad40bcac86581bdcbb1" target="_blank" rel="noopener noreferrer" aria-label="Visit Semantic Scholar Publication"><i class="fa-solid fa-graduation-cap"></i></a>
+                                    <a href="https://github.com/AnujaDilrukshiHerath" target="_blank" rel="noopener noreferrer" aria-label="Github Repo"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3>TAMZHI NLP Platform</h3>
+                            <p>Core translation engine and web wrapper interface mapping conversational Romanized Tamil back to standard text.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                <span>Django</span>
+                                <span>Scikit-Learn</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card-item" data-category="backend">
+                        <div class="project-inner">
+                            <div class="project-header">
+                                <span class="proj-icon"><i class="fa-solid fa-book-bookmark"></i></span>
+                                <div class="proj-links">
+                                    <a href="https://github.com/AnujaDilrukshiHerath" target="_blank" rel="noopener noreferrer" aria-label="Github Repo"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3>Library Management System</h3>
+                            <p>Scalable inventory catalog tracking loan states, member profiles, and checkouts. Built with enterprise Spring Boot architecture.</p>
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="education-section container section-padding">
+                <div class="section-header">
+                    <span class="section-tag">06. Knowledge</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="education-grid">
+                    <!-- Edu 1 -->
+                    <div class="education-card">
+                        <div class="edu-year">2024 – 2025</div>
+                        <h3>Master of Science (MSc) in Data Science & Analytics</h3>
+                        <p class="school">University of Westminster, United Kingdom</p>
+                        <span class="grade-badge"><i class="fa-solid fa-star"></i> Graduated with Merit</span>
+                        <p class="edu-desc">
+                            Core study modules: Predictive Modeling, Data Visualisation, Big Data Analytics, NLP, Deep Learning, and Machine Learning Systems.
+                        </p>
+                    </div>
+
+                    <!-- Edu 2 -->
+                    <div class="education-card">
+                        <div class="edu-year">2020 – 2023</div>
+                        <h3>Bachelor of Engineering (Hons) in Software Engineering</h3>
+                        <p class="school">University of Westminster, United Kingdom</p>
+                        <span class="grade-badge"><i class="fa-solid fa-graduation-cap"></i> First Class Honours equivalent</span>
+                        <p class="edu-desc">
+                            Focused on Object-Oriented Software Design, Database Engineering, Algorithms, Systems Architecture, and Web Architectures.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section container section-padding">
+                <div class="section-header">
+                    <span class="section-tag">07. Message</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info cards -->
+                    <div class="contact-info-panel">
+                        <h3>Contact Information</h3>
+                        <p class="contact-intro-text">
+                            If you have questions about my research, want to collaborate on a backend project, or discuss data roles in London, feel free to drop a message.
+                        </p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-info-item">
+                                <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <div class="info-content">
+                                    <span class="info-label">Email</span>
+                                    <a href="mailto:Anuanujadilrukshi@gmail.com">Anuanujadilrukshi@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+                                <div class="info-content">
+                                    <span class="info-label">Phone</span>
+                                    <a href="tel:+447932858305">+44 7932 858305</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                <div class="info-content">
+                                    <span class="info-label">Location</span>
+                                    <span>London, United Kingdom</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <span class="info-icon"><i class="fa-solid fa-globe"></i></span>
+                                <div class="info-content">
+                                    <span class="info-label">Languages</span>
+                                    <span>English (Fluent), Hindi (Fluent), Tamil (Fluent)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Card -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" action="#" method="POST" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" name="name" placeholder="Your Name" required>
+                                    <span class="error-msg" id="name-error">Name is required.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address</label>
+                                    <input type="email" id="form-email" name="email" placeholder="email@example.com" required>
+                                    <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject" placeholder="What's this about?" required>
+                                <span class="error-msg" id="subject-error">Subject is required.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                                <span class="error-msg" id="message-error">Message cannot be empty.</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                                Send Message <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                            <div class="form-status" id="form-status-msg" role="alert" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-  </section>
 
-  <!-- PUBLICATIONS -->
-  <section id="publications" class="py-5">
-    <div class="container">
-      <h2 class="section-title h4 fw-bold mb-4">Research & Publications <span class="muted">/ peer‑reviewed</span></h2>
+    <!-- INTERACTIVE DASHBOARD VIEW CONTAINER (Initially Hidden) -->
+    <div id="dashboard-view" class="hidden">
+        <main class="dashboard-main container">
+            <section class="dashboard-section section-padding">
+                <div class="dashboard-header-panel">
+                    <div>
+                        <span class="section-tag">Industry Demonstration</span>
+                        <h2 class="dashboard-main-title">Interactive Analytics Dashboard</h2>
+                    </div>
+                    
+                    <div class="dashboard-mode-selector">
+                        <button id="db-tab-events" class="db-selector-btn active" role="tab" aria-selected="true">
+                            <i class="fa-solid fa-calendar-days"></i> Crystal Events (Venue Bookings)
+                        </button>
+                        <button id="db-tab-sales" class="db-selector-btn" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-tags"></i> Virosa Group (E-Commerce Sales)
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="section-divider" style="margin-bottom: 30px;"></div>
 
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex flex-wrap align-items-start justify-content-between gap-3">
-            <div>
-              <h5 class="mb-1">TAMZHI: Shorthand Romanized Tamil → Tamil Reverse Transliteration Using a Novel Hybrid
-                Approach</h5>
-              <div class="small text-secondary">ICTer 2023 (University of Colombo) • NLP • Transliteration</div>
+                <!-- SUB-DASHBOARD 1: CRYSTAL EVENTS BOOKINGS -->
+                <div id="events-dashboard-container" class="dashboard-wrapper">
+                    <!-- Filters Grid -->
+                    <div class="dashboard-controls-card">
+                        <div class="control-row">
+                            <div class="control-group">
+                                <label for="search-client"><i class="fa-solid fa-magnifying-glass"></i> Search Client</label>
+                                <input type="text" id="search-client" placeholder="Search by name...">
+                            </div>
+                            <div class="control-group">
+                                <label for="filter-status"><i class="fa-solid fa-filter"></i> Payment Status</label>
+                                <select id="filter-status">
+                                    <option value="all">All Statuses</option>
+                                    <option value="Paid">Paid</option>
+                                    <option value="Confirmed">Confirmed (Part Paid)</option>
+                                    <option value="Pending">Pending (No Payment)</option>
+                                    <option value="Outstanding">Outstanding (Overdue)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPI Statistics Cards -->
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <span class="kpi-icon"><i class="fa-solid fa-calendar-check text-glow"></i></span>
+                            <div class="kpi-details">
+                                <span class="kpi-label">Filtered Bookings</span>
+                                <h4 class="kpi-value" id="kpi-bookings-count">0</h4>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-icon icon-cyan"><i class="fa-solid fa-sterling-sign"></i></span>
+                            <div class="kpi-details">
+                                <span class="kpi-label">Total Selected Volume</span>
+                                <h4 class="kpi-value" id="kpi-revenue-total">£0</h4>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-icon icon-purple"><i class="fa-solid fa-clock"></i></span>
+                            <div class="kpi-details">
+                                <span class="kpi-label">Outstanding Balance</span>
+                                <h4 class="kpi-value" id="kpi-outstanding-total">£0</h4>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-icon icon-green"><i class="fa-solid fa-chart-line"></i></span>
+                            <div class="kpi-details">
+                                <span class="kpi-label">Collection Rate</span>
+                                <h4 class="kpi-value" id="kpi-collection-rate">0%</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Charts Grid -->
+                    <div class="dashboard-charts-grid">
+                        <div class="chart-container-card">
+                            <h4>Monthly Cashflow Split (Revenue vs Outstanding)</h4>
+                            <div class="chart-canvas-wrapper">
+                                <canvas id="chart-events-cashflow"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-container-card">
+                            <h4>Bookings by Payment Status</h4>
+                            <div class="chart-canvas-wrapper">
+                                <canvas id="chart-events-status"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bookings Table -->
+                    <div class="table-container-card">
+                        <div class="table-header-row">
+                            <h4>Active Booking Sheet</h4>
+                            <span class="table-tip">Table dynamically updates upon filtering</span>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="data-table" id="bookings-table">
+                                <thead>
+                                    <tr>
+                                        <th>Client Name</th>
+                                        <th>Date</th>
+                                        <th>Event Location</th>
+                                        <th>Total Charge</th>
+                                        <th>Amount Paid</th>
+                                        <th>Outstanding</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bookings-table-body">
+                                    <!-- Dynamic rows loaded by JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUB-DASHBOARD 2: VIROSA SALES PROJECTOR -->
+                <div id="sales-dashboard-container" class="dashboard-wrapper hidden">
+                    <!-- Projector Simulator controls -->
+                    <div class="dashboard-controls-card">
+                        <h4>Data Modeling: Multichannel Revenue Projector</h4>
+                        <p class="control-subtitle">Adjust the input parameters to simulate e-commerce channel projections using a local growth estimation model.</p>
+                        <div class="simulator-sliders-grid">
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label for="slider-budget"><i class="fa-solid fa-bullhorn"></i> Monthly Ad Budget</label>
+                                    <span class="slider-value" id="val-budget">£2,500</span>
+                                </div>
+                                <input type="range" id="slider-budget" min="500" max="10000" step="500" value="2500">
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label for="slider-conversion"><i class="fa-solid fa-user-check"></i> Conversion Rate (%)</label>
+                                    <span class="slider-value" id="val-conversion">2.4%</span>
+                                </div>
+                                <input type="range" id="slider-conversion" min="0.5" max="8.0" step="0.1" value="2.4">
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label for="slider-margin"><i class="fa-solid fa-percent"></i> Average Profit Margin</label>
+                                    <span class="slider-value" id="val-margin">45%</span>
+                                </div>
+                                <input type="range" id="slider-margin" min="10" max="80" step="5" value="45">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPI Statistics Cards -->
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <span class="kpi-icon"><i class="fa-solid fa-sack-dollar text-glow"></i></span>
+                            <div class="kpi-details">
+                                <span class="kpi-label">Projected Sales</span>
+                                <h4 class="kpi-value" id="kpi-projected-sales">£0</h4>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-icon icon-green"><i class="fa-solid fa-hand-holding-dollar"></i></span>
+                            <div class="kpi-details">
+                                <span class="kpi-label">Projected Profit</span>
+                                <h4 class="kpi-value" id="kpi-projected-profit">£0</h4>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-icon icon-cyan"><i class="fa-solid fa-truck-fast"></i></span>
+                            <div class="kpi-details">
+                                <span class="kpi-label">Projected Orders</span>
+                                <h4 class="kpi-value" id="kpi-projected-orders">0</h4>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-icon icon-purple"><i class="fa-solid fa-arrows-spin"></i></span>
+                            <div class="kpi-details">
+                                <span class="kpi-label">Ad Return (ROAS)</span>
+                                <h4 class="kpi-value" id="kpi-projected-roas">0.0x</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Charts Grid -->
+                    <div class="dashboard-charts-grid">
+                        <div class="chart-container-card">
+                            <h4>Predicted Multichannel Sales Breakdown</h4>
+                            <div class="chart-canvas-wrapper">
+                                <canvas id="chart-sales-multichannel"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-container-card">
+                            <h4>Projected Monthly Sales Growth Trajectory</h4>
+                            <div class="chart-canvas-wrapper">
+                                <canvas id="chart-sales-growth"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Floating AI Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <!-- Trigger Bubble -->
+        <button class="chat-trigger-bubble" id="chat-trigger" aria-label="Open chat assistant">
+            <i class="fa-solid fa-comments"></i>
+            <span class="trigger-tooltip">Chat with AnuAI</span>
+        </button>
+
+        <!-- Chat Window -->
+        <div class="chat-window-card hidden" id="chat-window" role="dialog" aria-label="AnuAI Assistant chat window">
+            <div class="chat-window-header">
+                <div class="bot-profile">
+                    <div class="bot-avatar-circle">AH</div>
+                    <div class="bot-info">
+                        <h5>AnuAI Assistant</h5>
+                        <span class="bot-status"><span class="status-pulse-dot"></span> Online</span>
+                    </div>
+                </div>
+                <button class="chat-close-btn" id="chat-close" aria-label="Close chat window">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
-            <div class="d-flex gap-2">
-              <a class="btn btn-primary btn-sm" target="_blank" rel="noopener"
-                href="https://www.researchgate.net/publication/381088207_TAMZHI_Shorthand_Romanized_Tamil_to_Tamil_Reverse_Transliteration_Using_Novel_Hybrid_Approach">
-                <i class="bi bi-file-earmark-text me-1"></i> Read paper
-              </a>
+            
+            <div class="chat-window-body" id="chat-messages">
+                <div class="chat-message bot-message">
+                    Hi! I'm AnuAI, an assistant built to showcase Anuja's Chatbot & NLP work. Ask me about her background, projects, or research!
+                </div>
             </div>
-          </div>
 
-          <p class="small text-secondary mt-3 mb-2">
-            Hybrid rules + ML approach converting shorthand Romanized Tamil (with/without vowels) back to Tamil script.
-            Achieved <strong>90%+ accuracy</strong>; supports learning tools and IMEs.
-          </p>
+            <div class="chat-suggestions-container" id="chat-suggestions">
+                <button class="suggestion-chip" data-query="skills">Technical Skills</button>
+                <button class="suggestion-chip" data-query="tamzhi">TAMZHI Research</button>
+                <button class="suggestion-chip" data-query="antarions">Antarions Work</button>
+                <button class="suggestion-chip" data-query="contact">Contact Details</button>
+            </div>
 
-          <div class="d-flex flex-wrap gap-2">
-            <span class="badge rounded-pill badge-tech">NLP</span>
-            <span class="badge rounded-pill badge-tech">Transliteration</span>
-            <span class="badge rounded-pill badge-tech">Python</span>
-            <span class="badge rounded-pill badge-tech">Flask</span>
-          </div>
+            <div class="chat-window-footer">
+                <form id="chat-input-form" action="#" autocomplete="off">
+                    <input type="text" id="chat-input-field" placeholder="Ask about her skills, experience..." aria-label="Type message">
+                    <button type="submit" class="chat-send-btn" id="chat-send" aria-label="Send message">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-          <details class="mt-3">
-            <summary class="small">BibTeX</summary>
-            <pre class="mt-2 small text-secondary mb-0">@inproceedings{TamZhi2023,
-  title={TAMZHI: Shorthand Romanized Tamil to Tamil Reverse Transliteration Using a Novel Hybrid Approach},
-  booktitle={ICTer},
-  year={2023},
-  note={Available on ResearchGate}
+    <!-- Footer -->
+    <footer class="footer-bar">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Anuja Herath. Built with precision and care.</p>
+            <div class="footer-links">
+                <a href="https://github.com/AnujaDilrukshiHerath" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anuja-dilrukshi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#hero" class="back-to-top-btn" id="back-to-top-element" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Citation Modal -->
+    <div id="citation-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-card glass-panel">
+            <div class="modal-header">
+                <h3 id="modal-title"><i class="fa-solid fa-quote-left"></i> Cite Research Paper</h3>
+                <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-subtitle">Choose a citation style to copy or download. This paper is indexed on Semantic Scholar.</p>
+                
+                <div class="modal-tabs">
+                    <button class="modal-tab active" data-tab="apa">APA</button>
+                    <button class="modal-tab" data-tab="ieee">IEEE</button>
+                    <button class="modal-tab" data-tab="harvard">Harvard</button>
+                    <button class="modal-tab" data-tab="bibtex">BibTeX</button>
+                </div>
+                
+                <div class="modal-tab-content active" id="tab-apa">
+                    <div class="code-box">
+                        <pre id="cite-apa">Herath, A. D., & Sumanathilaka, D. K. (2024). TAMZHI: Shorthand Romanized Tamil to Tamil Reverse Transliteration Using Novel Hybrid Approach. International Journal on Advances in ICT for Emerging Regions (ICTer), 16(1).</pre>
+                        <button class="copy-cite-btn" data-target="cite-apa" aria-label="Copy APA Citation">
+                            <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="modal-tab-content" id="tab-ieee">
+                    <div class="code-box">
+                        <pre id="cite-ieee">A. D. Herath and D. K. Sumanathilaka, "TAMZHI: Shorthand Romanized Tamil to Tamil Reverse Transliteration Using Novel Hybrid Approach," International Journal on Advances in ICT for Emerging Regions (ICTer), 2024.</pre>
+                        <button class="copy-cite-btn" data-target="cite-ieee" aria-label="Copy IEEE Citation">
+                            <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-tab-content" id="tab-harvard">
+                    <div class="code-box">
+                        <pre id="cite-harvard">Herath, A.D. and Sumanathilaka, D.K., 2024. TAMZHI: Shorthand Romanized Tamil to Tamil Reverse Transliteration Using Novel Hybrid Approach. International Journal on Advances in ICT for Emerging Regions (ICTer).</pre>
+                        <button class="copy-cite-btn" data-target="cite-harvard" aria-label="Copy Harvard Citation">
+                            <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-tab-content" id="tab-bibtex">
+                    <div class="code-box">
+                        <pre id="cite-bibtex">@article{herath2024tamzhi,
+  title={TAMZHI: Shorthand Romanized Tamil to Tamil Reverse Transliteration Using Novel Hybrid Approach},
+  author={Herath, Anuja Dilrukshi and Sumanathilaka, Deshan Koshala},
+  journal={International Journal on Advances in ICT for Emerging Regions (ICTer)},
+  year={2024},
+  publisher={IEEE}
 }</pre>
-          </details>
+                        <button class="copy-cite-btn" data-target="cite-bibtex" aria-label="Copy BibTeX Citation">
+                            <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" id="download-bibtex-btn">
+                        <i class="fa-solid fa-download"></i> Download .bib
+                    </button>
+                    <a href="https://www.semanticscholar.org/reader/ad041321ba3f5307388c0ad40bcac86581bdcbb1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fa-solid fa-graduation-cap"></i> Read Paper
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="section-title h4 fw-bold mb-4">Contact <span class="muted">/ let’s build</span></h2>
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="p-3 border rounded h-100">
-            <dl class="row mb-0 small">
-              <dt class="col-4 col-md-3 text-secondary">Location</dt>
-              <dd class="col-8 col-md-9">London, United Kingdom</dd>
-              <dt class="col-4 col-md-3 text-secondary">Email</dt>
-              <dd class="col-8 col-md-9"><a href="mailto:anuanujadilrukshi@gmail.com"
-                  class="link-underline">anuanujadilrukshi@gmail.com</a></dd>
-              <dt class="col-4 col-md-3 text-secondary">Phone</dt>
-              <dd class="col-8 col-md-9">+44 7932 858305</dd>
-              <dt class="col-4 col-md-3 text-secondary">Links</dt>
-              <dd class="col-8 col-md-9">
-                <a target="_blank" rel="noopener" class="me-3 link-underline"
-                  href="https://linkedin.com/in/anuja-dilrukshi">LinkedIn</a>
-                <a target="_blank" rel="noopener" class="me-3 link-underline"
-                  href="https://github.com/AnujaDilrukshiHerath">GitHub</a>
-                <a target="_blank" rel="noopener" class="me-3 link-underline"
-                  href="https://anuja-herath.medium.com">Medium</a>
-              </dd>
-            </dl>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="p-3 border rounded h-100">
-            <div class="fw-semibold mb-1">Work with me</div>
-            <p class="small text-secondary mb-3">
-              For roles, collaborations, or freelance projects, include a short brief and timeline.
-            </p>
-            <a href="mailto:anuanujadilrukshi@gmail.com?subject=Project%20Enquiry%20—%20Anuja%20Dilrukshi"
-              class="btn btn-primary">
-              <i class="bi bi-send me-1"></i> Email Anuja
-            </a>
-            <a class="btn btn-outline-brand ms-2" href="./AnuDataScience.pdf" target="_blank" rel="noopener">
-              <i class="bi bi-download me-1"></i> Download CV
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="py-4 border-top">
-    <div class="container text-center small text-secondary">
-      © <span id="year"></span> Anuja Dilrukshi • 
-    </div>
-  </footer>
-
-  <button id="backToTop" class="btn btn-primary rounded-circle back-to-top">
-    <i class="bi bi-arrow-up"></i>
-  </button>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Scrollspy init
-    const scrollSpy = new bootstrap.ScrollSpy(document.body, { target: '#topnav', offset: 80 });
-
-    // Theme toggle (dark <-> light) with persistence
-    const themeToggle = document.getElementById('themeToggle');
-    const root = document.documentElement;
-    (function initTheme() {
-      const saved = localStorage.getItem('theme');
-      if (saved) document.documentElement.setAttribute('data-bs-theme', saved);
-      themeToggle.innerHTML = (document.documentElement.getAttribute('data-bs-theme') === 'light')
-        ? '<i class="bi bi-brightness-high"></i>'
-        : '<i class="bi bi-moon-stars"></i>';
-    })();
-    themeToggle.addEventListener('click', () => {
-      const cur = root.getAttribute('data-bs-theme') || 'dark';
-      const next = cur === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-bs-theme', next);
-      localStorage.setItem('theme', next);
-      themeToggle.innerHTML = next === 'light' ? '<i class="bi bi-brightness-high"></i>' : '<i class="bi bi-moon-stars"></i>';
-    });
-
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Back to top
-    const btt = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      btt.style.display = (window.scrollY > 400) ? 'inline-flex' : 'none';
-    });
-    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  </script>
+    <!-- ChartJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-

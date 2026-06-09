@@ -1,0 +1,61 @@
+                                  ANUJA HERATH
+                        London, United Kingdom | +44 7932 858305
+               Email: Anuanujadilrukshi@gmail.com | LinkedIn: anuja-dilrukshi
+================================================================================
+
+PROFESSIONAL SUMMARY
+--------------------
+Dynamic Backend Developer and Data Analyst with an MSc in Data Science & Analytics
+(Merit) and a BEng in Software Engineering. Proven track record in building 
+high-performance API services (Django, Spring Boot, Node.js), scalable data 
+pipelines, interactive analytics dashboards, and custom chatbot platforms.
+
+EDUCATION
+---------
+* MSc in Data Science & Analytics (Merit)
+  University of Westminster, United Kingdom (2024 - 2025)
+  
+* BEng (Hons) in Software Engineering
+  University of Westminster, Sri Lanka (2020 - 2023)
+
+WORK EXPERIENCE
+---------------
+Data Analyst | Crystal Events & Management, United Kingdom
+January 2026 - Present
+* Analyzed and tracked event booking datasets, monthly sales targets, and balances.
+* Developed custom dashboard interfaces for booking sheets and event scheduling.
+* Integrated transactional systems to display real-time financial tracking.
+
+Data Analyst | Virosa, United Kingdom
+May 2025 - October 2025
+* Built multichannel sales performance projections and inventory tracking models.
+* Programmed e-commerce dashboard panels reporting Shopify/Amazon sales data.
+* Implemented forecasting calculators for seasonal stock replenishment.
+
+Backend Developer | IT Domain, Australia (Remote)
+January 2024 - December 2024
+* Engineered data infrastructure and high-performance API routes for the 
+  Antarions analytics platform, boosting visual query speeds by 40%.
+* Designed and built conversational AI modules for automated data retrieval.
+* Managed relational databases, indexing, and complex SQL transaction layers.
+
+Software Engineer Intern | Informatics International Limited, Sri Lanka
+2022 - 2023
+* Supported backend microservices development using Java, Spring Boot, and SQL.
+* Wrote comprehensive unit and integration tests using JUnit and Mockito.
+* Assisted in bug resolution, system refactoring, and technical writing.
+
+PUBLICATIONS & HONORS
+---------------------
+* TAMZHI NLP Research: Lead Author of "TAMZHI: Shorthand Romanized Tamil to 
+  Tamil Reverse Transliteration Using Novel Hybrid Approach", published in 
+  the International Journal on Advances in ICT for Emerging Regions (ICTer), 
+  May 2024.
+* Bronze Medal for Applied Research & Innovation, ICTer (2025).
+
+CORE SKILLS
+-----------
+* Backend Systems: Python (Django), Java (Spring Boot, Microservices), Node.js
+* Data Science: Machine Learning, NLP, SQL (PostgreSQL, MySQL), R, Chart.js
+* Frontend & Mobile: ReactJS, JavaScript, Swift, Flutter, HTML/CSS
+* Languages: English (Fluent), Tamil (Fluent), Hindi (Fluent)
