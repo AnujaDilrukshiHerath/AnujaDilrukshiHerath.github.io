@@ -3,19 +3,30 @@
              Email: anuanujadilrukshi@gmail.com | LinkedIn: linkedin.com/in/anuja-dilrukshi
 ================================================================================
 
+JUNIOR DATA ENGINEER | TECHNICAL DATA ANALYST | PYTHON | SQL | DASHBOARDS | BACKEND ANALYTICS
+
 PROFESSIONAL SUMMARY
 --------------------
-Results-driven Technical Data Analyst and Data Analytics Engineer with 3+ years of
-hands-on experience turning business data into dashboards, SQL reporting,
-forecasting, and backend-supported analytics solutions for UK-based businesses.
-Holds an MSc in Data Science & Analytics (Merit) and a BEng (Hons) in Software
-Engineering from the University of Westminster. Strong technical profile in
-Python, SQL, dashboards, Django/FastAPI, PostgreSQL, API development, reporting,
-GCP Cloud Run, Docker, and data-driven automation. Proven ability to deliver
-production-ready insights and systems with measurable impact, strong stakeholder
-communication, and modern engineering practices. Targeting Technical Data
-Analyst, Data Analytics Engineer, BI Analyst, E-commerce Data Analyst, and
-Junior Data Engineer roles across the UK and UAE/GCC.
+Junior Data Engineer and Technical Data Analyst with 3+ years of experience
+building SQL reporting workflows, dashboards, forecasting models, APIs, and
+backend-supported analytics platforms. Skilled in Python, SQL, Django/FastAPI,
+Node.js, React, PostgreSQL, BI dashboards, and data automation. Experienced
+across e-commerce, event management, NLP research, and business intelligence
+systems.
+
+SELECTED PROJECTS
+-----------------
+1. Event Management Venue Platform
+   React, Node.js, PostgreSQL, Express.js, financial analytics
+
+2. Virosa E-Commerce Analytics Dashboard
+   Shopify, Amazon, Chart.js, React, forecasting
+
+3. Antarions BI Platform & NLP Chatbot
+   Django REST, PostgreSQL, SpaCy, GCP Cloud Run
+
+4. TAMZHI NLP Transliteration Engine
+   Python, NLP, Scikit-learn, published research
 
 KEY ACHIEVEMENTS
 ----------------
