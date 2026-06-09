@@ -649,11 +649,14 @@ const chartThemes = {
 window.dashboardCharts = {};
 
 function initShowcaseDashboard() {
-    // Mode toggling (Events vs Sales)
     const btnEvents = document.getElementById('db-tab-events');
     const btnSales = document.getElementById('db-tab-sales');
     const containerEvents = document.getElementById('events-dashboard-container');
     const containerSales = document.getElementById('sales-dashboard-container');
+    const scenarioCards = document.querySelectorAll('.feature-showcase-card');
+    const liveTitle = document.getElementById('demo-live-title');
+    const liveCopy = document.getElementById('demo-live-copy');
+    const liveTags = document.getElementById('demo-live-tags');
     
     if (btnEvents && btnSales && containerEvents && containerSales) {
         btnEvents.addEventListener('click', () => {
@@ -686,6 +689,48 @@ function initShowcaseDashboard() {
     
     // 2. Initialize Virosa Sales Projector Panel
     initSalesProjector();
+
+    const scenarioContent = {
+        enquiry: {
+            title: 'Multi-branch enquiry routing',
+            copy: 'This interactive scenario highlights how Hayes, Wembley, and Slough enquiries are routed through three email flows with live admin visibility.',
+            tags: ['3 branch routes', '3 email flows', 'Fast handoff']
+        },
+        chatbot: {
+            title: 'Admin chatbot insights',
+            copy: 'This scenario shows the chatbot responses being reviewed inside the admin view so customer guidance and event updates stay visible.',
+            tags: ['Admin review panel', 'Live answers', 'Operational guidance']
+        },
+        upload: {
+            title: 'Easy image upload',
+            copy: 'This scenario previews how admins can add halls, decoration, and venue images directly from the admin page for quick showcase updates.',
+            tags: ['Direct upload', 'Fast updates', 'Visual showcase']
+        },
+        branding: {
+            title: 'Sales-team showcase + branded output',
+            copy: 'This scenario previews the sales-team login and the automatic logo branding applied to event photo outputs.',
+            tags: ['Sales showcase', 'Logo branding', 'Customer-ready photos']
+        }
+    };
+
+    function setScenarioPreview(key) {
+        const content = scenarioContent[key] || scenarioContent.enquiry;
+        if (liveTitle) liveTitle.textContent = content.title;
+        if (liveCopy) liveCopy.textContent = content.copy;
+        if (liveTags) {
+            liveTags.innerHTML = content.tags.map(tag => `<span>${tag}</span>`).join('');
+        }
+        scenarioCards.forEach(card => {
+            card.classList.toggle('active', card.dataset.demoScenario === key);
+        });
+    }
+
+    scenarioCards.forEach(card => {
+        card.addEventListener('click', () => setScenarioPreview(card.dataset.demoScenario || 'enquiry'));
+        card.addEventListener('focus', () => setScenarioPreview(card.dataset.demoScenario || 'enquiry'));
+    });
+
+    setScenarioPreview('enquiry');
     
     // Global resizing helper
     window.resizeCharts = () => {
