@@ -1,6 +1,6 @@
                                   ANUJA HERATH
                         London, United Kingdom | +44 7932 858305
-               Email: Anuanujadilrukshi@gmail.com | LinkedIn: anuja-dilrukshi
+                Email: anuanujadilrukshi@gmail.com | LinkedIn: linkedin.com/in/anuja-dilrukshi
 ================================================================================
 
 PROFESSIONAL SUMMARY
@@ -16,7 +16,7 @@ EDUCATION
   University of Westminster, United Kingdom (2024 - 2025)
   
 * BEng (Hons) in Software Engineering
-  University of Westminster, Sri Lanka (2020 - 2023)
+  University of Westminster, United Kingdom (2020 - 2023)
 
 WORK EXPERIENCE
 ---------------
@@ -32,7 +32,7 @@ May 2025 - October 2025
 * Programmed e-commerce dashboard panels reporting Shopify/Amazon sales data.
 * Implemented forecasting calculators for seasonal stock replenishment.
 
-Backend Developer | IT Domain, Australia (Remote)
+Backend Developer | Antarions — IT Domain, Australia (Remote)
 January 2024 - December 2024
 * Engineered data infrastructure and high-performance API routes for the 
   Antarions analytics platform, boosting visual query speeds by 40%.

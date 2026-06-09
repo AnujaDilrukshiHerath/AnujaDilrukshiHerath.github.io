@@ -76,10 +76,12 @@ function updateThemeIcon(btn, theme) {
 function initTypewriter() {
     const typewriterSpan = document.getElementById('typewriter');
     const words = [
-        "Backend Developer.",
-        "Data Analyst.",
-        "Machine Learning Researcher.",
-        "Problem Solver."
+        "Backend Engineer.",
+        "Data Scientist.",
+        "NLP & AI Engineer.",
+        "Data Engineer.",
+        "Full Stack Developer.",
+        "Published Researcher."
     ];
     let wordIndex = 0;
     let charIndex = 0;
