@@ -1612,6 +1612,19 @@ button {
     background: linear-gradient(145deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.9));
     padding: 16px 18px;
     box-shadow: 0 10px 24px var(--shadow-color);
+    transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.demo-live-panel[data-scenario="chatbot"] { border-color: rgba(45, 212, 191, 0.35); }
+.demo-live-panel[data-scenario="upload"] { border-color: rgba(167, 139, 250, 0.35); }
+.demo-live-panel[data-scenario="branding"] { border-color: rgba(74, 222, 128, 0.35); }
+
+.demo-live-topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 6px;
 }
 
 .demo-live-label {
@@ -1619,7 +1632,19 @@ button {
     letter-spacing: 0.18em;
     font-size: 0.72rem;
     color: var(--accent-secondary);
-    margin-bottom: 6px;
+    margin: 0;
+}
+
+.demo-live-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    color: var(--text-primary);
+    font-size: 0.72rem;
+    font-weight: 700;
 }
 
 .demo-live-panel h5 {
@@ -1632,6 +1657,32 @@ button {
     font-size: 0.92rem;
     color: var(--text-secondary);
     margin: 0 0 10px;
+}
+
+.demo-live-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin: 10px 0 12px;
+}
+
+.demo-live-mini-card {
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    background: rgba(15, 23, 42, 0.7);
+}
+
+.demo-live-mini-card strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.demo-live-mini-card span {
+    color: var(--text-secondary);
+    font-size: 0.78rem;
 }
 
 .demo-live-hint {

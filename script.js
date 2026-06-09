@@ -694,31 +694,68 @@ function initShowcaseDashboard() {
         enquiry: {
             title: 'Multi-branch enquiry routing',
             copy: 'This interactive scenario highlights how Hayes, Wembley, and Slough enquiries are routed through three email flows with live admin visibility.',
+            badge: 'Enquiry routing',
+            mini: [
+                { value: '3', label: 'branch routes' },
+                { value: '98%', label: 'handoff speed' },
+                { value: 'Live', label: 'admin visibility' }
+            ],
             tags: ['3 branch routes', '3 email flows', 'Fast handoff']
         },
         chatbot: {
             title: 'Admin chatbot insights',
             copy: 'This scenario shows the chatbot responses being reviewed inside the admin view so customer guidance and event updates stay visible.',
+            badge: 'Admin chatbot',
+            mini: [
+                { value: '12', label: 'instant answers' },
+                { value: '24/7', label: 'support flow' },
+                { value: 'Live', label: 'guidance view' }
+            ],
             tags: ['Admin review panel', 'Live answers', 'Operational guidance']
         },
         upload: {
             title: 'Easy image upload',
             copy: 'This scenario previews how admins can add halls, decoration, and venue images directly from the admin page for quick showcase updates.',
+            badge: 'Image uploads',
+            mini: [
+                { value: '4', label: 'image types' },
+                { value: '1 min', label: 'upload flow' },
+                { value: 'Visual', label: 'venue-ready previews' }
+            ],
             tags: ['Direct upload', 'Fast updates', 'Visual showcase']
         },
         branding: {
             title: 'Sales-team showcase + branded output',
             copy: 'This scenario previews the sales-team login and the automatic logo branding applied to event photo outputs.',
+            badge: 'Sales branding',
+            mini: [
+                { value: '1 click', label: 'sales login' },
+                { value: 'Auto', label: 'logo branding' },
+                { value: 'Ready', label: 'customer output' }
+            ],
             tags: ['Sales showcase', 'Logo branding', 'Customer-ready photos']
         }
     };
 
     function setScenarioPreview(key) {
         const content = scenarioContent[key] || scenarioContent.enquiry;
+        const livePanel = document.getElementById('demo-live-panel');
+        const liveBadge = document.getElementById('demo-live-badge');
+        const liveMiniGrid = document.getElementById('demo-live-mini-grid');
+
         if (liveTitle) liveTitle.textContent = content.title;
         if (liveCopy) liveCopy.textContent = content.copy;
+        if (liveBadge) liveBadge.textContent = content.badge;
         if (liveTags) {
             liveTags.innerHTML = content.tags.map(tag => `<span>${tag}</span>`).join('');
+        }
+        if (liveMiniGrid) {
+            liveMiniGrid.innerHTML = content.mini
+                .map(item => `<div class="demo-live-mini-card"><strong>${item.value}</strong><span>${item.label}</span></div>`)
+                .join('');
+        }
+        if (livePanel) {
+            livePanel.dataset.scenario = key;
         }
         scenarioCards.forEach(card => {
             const isActive = card.dataset.demoScenario === key;
