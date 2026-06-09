@@ -1634,6 +1634,14 @@ button {
     margin: 0 0 10px;
 }
 
+.demo-live-hint {
+    margin-top: 8px !important;
+    color: var(--accent-secondary) !important;
+    font-size: 0.78rem !important;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
 .demo-live-tags {
     display: flex;
     flex-wrap: wrap;

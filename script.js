@@ -721,7 +721,9 @@ function initShowcaseDashboard() {
             liveTags.innerHTML = content.tags.map(tag => `<span>${tag}</span>`).join('');
         }
         scenarioCards.forEach(card => {
-            card.classList.toggle('active', card.dataset.demoScenario === key);
+            const isActive = card.dataset.demoScenario === key;
+            card.classList.toggle('active', isActive);
+            card.setAttribute('aria-pressed', String(isActive));
         });
     }
 
