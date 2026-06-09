@@ -2179,9 +2179,71 @@ button {
 }
 
 @media (max-width: 768px) {
+    .section-padding {
+        padding: 45px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 30px;
+    }
+    
+    .nav-logo {
+        order: 1;
+    }
+    
+    .nav-actions {
+        order: 2;
+        margin-left: auto;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .showcase-nav-btn,
+    .cv-btn {
+        width: 38px;
+        height: 38px;
+        padding: 0 !important;
+        border-radius: 50% !important;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 0 !important; /* Hides any text nodes inside the button */
+        border: 1px solid var(--glass-border) !important;
+        background: var(--glass-bg) !important;
+    }
+    
+    .showcase-nav-btn i,
+    .cv-btn i {
+        font-size: 0.95rem !important; /* Keep icons visible */
+        color: var(--text-primary) !important;
+    }
+    
+    .showcase-nav-btn:hover,
+    .cv-btn:hover {
+        border-color: var(--accent-primary) !important;
+        background: var(--accent-primary-glow) !important;
+    }
+    
+    .theme-toggle-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 0.95rem;
+    }
+    
     .menu-toggle {
         display: block;
         z-index: 1001;
+        order: 3;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--glass-border);
+        border-radius: 50%;
+        background: var(--glass-bg);
     }
     
     .nav-links-wrapper {
@@ -2214,8 +2276,19 @@ button {
         font-size: 1.2rem;
     }
     
-    .nav-actions {
-        margin-right: 40px;
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 20px;
+    }
+    
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
     }
     
     .hero-title {
