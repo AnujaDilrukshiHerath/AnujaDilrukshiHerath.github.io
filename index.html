@@ -338,7 +338,7 @@
                                 <p>Built and maintain the core data-driven booking management platform and financial analytics dashboards for a live UK events business, including the new admin, chatbot, and sales-facing workflows.</p>
                                 <ul>
                                     <li>Engineered a full-stack venue booking system (React + Node.js + PostgreSQL) managing <strong>200+ active bookings</strong>, cutting manual reconciliation by ~4 hours/week.</li>
-                                    <li>Extended enquiry handling across <strong>Hayes, Wembley, and Slough</strong> with three email flows, improving branch-level response coordination.</li>
+                                    <li>Extended enquiry handling across multiple venue branches with dedicated enquiry flows, improving response coordination.</li>
                                     <li>Added an integrated chatbot and admin visibility for its results, plus a simplified image-upload workflow directly from the admin panel.</li>
                                     <li>Built a dedicated sales-team login for showcasing event hall decorations and enabled uploaded photos to automatically display the business logo in the output.</li>
                                     <li>Implemented Agile/Scrum sprint cycles, delivering iterative dashboard features aligned with business KPIs.</li>
@@ -852,9 +852,9 @@
                 <div id="events-dashboard-container" class="dashboard-wrapper">
                     <!-- Filters Grid -->
                     <div class="dashboard-controls-card">
-                        <p class="control-subtitle">This demo showcases the live Crystal Events operations across Hayes, Wembley, and Slough, including enquiry routing, chatbot-enabled admin insights, easier image uploads from the admin page, a sales-team showcase login, and automatic logo branding on event photos.</p>
+                        <p class="control-subtitle">This demo showcases the live Crystal Events operations across multiple venue branches, including enquiry routing, chatbot-enabled admin insights, easier image uploads from the admin page, a sales-team showcase login, and automatic logo branding on event photos.</p>
                         <div class="feature-chip-row" style="display:flex; flex-wrap:wrap; gap:10px; margin-top:12px;">
-                            <span class="feature-chip">Hayes • Wembley • Slough</span>
+                            <span class="feature-chip">Multi-branch operations</span>
                             <span class="feature-chip">3 email enquiry flows</span>
                             <span class="feature-chip">Admin chatbot results</span>
                             <span class="feature-chip">Sales-team showcase login</span>
@@ -865,7 +865,7 @@
                             <button type="button" class="feature-showcase-card accent-blue active" data-demo-scenario="enquiry">
                                 <div class="feature-showcase-icon"><i class="fa-solid fa-building-columns"></i></div>
                                 <h5>Multi-branch enquiry routing</h5>
-                                <p>Click to preview how Hayes, Wembley, and Slough enquiries are routed through dedicated email flows.</p>
+                                <p>Click to preview how multi-branch enquiries are routed through dedicated email flows.</p>
                             </button>
                             <button type="button" class="feature-showcase-card accent-cyan" data-demo-scenario="chatbot">
                                 <div class="feature-showcase-icon"><i class="fa-solid fa-robot"></i></div>
@@ -890,7 +890,7 @@
                                 <span class="demo-live-badge" id="demo-live-badge">Enquiry routing</span>
                             </div>
                             <h5 id="demo-live-title">Multi-branch enquiry routing</h5>
-                            <p id="demo-live-copy">This interactive scenario highlights how Hayes, Wembley, and Slough enquiries are routed through three email flows with live admin visibility.</p>
+                            <p id="demo-live-copy">This interactive scenario highlights how multi-branch enquiries are routed through dedicated email flows with live admin visibility.</p>
                             <div class="demo-live-mini-grid" id="demo-live-mini-grid">
                                 <div class="demo-live-mini-card"><strong>3</strong><span>branch routes</span></div>
                                 <div class="demo-live-mini-card"><strong>98%</strong><span>handoff speed</span></div>
@@ -967,6 +967,20 @@
                             <div class="chart-canvas-wrapper">
                                 <canvas id="chart-events-status"></canvas>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Finance & Supplier Payment Summary -->
+                    <div class="dashboard-finance-grid">
+                        <div class="chart-container-card">
+                            <h4>Event P&L Statement</h4>
+                            <p class="control-subtitle">Event-wise gross profit, customer owed, and net cash flow for the Crystal Events booking portfolio.</p>
+                            <div id="event-finance-list" class="finance-list"></div>
+                        </div>
+                        <div class="chart-container-card">
+                            <h4>Supplier Payments by Month</h4>
+                            <p class="control-subtitle">Supplier payables and month-wise payouts tracked separately for the same event operations.</p>
+                            <div id="supplier-payments-list" class="finance-list"></div>
                         </div>
                     </div>
 

@@ -610,16 +610,36 @@ function initViewRouter() {
 
 // --- MOCK DATABASE DATASETS ---
 const CRYSTAL_EVENTS_BOOKINGS = [
-    { name: "Anil Kapoor", date: "2026-02-12", location: "Wembley Grand Hall", total: 4500, paid: 4500, status: "Paid" },
-    { name: "Jessica Smith", date: "2026-02-18", location: "Hayes Pavilion", total: 3200, paid: 1500, status: "Confirmed" },
-    { name: "David Miller", date: "2026-03-01", location: "Slough Banquet Suite", total: 6000, paid: 6000, status: "Paid" },
-    { name: "Sarah Connor", date: "2026-03-10", location: "Wembley Grand Hall", total: 2800, paid: 0, status: "Pending" },
-    { name: "Rajesh Sharma", date: "2026-03-24", location: "Hayes Pavilion", total: 7500, paid: 7500, status: "Paid" },
-    { name: "Emma Watson", date: "2026-04-05", location: "Slough Banquet Suite", total: 3900, paid: 2000, status: "Confirmed" },
-    { name: "Michael Jordan", date: "2026-04-14", location: "Wembley Grand Hall", total: 5500, paid: 1000, status: "Outstanding" },
-    { name: "Samantha Fox", date: "2026-04-20", location: "Hayes Pavilion", total: 4800, paid: 4800, status: "Paid" },
-    { name: "John Wick", date: "2026-05-02", location: "Slough Banquet Suite", total: 6500, paid: 0, status: "Pending" },
-    { name: "Priya Patel", date: "2026-05-18", location: "Wembley Grand Hall", total: 8000, paid: 5000, status: "Confirmed" }
+    { name: "Client A", date: "2026-02-12", location: "Venue A", total: 4500, paid: 4500, status: "Paid" },
+    { name: "Client B", date: "2026-02-18", location: "Venue B", total: 3200, paid: 1500, status: "Confirmed" },
+    { name: "Client C", date: "2026-03-01", location: "Venue C", total: 6000, paid: 6000, status: "Paid" },
+    { name: "Client D", date: "2026-03-10", location: "Venue D", total: 2800, paid: 0, status: "Pending" },
+    { name: "Client E", date: "2026-03-24", location: "Venue E", total: 7500, paid: 7500, status: "Paid" },
+    { name: "Client F", date: "2026-04-05", location: "Venue F", total: 3900, paid: 2000, status: "Confirmed" },
+    { name: "Client G", date: "2026-04-14", location: "Venue G", total: 5500, paid: 1000, status: "Outstanding" },
+    { name: "Client H", date: "2026-04-20", location: "Venue H", total: 4800, paid: 4800, status: "Paid" },
+    { name: "Client I", date: "2026-05-02", location: "Venue I", total: 6500, paid: 0, status: "Pending" },
+    { name: "Client J", date: "2026-05-18", location: "Venue J", total: 8000, paid: 5000, status: "Confirmed" }
+];
+
+const CRYSTAL_EVENTS_FINANCE = [
+    {
+        event: "Client Event A",
+        branch: "Branch A",
+        hall: "Venue A",
+        guests: 400,
+        revenue: 19500,
+        costs: 4882.75,
+        grossProfit: 14617.25,
+        customerOwed: 0,
+        netCashflow: 19500,
+        notes: "Event P&L statement with catering, decoration, lighting, bar, and food costs."
+    }
+];
+
+const CRYSTAL_EVENTS_SUPPLIER_PAYMENTS = [
+    { month: "Month A", supplier: "Supplier Group A", totalOwed: 4882.75, totalPaid: 0, balance: 4882.75, status: "UNPAID" },
+    { month: "Month B", supplier: "Supplier Group B", totalOwed: 3200, totalPaid: 1500, balance: 1700, status: "PARTIAL" }
 ];
 
 // Reference colors matching dark/light CSS variables
@@ -647,6 +667,14 @@ const chartThemes = {
 };
 
 window.dashboardCharts = {};
+
+function maskCurrencyValue(value) {
+    return Math.round(value / 1000) * 1000;
+}
+
+function formatMaskedCurrency(value) {
+    return `£${maskCurrencyValue(value).toLocaleString()}`;
+}
 
 function initShowcaseDashboard() {
     const btnEvents = document.getElementById('db-tab-events');
@@ -693,7 +721,7 @@ function initShowcaseDashboard() {
     const scenarioContent = {
         enquiry: {
             title: 'Multi-branch enquiry routing',
-            copy: 'This interactive scenario highlights how Hayes, Wembley, and Slough enquiries are routed through three email flows with live admin visibility.',
+            copy: 'This interactive scenario highlights how multi-branch enquiries are routed through dedicated email flows with live admin visibility.',
             badge: 'Enquiry routing',
             mini: [
                 { value: '3', label: 'branch routes' },
@@ -820,6 +848,7 @@ function initEventsAnalytics() {
     
     // Render initial states
     filterAndRenderBookings();
+    renderFinanceSummary();
     buildEventCharts();
     
     // Hook listeners
@@ -846,6 +875,46 @@ function filterAndRenderBookings() {
     updateEventChartsData(filtered);
 }
 
+function renderFinanceSummary() {
+    const eventContainer = document.getElementById('event-finance-list');
+    const supplierContainer = document.getElementById('supplier-payments-list');
+
+    if (eventContainer) {
+        eventContainer.innerHTML = CRYSTAL_EVENTS_FINANCE.map(item => `
+            <article class="finance-card">
+                <h5>${item.event}</h5>
+                <p>${item.branch} • ${item.hall} • ${item.guests} guests</p>
+                <div class="finance-meta">
+                    <span class="finance-chip">Revenue ${formatMaskedCurrency(item.revenue)}</span>
+                    <span class="finance-chip">Costs ${formatMaskedCurrency(item.costs)}</span>
+                    <span class="finance-chip">Gross profit ${formatMaskedCurrency(item.grossProfit)}</span>
+                </div>
+                <div class="finance-metric-row">
+                    <div class="finance-metric"><span class="finance-metric-label">Customer owed</span><strong class="finance-metric-value">${formatMaskedCurrency(item.customerOwed)}</strong></div>
+                    <div class="finance-metric"><span class="finance-metric-label">Net cash flow</span><strong class="finance-metric-value">${formatMaskedCurrency(item.netCashflow)}</strong></div>
+                </div>
+            </article>
+        `).join('');
+    }
+
+    if (supplierContainer) {
+        supplierContainer.innerHTML = CRYSTAL_EVENTS_SUPPLIER_PAYMENTS.map(item => `
+            <article class="finance-card">
+                <h5>${item.month}</h5>
+                <p>${item.supplier}</p>
+                <div class="finance-meta">
+                    <span class="finance-chip">Total owed ${formatMaskedCurrency(item.totalOwed)}</span>
+                    <span class="finance-chip">Paid ${formatMaskedCurrency(item.totalPaid)}</span>
+                    <span class="finance-chip">Balance ${formatMaskedCurrency(item.balance)}</span>
+                </div>
+                <div class="finance-metric-row">
+                    <div class="finance-metric"><span class="finance-metric-label">Status</span><strong class="finance-metric-value">${item.status}</strong></div>
+                </div>
+            </article>
+        `).join('');
+    }
+}
+
 function renderBookingsTable(data) {
     const tbody = document.getElementById('bookings-table-body');
     if (!tbody) return;
@@ -869,9 +938,9 @@ function renderBookingsTable(data) {
             <td><strong>${item.name}</strong></td>
             <td>${item.date}</td>
             <td>${item.location}</td>
-            <td>£${item.total.toLocaleString()}</td>
-            <td>£${item.paid.toLocaleString()}</td>
-            <td class="${balance > 0 ? 'text-glow' : ''}" style="color: ${balance > 0 ? 'var(--accent-secondary)' : 'inherit'}">£${balance.toLocaleString()}</td>
+            <td>${formatMaskedCurrency(item.total)}</td>
+            <td>${formatMaskedCurrency(item.paid)}</td>
+            <td class="${balance > 0 ? 'text-glow' : ''}" style="color: ${balance > 0 ? 'var(--accent-secondary)' : 'inherit'}">${formatMaskedCurrency(balance)}</td>
             <td><span class="badge-status ${badgeClass}">${item.status}</span></td>
         `;
         tbody.appendChild(row);
@@ -897,8 +966,8 @@ function updateEventKPIs(data) {
     const collectionRate = totalVolume > 0 ? Math.round((totalPaid / totalVolume) * 100) : 0;
     
     if (elCount) elCount.textContent = data.length.toLocaleString();
-    if (elRevenue) elRevenue.textContent = `£${totalVolume.toLocaleString()}`;
-    if (elOutstanding) elOutstanding.textContent = `£${totalOutstanding.toLocaleString()}`;
+    if (elRevenue) elRevenue.textContent = formatMaskedCurrency(totalVolume);
+    if (elOutstanding) elOutstanding.textContent = formatMaskedCurrency(totalOutstanding);
     if (elRate) elRate.textContent = `${collectionRate}%`;
 }
 
@@ -1008,8 +1077,8 @@ function getMonthsCashflow(data) {
             const dateObj = new Date(m + "-01");
             return dateObj.toLocaleString('default', { month: 'short', year: 'numeric' });
         }),
-        revenue: sortedMonths.map(m => monthlyMap[m].revenue),
-        outstanding: sortedMonths.map(m => monthlyMap[m].outstanding)
+        revenue: sortedMonths.map(m => maskCurrencyValue(monthlyMap[m].revenue)),
+        outstanding: sortedMonths.map(m => maskCurrencyValue(monthlyMap[m].outstanding))
     };
 }
 
