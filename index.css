@@ -1456,6 +1456,8 @@ button {
 
 .dashboard-mode-selector {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     background: var(--bg-card);
     border: 1px solid var(--glass-border);
     padding: 6px;
@@ -1463,6 +1465,7 @@ button {
 }
 
 .db-selector-btn {
+    white-space: nowrap;
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -1803,6 +1806,18 @@ button {
 /* ==========================================
    15. Conversational AI Chatbot Widget
    ========================================== */
+.feature-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    color: var(--text-primary);
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
 .chatbot-container {
     position: fixed;
     bottom: 30px;
