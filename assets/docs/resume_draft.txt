@@ -1,9 +1,9 @@
                                   ANUJA HERATH
                         London, United Kingdom | +44 7932 858305
-             Email: anuanujadilrukshi@gmail.com | LinkedIn: linkedin.com/in/anuja-dilrukshi
+             Email: anuanujadilrukshi@gmail.com | LinkedIn: linkedin.com/in/anuja-dilrukshi | Portfolio: anujadilrukshiherath.github.io
 ================================================================================
 
-JUNIOR DATA ENGINEER | TECHNICAL DATA ANALYST | PYTHON | SQL | DASHBOARDS | BACKEND ANALYTICS
+JUNIOR DATA ENGINEER | TECHNICAL DATA ANALYST | PYTHON | SQL | DASHBOARDS | DATA ENGINEERING
 
 PROFESSIONAL SUMMARY
 --------------------
@@ -62,8 +62,8 @@ January 2026 - Present
   PostgreSQL) processing 200+ active bookings, cutting manual reconciliation by ~4h/week.
 * Extended enquiry handling across Hayes, Wembley and Slough through three email
   workflows, improving branch-level coordination and response management.
-* Added a chatbot with admin-view results, simplified image uploads from the
-  admin page, and a sales-team login for showcasing event decoration halls.
+* Added chatbot result visibility for admins, simplified image uploads, and
+  created a sales-team login for showcasing event hall decoration packages.
 * Integrated automatic logo branding for uploaded event photos, improving
   presentation quality and brand consistency.
 * Implemented Agile/Scrum sprint cycles, delivering iterative dashboard features
@@ -112,10 +112,10 @@ CORE TECHNICAL SKILLS
 * Data Science & AI   : Machine Learning, NLP (NLTK, SpaCy, LangChain, RAG),
                          TensorFlow, Scikit-Learn, Pandas, NumPy, SQL (PostgreSQL,
                          MySQL), Power BI, Tableau, Data Visualisation
-* Frontend & Mobile   : React.js, JavaScript (ES6+), HTML5/CSS3, Flutter, Swift (iOS)
-* Cloud & DevOps      : GCP (Cloud Run, GCS), Docker, Kubernetes, CI/CD Pipelines,
+* Frontend & Mobile   : React.js, JavaScript (ES6+), HTML5/CSS3, Chart.js
+* Cloud & DevOps      : GCP (Cloud Run, GCS), Docker, GitHub Actions, CI/CD Pipelines,
                          Git/GitHub, Agile/Scrum, Jira, GDPR / Data Governance,
-                         MLOps, Cloud Deployment
+                         Cloud Deployment
 * Testing             : PyTest, JUnit, Mockito, TDD, Unit & Integration Testing,
                          Quality Assurance
 
