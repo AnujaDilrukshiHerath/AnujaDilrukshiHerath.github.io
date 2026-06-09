@@ -2144,108 +2144,140 @@ button {
 /* ==========================================
    17. Responsive Breakpoints
    ========================================== */
+
+/* ---- Tablet (≤992px) ---- */
 @media (max-width: 992px) {
+    .section-padding {
+        padding: 70px 0;
+    }
+
     .hero-grid {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 40px;
         text-align: center;
     }
-    
+
     .badge-intro {
         margin: 0 auto 20px auto;
     }
-    
+
     .hero-cta {
         justify-content: center;
     }
-    
+
     .hero-socials {
         justify-content: center;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 35px;
     }
-    
+
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 35px;
     }
-    
+
     .dashboard-charts-grid {
         grid-template-columns: 1fr;
     }
+
+    .footer-bar {
+        margin-top: 60px;
+    }
 }
 
+/* ---- Mobile (≤768px) ---- */
 @media (max-width: 768px) {
+    /* Global spacing reduction */
     .section-padding {
-        padding: 45px 0;
+        padding: 50px 0;
     }
-    
+
     .section-header {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
-    
-    .nav-logo {
-        order: 1;
+
+    .section-title {
+        font-size: 1.8rem;
     }
-    
-    .nav-actions {
-        order: 2;
-        margin-left: auto;
-        margin-right: 15px;
+
+    .footer-bar {
+        margin-top: 50px;
+        padding: 20px 0;
+    }
+
+    /* ---- Navigation ---- */
+    .nav-container {
+        height: 60px;
+        /* Logo | spacer | actions | hamburger */
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 0;
     }
-    
+
+    .nav-logo {
+        flex: 1;
+        /* sits on the left naturally */
+    }
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-right: 10px;
+    }
+
+    /* Collapse text from action buttons – show icon only */
     .showcase-nav-btn,
     .cv-btn {
-        width: 38px;
-        height: 38px;
+        width: 36px;
+        height: 36px;
         padding: 0 !important;
         border-radius: 50% !important;
         display: inline-flex !important;
         align-items: center;
         justify-content: center;
-        font-size: 0 !important; /* Hides any text nodes inside the button */
+        font-size: 0 !important;
         border: 1px solid var(--glass-border) !important;
         background: var(--glass-bg) !important;
     }
-    
+
     .showcase-nav-btn i,
     .cv-btn i {
-        font-size: 0.95rem !important; /* Keep icons visible */
+        font-size: 0.9rem !important;
         color: var(--text-primary) !important;
     }
-    
+
     .showcase-nav-btn:hover,
     .cv-btn:hover {
         border-color: var(--accent-primary) !important;
         background: var(--accent-primary-glow) !important;
     }
-    
+
     .theme-toggle-btn {
-        width: 38px;
-        height: 38px;
-        font-size: 0.95rem;
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
     }
-    
+
+    /* Hamburger */
     .menu-toggle {
-        display: block;
-        z-index: 1001;
-        order: 3;
-        width: 38px;
-        height: 38px;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 36px;
+        height: 36px;
         border: 1px solid var(--glass-border);
         border-radius: 50%;
         background: var(--glass-bg);
+        font-size: 1rem;
+        color: var(--text-primary);
+        flex-shrink: 0;
     }
-    
+
+    /* Slide-in nav drawer */
     .nav-links-wrapper {
         position: fixed;
         top: 0;
@@ -2261,86 +2293,154 @@ button {
         justify-content: center;
         transition: right 0.4s ease;
     }
-    
+
     .nav-links-wrapper.active {
         right: 0;
     }
-    
+
     .nav-links {
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 35px;
     }
-    
+
     .nav-link {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
-    
+
+    /* ---- Hero ---- */
+    .hero-section {
+        padding-top: 80px;
+        min-height: auto;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-description {
+        font-size: 0.97rem;
+        max-width: 100%;
+    }
+
+    .hero-cta {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .hero-cta .btn {
+        flex: 1 1 140px;
+        justify-content: center;
+    }
+
+    .scroll-indicator {
+        margin-top: 20px;
+    }
+
+    /* ---- About ---- */
+    .avatar-card {
+        width: 240px;
+        height: 240px;
+    }
+
+    /* ---- Skills ---- */
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    /* ---- Projects ---- */
     .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
-    
+
+    /* ---- Education ---- */
     .education-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 16px;
     }
-    
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
+
+    /* ---- Research ---- */
+    .research-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
-    
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.4rem;
-    }
-    
+
+    /* ---- Timeline ---- */
     .timeline-container::before {
         left: 8px;
     }
-    
+
     .timeline-item {
-        padding-left: 30px;
+        padding-left: 28px;
     }
-    
+
     .timeline-dot {
         left: 1px;
     }
-    
+
     .timeline-header {
         flex-direction: column;
         gap: 4px;
     }
-    
+
+    /* ---- Contact form ---- */
     .form-row {
         grid-template-columns: 1fr;
     }
-    
-    .education-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
-    
+
+    /* ---- Dashboard ---- */
     .dashboard-header-panel {
         flex-direction: column;
         align-items: flex-start;
+        gap: 10px;
     }
-    
+
+    /* ---- Chatbot ---- */
     .chatbot-container {
-        bottom: 20px;
-        right: 20px;
+        bottom: 16px;
+        right: 16px;
     }
-    
+
     .chat-window-card {
-        width: calc(100vw - 40px);
-        height: 400px;
+        width: calc(100vw - 32px);
+        height: 380px;
+    }
+}
+
+/* ---- Small Mobile (≤480px) ---- */
+@media (max-width: 480px) {
+    .section-padding {
+        padding: 40px 0;
+    }
+
+    .hero-title {
+        font-size: 1.9rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-quick-facts {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
     }
 }
 
@@ -2940,23 +3040,21 @@ button {
         margin-top: 0;
         transition: margin-top 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
-    
+
     .avatar-card-wrapper.bubble-active {
         margin-top: 140px;
     }
-    
+
     .avatar-bubble {
         position: absolute;
         bottom: calc(100% + 20px);
         left: 50%;
         transform: translateX(-50%) scale(0.8);
-        width: 280px; /* Force the bubble to align perfectly with the card width on mobile */
-        max-width: 280px;
+        width: 280px;
+        max-width: 90vw;
         opacity: 0;
         pointer-events: none;
         transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        
-        /* Reset mobile flow properties */
         max-height: none;
         padding: 16px;
         margin: 0;
@@ -2964,15 +3062,15 @@ button {
         border: 1px solid var(--glass-border);
         box-shadow: 0 20px 40px var(--shadow-color), 0 0 15px var(--accent-primary-glow);
     }
-    
+
     .avatar-bubble.active {
         opacity: 1;
         pointer-events: all;
         transform: translateX(-50%) scale(1);
     }
-    
+
     .bubble-arrow {
-        display: block; /* Show arrow on mobile */
+        display: block;
         bottom: -10px;
         left: 50%;
         transform: translateX(-50%);
