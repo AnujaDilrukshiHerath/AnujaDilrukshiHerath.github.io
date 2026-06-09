@@ -1107,7 +1107,7 @@ const BOT_RESPONSES = {
     antarions: "At <strong>IT Domain</strong>, Anuja worked on the Western Australian analytics platform **Antarions** (antarions.com):<br>• Built optimized backend API routes for their **interactive charts dashboards**, speeding up visual data queries by 40%.<br>• Designed and integrated the **conversational AI chatbot module** for intelligent customer queries and data retrieval.",
     experience: "Anuja's professional background covers:<br>• **Data Analyst** at Crystal Events & Management (Jan 2026 – Present)<br>• **Data Analyst** at Virosa (May 2025 – Oct 2025)<br>• **Backend Developer** at IT Domain (Antarions Project, 2024)<br>• **Software Engineer Intern** at Informatics (2022 – 2023)",
     education: "Anuja completed her higher education at the **University of Westminster, UK**:<br>• **MSc in Data Science & Analytics** (2025) – <em>Graduated with Merit</em><br>• **BEng (Hons) in Software Engineering** (2023)",
-    contact: "You can reach Anuja Herath at:<br>• **Email**: Anuanujadilrukshi@gmail.com<br>• **Phone**: +44 7932 858305<br>• **Location**: London, United Kingdom",
+    contact: "You can reach Anuja Herath at:<br>• **Email**: anuja.dilrukshi@gmail.com<br>• **Phone**: +44 7932 858305<br>• **Location**: London, United Kingdom",
     default: "I'm not sure I understood that. You can ask about my skills, TAMZHI research, Westminster education, or Antarions work. Try using the suggestions buttons!"
 };
 

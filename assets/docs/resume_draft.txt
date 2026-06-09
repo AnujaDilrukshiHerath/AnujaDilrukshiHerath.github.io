@@ -1,17 +1,20 @@
                                   ANUJA HERATH
                         London, United Kingdom | +44 7932 858305
-             Email: anuanujadilrukshi@gmail.com | LinkedIn: linkedin.com/in/anuja-dilrukshi
+             Email: anuja.dilrukshi@gmail.com | LinkedIn: linkedin.com/in/anuja-dilrukshi
 ================================================================================
 
 PROFESSIONAL SUMMARY
 --------------------
-Results-driven Backend Engineer and Data Scientist with an MSc in Data Science &
-Analytics (Merit, University of Westminster) and a BEng (Hons) in Software Engineering.
-Published NLP researcher (ICTer 2025 Bronze Medal) with 3+ years of hands-on production
-experience building RESTful APIs, data pipelines, analytics dashboards, and AI-driven
-systems for UK-based businesses. Proven expertise in Python (Django, FastAPI), Java
-(Spring Boot), React/Node.js, PostgreSQL, GCP Cloud Run, and Machine Learning / NLP.
-Seeking Backend Engineer, Data Engineer, or AI/ML Engineer roles in the UK or UAE/GCC.
+Results-driven Backend Engineer, Data Engineer, and AI/ML Engineer with 3+ years of
+hands-on experience building scalable APIs, cloud-native platforms, analytics
+pipelines, and NLP/ML systems for UK-based businesses. Holds an MSc in Data
+Science & Analytics (Merit) and a BEng (Hons) in Software Engineering from the
+University of Westminster. Strong technical profile in Python, Django, FastAPI,
+Java Spring Boot, React/Node.js, PostgreSQL, GCP Cloud Run, Docker, Kubernetes,
+CI/CD, and data-driven automation. Proven ability to deliver production-ready
+solutions with measurable impact, strong stakeholder communication, and modern
+engineering practices. Targeting Backend Engineer, Data Engineer, AI/ML Engineer,
+and Full Stack roles across the UK and UAE/GCC.
 
 KEY ACHIEVEMENTS
 ----------------
@@ -41,7 +44,7 @@ EDUCATION
 
 WORK EXPERIENCE
 ---------------
-Data Analyst & React/Node.js Developer | Crystal Events & Management, United Kingdom
+Data Engineer & Full Stack Developer | Crystal Events & Management, United Kingdom
 January 2026 - Present
 * Engineered a full-stack venue booking management system (React + Node.js +
   PostgreSQL) processing 200+ active bookings, cutting manual reconciliation by ~4h/week.
@@ -52,7 +55,7 @@ January 2026 - Present
 * Implemented Agile/Scrum sprint cycles, delivering iterative dashboard features
   aligned with business KPIs.
 
-Data Analyst & Full Stack Developer | Virosa Group, United Kingdom
+Data Engineer & Full Stack Developer | Virosa Group, United Kingdom
 May 2025 - October 2025
 * Built multichannel sales analytics dashboards (Chart.js + React) monitoring
   Shopify and Amazon revenue, reducing reporting time by 50%.
@@ -89,14 +92,17 @@ PUBLICATIONS & HONOURS
 CORE TECHNICAL SKILLS
 ---------------------
 * Backend Engineering : Python (Django REST Framework, FastAPI), Java (Spring Boot,
-                         Microservices), Node.js (Express.js), RESTful APIs
+                         Microservices), Node.js (Express.js), RESTful APIs, API Design,
+                         ETL Pipelines, Data Modelling
 * Data Science & AI   : Machine Learning, NLP (NLTK, SpaCy, LangChain, RAG),
-                         TensorFlow, Scikit-Learn, Pandas, NumPy, R, SQL (PostgreSQL,
-                         MySQL), Power BI, Tableau
+                         TensorFlow, Scikit-Learn, Pandas, NumPy, SQL (PostgreSQL,
+                         MySQL), Power BI, Tableau, Data Visualisation
 * Frontend & Mobile   : React.js, JavaScript (ES6+), HTML5/CSS3, Flutter, Swift (iOS)
 * Cloud & DevOps      : GCP (Cloud Run, GCS), Docker, Kubernetes, CI/CD Pipelines,
-                         Git/GitHub, Agile/Scrum, Jira, GDPR / Data Governance
-* Testing             : PyTest, JUnit, Mockito, TDD, Unit & Integration Testing
+                         Git/GitHub, Agile/Scrum, Jira, GDPR / Data Governance,
+                         MLOps, Cloud Deployment
+* Testing             : PyTest, JUnit, Mockito, TDD, Unit & Integration Testing,
+                         Quality Assurance
 
 LANGUAGES
 ---------
