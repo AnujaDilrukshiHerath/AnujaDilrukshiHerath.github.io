@@ -36,8 +36,8 @@ KEY ACHIEVEMENTS
   at Antarions analytics platform (GCP Cloud Run, PyTest 85% coverage).
 * Engineered a full-stack venue booking system managing 200+ live bookings, cutting
   manual financial reconciliation by ~4 hours/week (Crystal Events, UK).
-* Improved PostgreSQL reporting speed by 35% through schema optimisation and multi-join
-  query refactoring; reduced overdue invoices by 60% via automated balance tracking.
+* Optimised PostgreSQL reporting workflows through schema improvements and multi-join
+  query refactoring, improving report performance and invoice visibility.
 * Reduced e-commerce reporting effort by 50% by building multichannel analytics
   dashboards (Shopify + Amazon) with CI/CD-integrated deployments (Virosa Group, UK).
 * Graduated MSc Data Science & Analytics with Merit — University of Westminster, UK (2025).
@@ -49,14 +49,14 @@ EDUCATION
   Modules: Predictive Modelling, Deep Learning, NLP, Big Data Analytics,
   Data Visualisation, Machine Learning Systems.
 
-* BEng (Hons) in Software Engineering (First Class equivalent)
-  University of Westminster, United Kingdom (2020 - 2023)
+* BEng (Hons) in Software Engineering
+  University of Westminster, United Kingdom / IIT Sri Lanka partner institution (2020 - 2023)
   Modules: OOP Software Design, Database Engineering, Algorithms,
   Systems Architecture, Web Architectures.
 
 WORK EXPERIENCE
 ---------------
-Data Engineer & Full Stack Developer | Crystal Events & Management, United Kingdom
+Technical Data Analyst & Full Stack Developer | Crystal Events & Management, United Kingdom
 January 2026 - Present
 * Engineered a full-stack venue booking management system (React + Node.js +
   PostgreSQL) processing 200+ active bookings, cutting manual reconciliation by ~4h/week.
@@ -69,7 +69,7 @@ January 2026 - Present
 * Implemented Agile/Scrum sprint cycles, delivering iterative dashboard features
   aligned with business KPIs.
 
-Data Engineer & Full Stack Developer | Virosa Group, United Kingdom
+E-commerce Data Analyst & Full Stack Developer | Virosa Group, United Kingdom
 May 2025 - October 2025
 * Built multichannel sales analytics dashboards (Chart.js + React) monitoring
   Shopify and Amazon revenue, reducing reporting time by 50%.
@@ -100,7 +100,8 @@ PUBLICATIONS & HONOURS
 * TAMZHI NLP Research — Lead Author: "TAMZHI: Shorthand Romanized Tamil to Tamil
   Reverse Transliteration Using Novel Hybrid Approach."
   Published: International Journal on Advances in ICT for Emerging Regions (ICTer),
-  Vol. 16(1), May 2024. Indexed. 90%+ transliteration accuracy. 80M+ speakers addressed.
+  Vol. 16(1), May 2024. Indexed. 90%+ transliteration accuracy. Designed to support
+  digital accessibility for Tamil language users and multilingual applications.
 * ICTer 2025 Bronze Medal — Applied Research & Innovation Award.
 
 CORE TECHNICAL SKILLS
