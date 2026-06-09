@@ -48,10 +48,12 @@ Data Engineer & Full Stack Developer | Crystal Events & Management, United Kingd
 January 2026 - Present
 * Engineered a full-stack venue booking management system (React + Node.js +
   PostgreSQL) processing 200+ active bookings, cutting manual reconciliation by ~4h/week.
-* Optimised PostgreSQL schemas and multi-table joins, improving financial report
-  generation speed by 35%.
-* Automated outstanding balance calculations and payment notifications, reducing
-  overdue invoices by 60%.
+* Extended enquiry handling across Hayes, Wembley and Slough through three email
+  workflows, improving branch-level coordination and response management.
+* Added a chatbot with admin-view results, simplified image uploads from the
+  admin page, and a sales-team login for showcasing event decoration halls.
+* Integrated automatic logo branding for uploaded event photos, improving
+  presentation quality and brand consistency.
 * Implemented Agile/Scrum sprint cycles, delivering iterative dashboard features
   aligned with business KPIs.
 
