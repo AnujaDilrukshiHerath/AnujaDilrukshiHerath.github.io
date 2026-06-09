@@ -11,22 +11,7 @@ Junior Data Engineer and Technical Data Analyst with 3+ years of combined
 experience across software engineering, backend development, data analytics,
 and business intelligence systems. Skilled in Python, SQL, Django/FastAPI,
 Node.js, React, PostgreSQL, BI dashboards, and data automation. Experienced
-across e-commerce, event management, NLP research, and business intelligence
-systems.
-
-SELECTED PROJECTS
------------------
-1. Event Management Venue Platform
-   React, Node.js, PostgreSQL, Express.js, financial analytics
-
-2. Virosa E-Commerce Analytics Dashboard
-   Shopify, Amazon, Chart.js, React, forecasting
-
-3. Antarions BI Platform & NLP Chatbot
-   Django REST, PostgreSQL, SpaCy, GCP Cloud Run
-
-4. TAMZHI NLP Transliteration Engine
-   Python, NLP, Scikit-learn, published research
+across e-commerce, event management, NLP research, and analytics automation.
 
 KEY ACHIEVEMENTS
 ----------------
@@ -41,18 +26,6 @@ KEY ACHIEVEMENTS
 * Reduced e-commerce reporting effort by 50% by building multichannel analytics
   dashboards (Shopify + Amazon) with CI/CD-integrated deployments (Virosa Group, UK).
 * Graduated MSc Data Science & Analytics with Merit — University of Westminster, UK (2025).
-
-EDUCATION
----------
-* MSc in Data Science & Analytics (Merit)
-  University of Westminster, United Kingdom (2024 - 2025)
-  Modules: Predictive Modelling, Deep Learning, NLP, Big Data Analytics,
-  Data Visualisation, Machine Learning Systems.
-
-* BEng (Hons) in Software Engineering
-  University of Westminster, United Kingdom — delivered through IIT, Sri Lanka (2020 - 2023)
-  Modules: OOP Software Design, Database Engineering, Algorithms,
-  Systems Architecture, Web Architectures.
 
 WORK EXPERIENCE
 ---------------
@@ -95,6 +68,33 @@ Software Engineer Intern (Java / Spring Boot) | Informatics International Limite
 * Collaborated with senior engineers on REST API integrations, code reviews, and
   technical documentation — gaining exposure to enterprise software delivery practices.
 
+SELECTED PROJECTS
+-----------------
+1. Event Management Venue Platform
+   React, Node.js, PostgreSQL, Express.js, financial analytics
+
+2. Virosa E-Commerce Analytics Dashboard
+   Shopify, Amazon, Chart.js, React, forecasting
+
+3. Antarions BI Platform & NLP Chatbot
+   Django REST, PostgreSQL, SpaCy, GCP Cloud Run
+
+4. TAMZHI NLP Transliteration Engine
+   Python, NLP, Scikit-learn, published research
+
+EDUCATION
+---------
+* MSc in Data Science & Analytics (Merit)
+  University of Westminster, United Kingdom (2024 - 2025)
+  Modules: Business Analytics, Data Visualisation & Dashboarding,
+  Data Mining & Machine Learning, Data Warehousing & Business Intelligence,
+  Big Data Theory and Practice.
+
+* BEng (Hons) in Software Engineering
+  University of Westminster, United Kingdom — delivered through IIT, Sri Lanka (2020 - 2023)
+  Modules: OOP Software Design, Database Engineering, Algorithms,
+  Systems Architecture, Web Architectures.
+
 PUBLICATIONS & HONOURS
 -----------------------
 * TAMZHI NLP Research — Lead Author: "TAMZHI: Shorthand Romanized Tamil to Tamil
@@ -114,10 +114,8 @@ CORE TECHNICAL SKILLS
                          MySQL), Power BI, Tableau, Data Visualisation
 * Frontend & Mobile   : React.js, JavaScript (ES6+), HTML5/CSS3, Chart.js
 * Cloud & DevOps      : GCP (Cloud Run, GCS), Docker, GitHub Actions, CI/CD Pipelines,
-                         Git/GitHub, Agile/Scrum, Jira, GDPR / Data Governance,
-                         Cloud Deployment
-* Testing             : PyTest, JUnit, Mockito, TDD, Unit & Integration Testing,
-                         Quality Assurance
+                         Git/GitHub, Agile/Scrum, Jira
+* Testing             : PyTest, JUnit, Mockito, Unit & Integration Testing
 
 LANGUAGES
 ---------
