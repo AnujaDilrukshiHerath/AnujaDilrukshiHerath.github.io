@@ -71,16 +71,16 @@ Software Engineer Intern (Java / Spring Boot) | Informatics International Limite
 SELECTED PROJECTS
 -----------------
 1. Event Management Venue Platform
-   React, Node.js, PostgreSQL, Express.js, financial analytics
+   React, Node.js, PostgreSQL, Express.js, financial analytics; supported 200+ bookings and improved reconciliation efficiency.
 
 2. Virosa E-Commerce Analytics Dashboard
-   Shopify, Amazon, Chart.js, React, forecasting
+   Shopify, Amazon, Chart.js, React, forecasting; reduced reporting effort by 50%.
 
 3. Antarions BI Platform & NLP Chatbot
-   Django REST, PostgreSQL, SpaCy, GCP Cloud Run
+   Django REST, PostgreSQL, spaCy, GCP Cloud Run; improved BI data rendering and chatbot-driven retrieval.
 
 4. TAMZHI NLP Transliteration Engine
-   Python, NLP, Scikit-learn, published research
+   Python, NLP, scikit-learn, published research; supported multilingual accessibility and transliteration accuracy.
 
 EDUCATION
 ---------
@@ -109,13 +109,13 @@ CORE TECHNICAL SKILLS
 * Backend Engineering : Python (Django REST Framework, FastAPI), Java (Spring Boot,
                          Microservices), Node.js (Express.js), RESTful APIs, API Design,
                          ETL Pipelines, Data Modelling
-* Data Science & AI   : Machine Learning, NLP (NLTK, SpaCy, LangChain, RAG),
-                         TensorFlow, Scikit-Learn, Pandas, NumPy, SQL (PostgreSQL,
+* Data Science & AI   : Machine Learning, NLP (NLTK, spaCy, LangChain, RAG),
+                         TensorFlow, scikit-learn, Pandas, NumPy, SQL (PostgreSQL,
                          MySQL), Power BI, Tableau, Data Visualisation
 * Frontend & Mobile   : React.js, JavaScript (ES6+), HTML5/CSS3, Chart.js
 * Cloud & DevOps      : GCP (Cloud Run, GCS), Docker, GitHub Actions, CI/CD Pipelines,
                          Git/GitHub, Agile/Scrum, Jira
-* Testing             : PyTest, JUnit, Mockito, Unit & Integration Testing
+* Testing             : pytest, JUnit, Mockito, Unit & Integration Testing
 
 LANGUAGES
 ---------
