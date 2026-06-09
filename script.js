@@ -76,12 +76,12 @@ function updateThemeIcon(btn, theme) {
 function initTypewriter() {
     const typewriterSpan = document.getElementById('typewriter');
     const words = [
-        "Backend Engineer.",
-        "Data Scientist.",
-        "NLP & AI Engineer.",
-        "Data Engineer.",
-        "Full Stack Developer.",
-        "Published Researcher."
+        "Technical Data Analyst.",
+        "Data Analytics Engineer.",
+        "BI Analyst.",
+        "E-commerce Data Analyst.",
+        "Junior Data Engineer.",
+        "Backend & Data Developer."
     ];
     let wordIndex = 0;
     let charIndex = 0;
@@ -1934,8 +1934,8 @@ function initAvatarIntro() {
     // Intro script slides
     const slides = [
         {
-            text: "Hi there! I'm <strong>Anuja Herath</strong>. I'm a Backend Developer & Data Analyst. Welcome to my portfolio! 👋",
-            speech: "Hi there! I'm Anuja Herath. I'm a Backend Developer and Data Analyst. Welcome to my portfolio!"
+            text: "Hi there! I'm <strong>Anuja Herath</strong>. I'm a Technical Data Analyst & Data Analytics Engineer. Welcome to my portfolio! 👋",
+            speech: "Hi there! I'm Anuja Herath. I'm a Technical Data Analyst and Data Analytics Engineer. Welcome to my portfolio!"
         },
         {
             text: "I recently graduated with my <strong>MSc in Data Science & Analytics with Merit</strong> from the University of Westminster in London! 🎓",

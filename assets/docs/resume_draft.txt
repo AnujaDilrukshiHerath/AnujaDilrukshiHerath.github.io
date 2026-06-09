@@ -5,16 +5,17 @@
 
 PROFESSIONAL SUMMARY
 --------------------
-Results-driven Backend Engineer, Data Engineer, and AI/ML Engineer with 3+ years of
-hands-on experience building scalable APIs, cloud-native platforms, analytics
-pipelines, and NLP/ML systems for UK-based businesses. Holds an MSc in Data
-Science & Analytics (Merit) and a BEng (Hons) in Software Engineering from the
-University of Westminster. Strong technical profile in Python, Django, FastAPI,
-Java Spring Boot, React/Node.js, PostgreSQL, GCP Cloud Run, Docker, Kubernetes,
-CI/CD, and data-driven automation. Proven ability to deliver production-ready
-solutions with measurable impact, strong stakeholder communication, and modern
-engineering practices. Targeting Backend Engineer, Data Engineer, AI/ML Engineer,
-and Full Stack roles across the UK and UAE/GCC.
+Results-driven Technical Data Analyst and Data Analytics Engineer with 3+ years of
+hands-on experience turning business data into dashboards, SQL reporting,
+forecasting, and backend-supported analytics solutions for UK-based businesses.
+Holds an MSc in Data Science & Analytics (Merit) and a BEng (Hons) in Software
+Engineering from the University of Westminster. Strong technical profile in
+Python, SQL, dashboards, Django/FastAPI, PostgreSQL, API development, reporting,
+GCP Cloud Run, Docker, and data-driven automation. Proven ability to deliver
+production-ready insights and systems with measurable impact, strong stakeholder
+communication, and modern engineering practices. Targeting Technical Data
+Analyst, Data Analytics Engineer, BI Analyst, E-commerce Data Analyst, and
+Junior Data Engineer roles across the UK and UAE/GCC.
 
 KEY ACHIEVEMENTS
 ----------------
